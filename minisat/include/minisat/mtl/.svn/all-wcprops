@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1271/c3-conformant/minisat/include/minisat/mtl
+END
+Alloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1271/c3-conformant/minisat/include/minisat/mtl/Alloc.h
+END
+Heap.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/981/c3-conformant/minisat/include/minisat/mtl/Heap.h
+END
+Map.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/981/c3-conformant/minisat/include/minisat/mtl/Map.h
+END
+Vec.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1102/c3-conformant/minisat/include/minisat/mtl/Vec.h
+END
+IntTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/979/c3-conformant/minisat/include/minisat/mtl/IntTypes.h
+END
+XAlloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1066/c3-conformant/minisat/include/minisat/mtl/XAlloc.h
+END
+Alg.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/981/c3-conformant/minisat/include/minisat/mtl/Alg.h
+END
+Queue.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/981/c3-conformant/minisat/include/minisat/mtl/Queue.h
+END
+Sort.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/981/c3-conformant/minisat/include/minisat/mtl/Sort.h
+END

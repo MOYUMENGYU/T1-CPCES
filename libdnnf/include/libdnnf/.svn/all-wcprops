@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1628/c3-conformant/libdnnf/include/libdnnf
+END
+ext_math.hxx
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/942/c3-conformant/libdnnf/include/libdnnf/ext_math.hxx
+END
+cnf2dnnf.hxx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1569/c3-conformant/libdnnf/include/libdnnf/cnf2dnnf.hxx
+END
+dnnf_theory.hxx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1628/c3-conformant/libdnnf/include/libdnnf/dnnf_theory.hxx
+END
+cnf_theory.hxx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1038/c3-conformant/libdnnf/include/libdnnf/cnf_theory.hxx
+END
+utils.hxx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/942/c3-conformant/libdnnf/include/libdnnf/utils.hxx
+END
+string_ops.hxx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/942/c3-conformant/libdnnf/include/libdnnf/string_ops.hxx
+END

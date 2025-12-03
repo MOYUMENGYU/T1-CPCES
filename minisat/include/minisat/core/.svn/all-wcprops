@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1221/c3-conformant/minisat/include/minisat/core
+END
+Solver.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1221/c3-conformant/minisat/include/minisat/core/Solver.h
+END
+SolverTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1147/c3-conformant/minisat/include/minisat/core/SolverTypes.h
+END
+Dimacs.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/981/c3-conformant/minisat/include/minisat/core/Dimacs.h
+END

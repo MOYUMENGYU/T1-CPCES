@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1620/c3-conformant/mod-conformant-ff
+END
+output.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1169/c3-conformant/mod-conformant-ff/output.c
+END
+output.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/output.h
+END
+inst_hard.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1018/c3-conformant/mod-conformant-ff/inst_hard.c
+END
+lex-fct_pddl.l
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/lex-fct_pddl.l
+END
+inst_hard.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/inst_hard.h
+END
+inst_pre.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1018/c3-conformant/mod-conformant-ff/inst_pre.c
+END
+validator.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/validator.c
+END
+inst_final.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1169/c3-conformant/mod-conformant-ff/inst_final.c
+END
+scan-fct_pddl.y
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/scan-fct_pddl.y
+END
+inst_pre.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/inst_pre.h
+END
+validator.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/validator.h
+END
+inst_final.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/inst_final.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1620/c3-conformant/mod-conformant-ff/Makefile
+END
+inst_easy.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/inst_easy.c
+END
+ff.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1222/c3-conformant/mod-conformant-ff/ff.h
+END
+test_main.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/970/c3-conformant/mod-conformant-ff/test_main.cxx
+END
+inst_easy.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/inst_easy.h
+END
+lex-ops_pddl.l
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/lex-ops_pddl.l
+END
+search.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/search.c
+END
+memory.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1074/c3-conformant/mod-conformant-ff/memory.c
+END
+search.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/search.h
+END
+parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1018/c3-conformant/mod-conformant-ff/parse.c
+END
+relax.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/relax.c
+END
+scan-ops_pddl.y
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/scan-ops_pddl.y
+END
+repeated_states.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/repeated_states.c
+END
+state_transitions.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/state_transitions.c
+END
+memory.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/memory.h
+END
+parse.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/parse.h
+END
+relax.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/relax.h
+END
+repeated_states.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/repeated_states.h
+END
+state_transitions.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/898/c3-conformant/mod-conformant-ff/state_transitions.h
+END
+libff.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1169/c3-conformant/mod-conformant-ff/libff.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1189/c3-conformant/mod-conformant-ff/main.c
+END
+libff.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1169/c3-conformant/mod-conformant-ff/libff.h
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1221/c3-conformant/minisat/core
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/979/c3-conformant/minisat/core/SConscript
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/977/c3-conformant/minisat/core/Makefile
+END
+Solver.cc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1221/c3-conformant/minisat/core/Solver.cc
+END

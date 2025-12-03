@@ -1,0 +1,4 @@
+minisat/include/minisat/core
+minisat/include/minisat/mtl
+minisat/include/minisat/utils
+mod-conformant-ff

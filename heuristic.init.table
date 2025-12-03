@@ -1,0 +1,69 @@
+<(HOLDING A), 0>: oo
+<(HOLDING A), 1>: oo
+<(HOLDING A), 2>: oo
+<(NOT-HOLDING A), 0>: 0
+<(NOT-HOLDING A), 1>: 0
+<(NOT-HOLDING A), 2>: 0
+<(HOLDING B), 0>: 0
+<(HOLDING B), 1>: oo
+<(HOLDING B), 2>: oo
+<(NOT-HOLDING B), 0>: oo
+<(NOT-HOLDING B), 1>: 0
+<(NOT-HOLDING B), 2>: oo
+<(HANDEMPTY), 0>: oo
+<(HANDEMPTY), 1>: 0
+<(HANDEMPTY), 2>: oo
+<(NOT-HANDEMPTY), 0>: 0
+<(NOT-HANDEMPTY), 1>: oo
+<(NOT-HANDEMPTY), 2>: oo
+<(CLEAR B), 0>: oo
+<(CLEAR B), 1>: 0
+<(CLEAR B), 2>: oo
+<(NOT-CLEAR B), 0>: 0
+<(NOT-CLEAR B), 1>: oo
+<(NOT-CLEAR B), 2>: oo
+<(CLEAR A), 0>: 0
+<(CLEAR A), 1>: oo
+<(CLEAR A), 2>: oo
+<(NOT-CLEAR A), 0>: oo
+<(NOT-CLEAR A), 1>: 0
+<(NOT-CLEAR A), 2>: oo
+<(ONTABLE B), 0>: oo
+<(ONTABLE B), 1>: oo
+<(ONTABLE B), 2>: oo
+<(NOT-ONTABLE B), 0>: 0
+<(NOT-ONTABLE B), 1>: 0
+<(NOT-ONTABLE B), 2>: oo
+<(ONTABLE A), 0>: 0
+<(ONTABLE A), 1>: 0
+<(ONTABLE A), 2>: oo
+<(NOT-ONTABLE A), 0>: oo
+<(NOT-ONTABLE A), 1>: oo
+<(NOT-ONTABLE A), 2>: oo
+<(ON B A), 0>: oo
+<(ON B A), 1>: 0
+<(ON B A), 2>: oo
+<(NOT-ON B A), 0>: 0
+<(NOT-ON B A), 1>: oo
+<(NOT-ON B A), 2>: oo
+<(ON A B), 0>: oo
+<(ON A B), 1>: oo
+<(ON A B), 2>: oo
+<(NOT-ON A B), 0>: 0
+<(NOT-ON A B), 1>: 0
+<(NOT-ON A B), 2>: oo
+<(ON A A), 0>: oo
+<(ON A A), 1>: oo
+<(ON A A), 2>: oo
+<(NOT-ON A A), 0>: 0
+<(NOT-ON A A), 1>: 0
+<(NOT-ON A A), 2>: 0
+<(ON B B), 0>: oo
+<(ON B B), 1>: oo
+<(ON B B), 2>: oo
+<(NOT-ON B B), 0>: 0
+<(NOT-ON B B), 1>: 0
+<(NOT-ON B B), 2>: 0
+<GOAL, 0>: oo
+<GOAL, 1>: oo
+<GOAL, 2>: oo

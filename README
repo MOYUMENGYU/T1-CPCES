@@ -1,0 +1,15 @@
+T1 a Conforman Planner which translation if based on sampling
+  by Alexandre Albore, Miquel Ramirez, and Hector Geffner
+(c) 2011
+
+Run scons to compile.
+
+Notice that T1 is only 32-bit.
+
+The command line should be the following:
+./t1 -p -x -S dqbfs -W 1 -d domain.pddl -i problem.pddl
+
+or use the scripts attached.
+
+In all this, you're missing a folder called "libdnnf" containing an executable c2d_linux: it is Darwiche's DNNF compiler. I am not allowed to distribute it, but you can get a copy from his web page (and then copy the file c2d_linux in libdnnf/): 
+http://reasoning.cs.ucla.edu/c2d/

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1620/c3-conformant/minisat
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/977/c3-conformant/minisat/LICENSE
+END
+SConstruct
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1620/c3-conformant/minisat/SConstruct
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/AIG-RESEARCH-PROJECTS/!svn/ver/1588/c3-conformant/minisat/README
+END
