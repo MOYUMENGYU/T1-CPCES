@@ -32,6 +32,7 @@ NFF_SOURCES = main-probe.cxx \
 	nff_planner_stats.cxx \
 	utils.cxx \
 	nff_mutexes.cxx \
+        risk_analysis.cxx
 #	nff_rp.cxx 
 
 NFF_LIB_SOURCES = nff_options.cxx \

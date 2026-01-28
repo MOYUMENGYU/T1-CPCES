@@ -15,13 +15,13 @@ Compiling...done.
 Cache memory: 0.0 MB / Cache count: 4
 NNF memory: 0.0 MB
 Learned clauses: 0
-Compile Time: 0.000s / Pre-Processing: 0.001s / Post-Processing: 0.008s
+Compile Time: 0.000s / Pre-Processing: 0.002s / Post-Processing: 0.009s
 
 0.9% of nodes, and 1.0% of edges are dead.
 Saving 58 nodes and 91 edges...done.
 Loading 58 nnf nodes and 91 edges...done.
-Reducing 58 nodes, 91 edges......54 nodes, 87 edges: 0.007s
+Reducing 58 nodes, 91 edges......54 nodes, 87 edges: 0.010s
 Smoothing 54 nodes, 87 edges...54 nodes, 87 edges / 0.000s
 Saving 54 nnf nodes and 87 edges...done.
 
-Total Time: 0.017s
+Total Time: 0.023s

@@ -169,7 +169,16 @@ namespace NFF
 	~BeliefSearch();
 
 	bool	solve();
+
+    // 2026.1.26
+    // CPCES/CEGAR: last plan found by solve()
+    const std::vector<unsigned>& last_plan() const { return m_last_plan; }
+
+
+
 	bool	failed();
+
+
 
 	bool 		instate( int value, std::vector<int>& myvector );
 	double 		compile( DNNF::CNF_Theory& cnf, DNNF::DNNF_Theory& dnnf );
@@ -238,6 +247,10 @@ protected:
 	// MRJ: Matrix for holding the states we sample from
 	//	the initial belief
 	std::vector< std::vector< int > >       m_models;
+
+    // 2026.1.26
+    std::vector<unsigned>            m_last_plan;
+
     
 	bool       				m_failed;
 	SearchNode*				m_root;

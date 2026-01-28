@@ -114,24 +114,17 @@ protected:
 	unsigned		m_prot_index;
 };
 
-//2025.12.3
-struct VarRisk {
-    unsigned pos_fluent;   // 正 literal 的 fluent id
-    unsigned neg_fluent;   // 负 literal 的 fluent id (0 如果不存在)
-    float    risk;         // 合并后的变量级风险分数
-};
-//2025.12.3
-struct VarRiskGreater {
-    bool operator()( const VarRisk& a, const VarRisk& b ) const {
-        return a.risk > b.risk;  // risk 大的排前面（降序）
-    }
-};
 
 class Task
 {
 	
 private:
 	Task();
+
+    // 2026.1.26
+    std::vector<unsigned> m_critical_fluents;
+    PDDL::Fluent_Set*     m_critical_fluent_set;
+
 public:
 	~Task();
 	static Task& instance();
@@ -163,14 +156,17 @@ public:
         std::vector<std::vector <unsigned> >& oneofs() { return m_initial_oneofs;}
 
 	std::vector<unsigned>& 	goal_state() { return m_goal_state; }
-    //2025/12/3
-    std::vector<float>&  fluent_risk() { return m_fluent_risk; }
-    float                get_fluent_risk( unsigned f ) const { return m_fluent_risk[f]; }
-    void                 compute_fluent_risk();
-    void                 print_fluent_risk( std::ostream& os );
-    // 新增：计算变量级风险（合并正/负 literal）并按 risk 降序排序
-    std::vector<VarRisk> compute_variable_risk();
-    void print_top_k_risk_variables( unsigned k, std::ostream& os );
+
+    // 2026.1.26
+    // ==== Critical fluents (risk-based) ====
+    void set_critical_fluents( const std::vector<unsigned>& crit );
+    bool has_critical_fluents() const;
+    const std::vector<unsigned>& critical_fluents() const;
+    bool is_critical_fluent( unsigned f ) const;
+
+
+
+
 
 
         std::vector<std::vector<unsigned> >&	pos_invariants_table() { return  m_pos_invariants; }
@@ -305,6 +301,11 @@ public:
         bool                   cond_eff(){return m_cond_effects;}
         void                   set_initial_models(std::vector<std::vector<int> >* m);
         std::vector<std::vector<int> >*               get_initial_models() { return m_initial_models; }
+
+
+
+
+
         std::vector<unsigned>&  relevant_to( unsigned i ) { return m_relevant_atoms[i]; }
 
 	float                  op_cost( unsigned op ) { return m_op_costs[op]; }
@@ -351,8 +352,6 @@ protected:
 	std::vector< PDDL::Fluent_Set* >		m_fast_op_edeletes;
 	std::vector< std::vector<unsigned> >		m_op_edeletes;
 	std::vector< std::vector<unsigned> >		m_op_landmarks;
-    //2025.12.3
-    std::vector<float>                          m_fluent_risk;
 
 	std::vector<bool>				m_is_useful;
 	std::vector<bool>				m_is_reachable;

@@ -108,7 +108,10 @@ Operator::~Operator()
 Task::Task()
         :  m_string_table( String_Table::instance() ), m_glog( "grounding.stats" ), m_negation(false)
 
+
 {
+    m_critical_fluent_set = NULL;
+
 }
 
 Task::~Task()
@@ -126,6 +129,7 @@ Task& Task::instance()
 void Task::setup()
 {
 	Global_Options& opt = Global_Options::instance();
+    m_critical_fluent_set = NULL;
 
   
 	float t0 = time_used();
@@ -163,8 +167,7 @@ void Task::setup()
 	//!!!!!IGNORING COST OF PDDL
 	//  m_op_costs[o] = useful_ops()[o]->metric_cost();
 
-    // 2025.12.3 Compute per-fluent risk scores
-    compute_fluent_risk();
+
 
 	set_domain_name( FF::get_domain_name() );
 	set_problem_name( FF::get_problem_name() );
@@ -173,12 +176,66 @@ void Task::setup()
 
         void Task::set_initial_models(std::vector<std::vector<int> >* m)
         {
-                assert(m_initial_models == NULL);
+//                assert(m_initial_models == NULL);
                 
-                m_initial_models = m;
+//                m_initial_models = m;
                 
 //                        std::cerr << "Trying to initialize twice the samples." << std::endl; 
+            // 2026.1.27
+                // NOTE: In CEGAR / iterative calls, we may need to reset the pointer.
+                // Keep it safe and print a warning if it changes.
+                if ( m_initial_models != NULL && m_initial_models != m )
+                {
+                        std::cout << "[Samples][WARN] Task::set_initial_models() reset initial_models pointer" << std::endl;
+                }
+                m_initial_models = m;
         }
+
+
+        // 2026.1.26
+        void Task::set_critical_fluents( const std::vector<unsigned>& crit )
+        {
+            // 初始化 set
+            if ( m_critical_fluent_set == NULL )
+                m_critical_fluent_set = new Fluent_Set( fluent_count()+1 );
+            else
+                m_critical_fluent_set->reset();
+
+            m_critical_fluents.clear();
+            m_critical_fluents.reserve( crit.size() );
+
+            for ( unsigned i = 0; i < crit.size(); ++i )
+            {
+                unsigned f = crit[i];
+
+                // 防御性过滤：去掉 0 和最后一个（你输出里 f=0, f=23 这类）
+                if ( f == 0 ) continue;
+                if ( f >= fluent_count()-1 ) continue;
+
+                // 去重
+                if ( m_critical_fluent_set->isset( f ) ) continue;
+
+                m_critical_fluent_set->set( f );
+                m_critical_fluents.push_back( f );
+            }
+        }
+
+        bool Task::has_critical_fluents() const
+        {
+            return !m_critical_fluents.empty();
+        }
+
+        const std::vector<unsigned>& Task::critical_fluents() const
+        {
+            return m_critical_fluents;
+        }
+
+        bool Task::is_critical_fluent( unsigned f ) const
+        {
+            if ( m_critical_fluent_set == NULL ) return false;
+            return m_critical_fluent_set->isset( f );
+        }
+
 
 
 void Task::create_fluents()
@@ -1101,176 +1158,6 @@ void Task::print_operators( std::ostream& os )
 	}
 }
 
-//2025.12.3
-void Task::compute_fluent_risk()
-{
-    // Simple risk scoring: risk(f) = alpha * usage(f) + beta * uncertainty(f)
-    const float alpha = 2.0f;
-    const float beta  = 1.0f;
-
-    m_fluent_risk.clear();
-    m_fluent_risk.resize( fluents().size(), 0.0f );
-
-    // Mark uncertain fluents: those that appear in initial_unknown,
-    // initial clauses or oneofs.
-    std::vector<bool> is_uncertain( fluents().size(), false );
-
-    // Unknown atoms from initial state
-    for( std::vector<unsigned>::const_iterator it = initial_unknown().begin();
-         it != initial_unknown().end(); ++it )
-    {
-        if( *it < is_uncertain.size() )
-            is_uncertain[*it] = true;
-    }
-
-    // Atoms that appear in initial CNF clauses
-    for( std::vector< std::vector<unsigned> >::const_iterator ci = initial_clauses().begin();
-         ci != initial_clauses().end(); ++ci )
-    {
-        for( std::vector<unsigned>::const_iterator li = ci->begin();
-             li != ci->end(); ++li )
-        {
-            if( *li < is_uncertain.size() )
-                is_uncertain[*li] = true;
-        }
-    }
-
-    // Atoms that appear in oneof groups
-    for( std::vector< std::vector<unsigned> >::const_iterator oi = oneofs().begin();
-         oi != oneofs().end(); ++oi )
-    {
-        for( std::vector<unsigned>::const_iterator li = oi->begin();
-             li != oi->end(); ++li )
-        {
-            if( *li < is_uncertain.size() )
-                is_uncertain[*li] = true;
-        }
-    }
-
-    // Compute risk per fluent:
-    // usage(f) = how many operators require/add/delete f
-    for( unsigned f = 1; f < fluents().size(); ++f )
-    {
-        unsigned usage = 0;
-
-        if( f < m_required_by.size() )
-            usage += m_required_by[f].size();
-        if( f < m_added_by.size() )
-            usage += m_added_by[f].size();
-        if( f < m_deleted_by.size() )
-            usage += m_deleted_by[f].size();
-
-        float uncertainty = is_uncertain[f] ? 1.0f : 0.0f;
-        m_fluent_risk[f] = alpha * static_cast<float>( usage ) + beta * uncertainty;
-    }
-}
-
-//2025.12.3
-void Task::print_fluent_risk( std::ostream& os )
-{
-    for( unsigned f = 1; f < fluents().size(); ++f )
-    {
-        os << f << "\t";
-        print_fluent( fluents()[f], os );
-        os << "\trisk=";
-
-        if( f < m_fluent_risk.size() )
-            os << m_fluent_risk[f];
-        else
-            os << 0.0f;
-
-        os << std::endl;
-    }
-}
-
-//2025.12.3
-std::vector<VarRisk> Task::compute_variable_risk()
-{
-    std::vector<VarRisk> vars;
-    vars.reserve( fluents().size() );
-
-    // 遍历所有 fluent，只从“正 literal”起头构造变量
-    for( unsigned f = 1; f < fluents().size(); ++f )
-    {
-        Fluent* fl = fluents()[f];
-        if( fl == NULL )
-            continue;
-
-        // 只处理正 literal，负的那一半留给 not_equivalent 来挂上
-        if( !fl->is_pos() )
-            continue;
-
-        // 可选：跳过 GOAL 等特殊 fluent（如果你不想让它参与排序）
-        // if( f == m_dummy_goal_id )
-        //     continue;
-
-        unsigned neg = not_equivalent( f );   // 对应的负 fluent（如果没有则为 0）
-
-        float r_pos = 0.0f;
-        float r_neg = 0.0f;
-
-        if( f < m_fluent_risk.size() )
-            r_pos = m_fluent_risk[f];
-
-        if( neg && neg < m_fluent_risk.size() )
-            r_neg = m_fluent_risk[neg];
-
-        VarRisk v;
-        v.pos_fluent = f;
-        v.neg_fluent = neg;
-        // 合并策略：取 max，表示“有一边危险就算这个变量危险”
-        v.risk = (r_pos > r_neg ? r_pos : r_neg);
-
-        vars.push_back( v );
-    }
-
-    // 按风险从大到小排序
-    std::sort( vars.begin(), vars.end(), VarRiskGreater() );
-
-
-    return vars;
-}
-
-//2025.12.3
-void Task::print_top_k_risk_variables( unsigned k, std::ostream& os )
-{
-    // 获取按风险降序排列的变量列表
-    std::vector<VarRisk> vars = compute_variable_risk();
-
-    if( vars.empty() ) {
-        os << "No variables found for risk analysis." << std::endl;
-        return;
-    }
-
-    // 控制不要越界
-    if( k > vars.size() )
-        k = vars.size();
-
-    os << "===== Top " << k << " High-Risk Variables =====" << std::endl;
-
-    for( unsigned i = 0; i < k; ++i )
-    {
-        const VarRisk& v = vars[i];
-
-        os << "[" << (i+1) << "]  ";
-
-        // 打印正 literal 名称
-        print_fluent( fluents()[v.pos_fluent], os );
-
-        // 如果有负 literal，也打印一下
-        if( v.neg_fluent )
-        {
-            os << "   ~";
-            print_fluent( fluents()[v.neg_fluent], os );
-        }
-
-        os << "   risk=" << v.risk;
-
-        os << std::endl;
-    }
-
-    os << "=============================================" << std::endl;
-}
 
 
 

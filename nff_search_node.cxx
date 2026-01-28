@@ -1583,6 +1583,106 @@ bool SearchNode::is_literal_known( MiniSAT& solver, unsigned p )
 	return true;
 }
 
+// 2026.1.26
+bool SearchNode::get_counterexample_for_literal( unsigned p, std::vector<int>& sat_model )
+{
+    // theory_step must exist; caller should have built SAT clauses (e.g., via belief_tracking_with_sat()).
+    if ( theory_step == NULL )
+    {
+        std::cout << "[CEGAR][CEX] ERROR: theory_step is NULL, cannot build SAT solver." << std::endl;
+        return false;
+    }
+
+    unsigned neg_p = sm_task.not_equivalent( p );
+
+    // Build solver for this node's theory (prefix constraints are included by MiniSAT::prepare_solver()).
+    MiniSAT solver(this);
+
+    // Add a fact enforcing "p is false" (i.e., seek a model that violates p).
+    int test_literal = 0;
+    if ( sm_task.fluents().at(p)->is_pos() )
+    {
+        // var(p) represents p=true, so to force p=false we add -var(p)
+        test_literal = -theory_step->fluent_var(p);
+    }
+    else
+    {
+        // p is a negative fluent; falsifying p means making its positive counterpart true.
+        // In original is_literal_known(), for negative fluent p, it uses var(neg_p) positively.
+        if ( neg_p == 0 )
+        {
+            std::cout << "[CEGAR][CEX] ERROR: neg_p==0 for negative fluent." << std::endl;
+            return false;
+        }
+        test_literal = theory_step->fluent_var(neg_p);
+    }
+
+    solver.add_fact( test_literal );
+    int sat = solver.solve( sat_model );
+    solver.retract_last_fact();
+
+    return (sat == 1);
+}
+
+// 2026.1.27
+bool SearchNode::project_sat_model_to_initial_state( const std::vector<int>& sat_model,
+                                                     std::vector<int>& init_state )
+{
+    // 1) 找 root
+    SearchNode* r = this;
+    while ( r->father != NULL )
+        r = r->father;
+
+    if ( r->theory_step == NULL )
+    {
+        std::cout << "[CEGAR][CEX] ERROR: root theory_step is NULL." << std::endl;
+        return false;
+    }
+
+    Theory_Fragment* root_tf = r->theory_step;
+
+    // 2) init_state 的格式要和 T1 models 一致：index 是 fluent id，值是 ±id
+    init_state.clear();
+    init_state.resize( sm_task.fluent_count(), 0 );
+
+    // 3) 只对“正 fluent”做赋值，然后同步 not_equivalent
+    for ( unsigned f = 1; f < (unsigned)sm_task.fluent_count()-1; ++f )
+    {
+        if ( !sm_task.fluents()[f]->is_pos() )
+            continue;
+
+        int var = root_tf->fluent_var( f );
+        if ( var < 0 || var >= (int)sat_model.size() )
+        {
+            std::cout << "[CEGAR][CEX] WARN: var out of range for fluent f=" << f
+                      << " var=" << var << " model_size=" << sat_model.size() << std::endl;
+            continue;
+        }
+
+        int mv = sat_model[var];
+        if ( mv == 0 )
+        {
+            // undef：理论上 MiniSAT::solve() 你已经改成尽量返回完整赋值，但这里仍做保护
+            std::cout << "[CEGAR][CEX] WARN: model[var] is Undef for fluent f=" << f << std::endl;
+            continue;
+        }
+
+        bool is_true = (mv > 0);
+        init_state[f] = is_true ? (int)f : -(int)f;
+
+        int not_f = sm_task.not_equivalent( f );
+        if ( not_f )
+            init_state[not_f] = is_true ? -(int)not_f : (int)not_f;
+    }
+
+    // 可选：打印前几个 fluent 的投影结果，方便你确认确实是 t=0 的值
+    std::cout << "[CEGAR][CEX] projected initial sample built." << std::endl;
+
+    return true;
+}
+
+
+
 void   SearchNode::print_clauses()
 {
         std::cout << "PRINTING THE THEORY STEP..... " << std::endl;

@@ -47,6 +47,7 @@ nff_theory_fragment.cxx
 nff_planner_stats.cxx
 utils.cxx
 nff_mutexes.cxx
+risk_analysis.cxx
 """
 
 sources = [ src for src in sources.split() if len(src) > 0 ]

@@ -5,28 +5,28 @@
 <(NOT-HOLDING A), 1>: 0
 <(NOT-HOLDING A), 2>: 0
 <(HOLDING B), 0>: 0
-<(HOLDING B), 1>: oo
+<(HOLDING B), 1>: 0
 <(HOLDING B), 2>: oo
 <(NOT-HOLDING B), 0>: oo
-<(NOT-HOLDING B), 1>: 0
+<(NOT-HOLDING B), 1>: oo
 <(NOT-HOLDING B), 2>: oo
 <(HANDEMPTY), 0>: oo
-<(HANDEMPTY), 1>: 0
+<(HANDEMPTY), 1>: oo
 <(HANDEMPTY), 2>: oo
 <(NOT-HANDEMPTY), 0>: 0
-<(NOT-HANDEMPTY), 1>: oo
+<(NOT-HANDEMPTY), 1>: 0
 <(NOT-HANDEMPTY), 2>: oo
 <(CLEAR B), 0>: oo
-<(CLEAR B), 1>: 0
+<(CLEAR B), 1>: oo
 <(CLEAR B), 2>: oo
 <(NOT-CLEAR B), 0>: 0
-<(NOT-CLEAR B), 1>: oo
+<(NOT-CLEAR B), 1>: 0
 <(NOT-CLEAR B), 2>: oo
 <(CLEAR A), 0>: 0
-<(CLEAR A), 1>: oo
+<(CLEAR A), 1>: 0
 <(CLEAR A), 2>: oo
 <(NOT-CLEAR A), 0>: oo
-<(NOT-CLEAR A), 1>: 0
+<(NOT-CLEAR A), 1>: oo
 <(NOT-CLEAR A), 2>: oo
 <(ONTABLE B), 0>: oo
 <(ONTABLE B), 1>: oo
@@ -41,10 +41,10 @@
 <(NOT-ONTABLE A), 1>: oo
 <(NOT-ONTABLE A), 2>: oo
 <(ON B A), 0>: oo
-<(ON B A), 1>: 0
+<(ON B A), 1>: oo
 <(ON B A), 2>: oo
 <(NOT-ON B A), 0>: 0
-<(NOT-ON B A), 1>: oo
+<(NOT-ON B A), 1>: 0
 <(NOT-ON B A), 2>: oo
 <(ON A B), 0>: oo
 <(ON A B), 1>: oo

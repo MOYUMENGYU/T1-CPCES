@@ -129,6 +129,17 @@ namespace NFF
 		void				replace_dead_sample( std::vector<int>& model );
 		unsigned			size();
 
+        // 2026.1.26
+        // CPCES/CEGAR: try to find a SAT model that falsifies literal p at this node.
+        // Return true if such counterexample exists, and fill sat_model with assignment.
+        bool get_counterexample_for_literal( unsigned p, std::vector<int>& sat_model );
+        // 2026.1.27
+        // 将 SAT 求得的整条前缀赋值投影为 t=0 的“初始状态样本”
+        // init_state 输出格式与 T1 models 相同：state[f] = +f / -f（并同步 not_equivalent）
+        bool project_sat_model_to_initial_state( const std::vector<int>& sat_model,
+                                                 std::vector<int>& init_state );
+
+
 	protected:
 		std::vector<unsigned>		m_hS_HA;
 		PDDL::Fluent_Set*		m_hS_HA_set; 

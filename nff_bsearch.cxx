@@ -616,9 +616,40 @@ double	BeliefSearch::approximate_initial_belief()
 
 	initialize_dnnf_lit_weights(initial_dnnf);
 
-	Atom_Vec preconds_and_goals_relevants;
-	PDDL::Fluent_Set preconds_and_goals_relevant_set ( sm_task.fluent_count()+1 );
-	compute_relevant_prec_and_goals( preconds_and_goals_relevants, preconds_and_goals_relevant_set );
+//	Atom_Vec sampling_relevants;
+//	PDDL::Fluent_Set preconds_and_goals_relevant_set ( sm_task.fluent_count()+1 );
+//	compute_relevant_prec_and_goals( sampling_relevants, preconds_and_goals_relevant_set );
+
+    Atom_Vec sampling_relevants;
+    PDDL::Fluent_Set sampling_relevant_set ( sm_task.fluent_count()+1 );
+
+    if ( sm_task.has_critical_fluents() )
+    {
+        const std::vector<unsigned>& cf = sm_task.critical_fluents();
+
+        std::cout << "[Samples] Using CRITICAL fluents for sample generation. count="
+                  << cf.size() << std::endl;
+
+        for ( unsigned i = 0; i < cf.size(); ++i )
+        {
+            unsigned f = cf[i];
+            if ( f == 0 || f >= sm_task.fluent_count()-1 ) continue;
+            if ( sampling_relevant_set.isset( f ) ) continue;
+            sampling_relevant_set.set( f );
+            sampling_relevants.push_back( f );
+
+            std::cout << "[Samples][Critical] f=" << f << " ";
+            sm_task.print_fluent( f, std::cout );
+            std::cout << std::endl;
+        }
+    }
+    else
+    {
+        compute_relevant_prec_and_goals( sampling_relevants, sampling_relevant_set );
+        std::cout << "[Samples] Using PRE/GOAL relevants for sample generation. count="
+                  << sampling_relevants.size() << std::endl;
+    }
+
 
         std::vector<bool>	fluent_width( sm_task.fluent_count()+1 ); //fluent_width: true if w(L) <= 1 
         std::vector<bool>	zero_width ( sm_task.fluent_count()+1 );  //zero_width: true if w(L) == 0 
@@ -637,14 +668,30 @@ double	BeliefSearch::approximate_initial_belief()
 
 //	initialize_dnnf_lit_weights(initial_dnnf);
  
-	for ( int pi = 1; pi < sm_task.fluent_count()-1; pi++ )
-	{
-		if ( !sm_task.is_prec_or_goal(pi) )	
-			continue;
+//2026.1.27
+//	for ( int pi = 1; pi < sm_task.fluent_count()-1; pi++ )
+//	{
+//		if ( !sm_task.is_prec_or_goal(pi) )
+//			continue;
 
-                PDDL::Fluent_Set pi_relevant_set = ( sm_task.fluent_count()+1 );
-		Atom_Vec&        Rpi = sm_task.relevant_to(pi);
-                char* best_model ;
+//                PDDL::Fluent_Set pi_relevant_set = ( sm_task.fluent_count()+1 );
+//		Atom_Vec&        Rpi = sm_task.relevant_to(pi);
+//                char* best_model ;
+
+     for ( unsigned idx = 0; idx < sampling_relevants.size(); ++idx )
+     {
+                        int pi = (int)sampling_relevants[idx];
+
+                        if ( pi <= 0 || pi >= sm_task.fluent_count()-1 )
+                            continue;
+
+                        // 如果 pi 本身不是 unknown，也可以跳过（可选，但通常能减少无意义查询）
+                        if ( !b0.unknown_set().isset( (unsigned)pi ) )
+                            continue;
+
+                        PDDL::Fluent_Set pi_relevant_set( sm_task.fluent_count()+1 );
+                        Atom_Vec&        Rpi = sm_task.relevant_to( (unsigned)pi );
+                        char*            best_model;
 
                 //AA: Sets w(L')= 10000 for L' -> pi
 		for ( unsigned r = 0; r < Rpi.size(); r++ )
@@ -692,29 +739,56 @@ double	BeliefSearch::approximate_initial_belief()
                                 continue;
                         }
 
-                        for ( int pi_0 = 1; pi_0 < sm_task.fluent_count()-1; pi_0++ )
-                        {
-                                if ( !sm_task.is_prec_or_goal(pi_0) )	
-                                        continue;
-                                if ( !zero_width[ pi_0 ] )
-                                        continue;
-                                if ( pi_0 == pi )
-                                        continue;
-                                Atom_Vec&  Rpi_0 = sm_task.relevant_to(pi_0);
+//                        for ( int pi_0 = 1; pi_0 < sm_task.fluent_count()-1; pi_0++ )
+//                        {
+//                                if ( !sm_task.is_prec_or_goal(pi_0) )
+//                                        continue;
+//                                if ( !zero_width[ pi_0 ] )
+//                                        continue;
+//                                if ( pi_0 == pi )
+//                                        continue;
+//                                Atom_Vec&  Rpi_0 = sm_task.relevant_to(pi_0);
                                 
-                                //AA: Sets w(L')= 1 for L' -> pi_0
-                                for ( unsigned r = 0; r < Rpi_0.size(); r++ )
-                                {
-                                        unsigned ll = Rpi_0[r];
-                                        if (sm_task.fluents()[ ll ]->is_pos()  )
-                                                initial_dnnf.set_lw( ll, initial_dnnf.lw( ll ) + 1);
-                                        else if ( sm_task.not_equivalent( ll ) )
-                                                initial_dnnf.set_lw( -(int)sm_task.not_equivalent( ll ), 
-                                                                     initial_dnnf.lw( -(int)sm_task.not_equivalent(ll)) + 1 ) ;
+//                                //AA: Sets w(L')= 1 for L' -> pi_0
+//                                for ( unsigned r = 0; r < Rpi_0.size(); r++ )
+//                                {
+//                                        unsigned ll = Rpi_0[r];
+//                                        if (sm_task.fluents()[ ll ]->is_pos()  )
+//                                                initial_dnnf.set_lw( ll, initial_dnnf.lw( ll ) + 1);
+//                                        else if ( sm_task.not_equivalent( ll ) )
+//                                                initial_dnnf.set_lw( -(int)sm_task.not_equivalent( ll ),
+//                                                                     initial_dnnf.lw( -(int)sm_task.not_equivalent(ll)) + 1 ) ;
                                         
-                                        pi_relevant_set.set( ll );
-                                }
+//                                        pi_relevant_set.set( ll );
+//                                }
+//                        }
+                        for ( unsigned j = 0; j < sampling_relevants.size(); ++j )
+                        {
+                            int pi_0 = (int)sampling_relevants[j];
+
+                            if ( pi_0 <= 0 || pi_0 >= sm_task.fluent_count()-1 )
+                                continue;
+                            if ( !zero_width[ pi_0 ] )
+                                continue;
+                            if ( pi_0 == pi )
+                                continue;
+
+                            Atom_Vec& Rpi_0 = sm_task.relevant_to( (unsigned)pi_0 );
+
+                            // AA: Sets w(L')= 1 for L' -> pi_0
+                            for ( unsigned r = 0; r < Rpi_0.size(); r++ )
+                            {
+                                unsigned ll = Rpi_0[r];
+                                if ( sm_task.fluents()[ ll ]->is_pos() )
+                                    initial_dnnf.set_lw( ll, initial_dnnf.lw( ll ) + 1 );
+                                else if ( sm_task.not_equivalent( ll ) )
+                                    initial_dnnf.set_lw( -(int)sm_task.not_equivalent( ll ),
+                                                         initial_dnnf.lw( -(int)sm_task.not_equivalent(ll)) + 1 );
+
+                                pi_relevant_set.set( ll );
+                            }
                         }
+
 
                         best_model = initial_dnnf.best_model(w);
 
@@ -767,7 +841,7 @@ double	BeliefSearch::approximate_initial_belief()
                                 if ( state[i] > 0)
                                 {
                                         //AA: Increases True lits weight to obtain samples as different as possible.
-                                       if ( preconds_and_goals_relevant_set.isset( state[i]) )
+                                       if ( sampling_relevant_set.isset( state[i]) )
                                         {
                                                 int nw = initial_dnnf.lw( state[i] ) + 1;
                                                 initial_dnnf.set_lw( state[i], nw ); 
@@ -776,7 +850,7 @@ double	BeliefSearch::approximate_initial_belief()
                                 else if  ( zero_width[ abs(state[i]) ] )
                                 {
                                         unsigned lit = abs(state[i]);
-                                        if    (sm_task.is_prec_or_goal( lit ) )
+                                        if    (sampling_relevant_set.isset( lit ) )
                                         { // Checks if the model can be used for this literal too
                                                 bool reusable_model = true;                                
                                                 Atom_Vec&  rel_lit = sm_task.relevant_to( lit );
@@ -831,19 +905,19 @@ double	BeliefSearch::approximate_initial_belief()
                 /** Models for literals with width > 0 **/
 
                 //AA: Sets w(L'')= 1 for L'' -> Prec + Goal (different from pi)
-                for ( unsigned r = 0; r < preconds_and_goals_relevants.size(); r++ )
+                for ( unsigned r = 0; r < sampling_relevants.size(); r++ )
                 {
                         //AA: Relevant to current pi
-                        if ( pi_relevant_set.isset( preconds_and_goals_relevants[r] ) )
+                        if ( pi_relevant_set.isset( sampling_relevants[r] ) )
                                 continue;
                         //AA: weigth already raised
-                        if (  initial_dnnf.lw( preconds_and_goals_relevants[r] ) > 1 )
+                        if (  initial_dnnf.lw( sampling_relevants[r] ) > 1 )
                                 continue;
-                        if ( sm_task.fluents()[ preconds_and_goals_relevants[r]]->is_pos() )         
-                                initial_dnnf.set_lw( preconds_and_goals_relevants[r], 1); 
+                        if ( sm_task.fluents()[ sampling_relevants[r]]->is_pos() )
+                                initial_dnnf.set_lw( sampling_relevants[r], 1);
                         else
                         {
-                                int not_l = (int)sm_task.not_equivalent( preconds_and_goals_relevants[r] );
+                                int not_l = (int)sm_task.not_equivalent( sampling_relevants[r] );
                                 if ( not_l )
                                         initial_dnnf.set_lw( -not_l, 1 ); 
                         }
@@ -851,15 +925,43 @@ double	BeliefSearch::approximate_initial_belief()
                 // sL = lits relevant to pi and initially unknown
                 PDDL::Fluent_Set sL_set ( sm_task.fluent_count()+1 );
                 std::vector<unsigned> sL_vec, relevant_lits;
-		for ( unsigned j = 0; j < Rpi.size(); j++ )
-		{
-			int rel = Rpi[j];
-			if ( b0.unknown_set().isset(rel) )
-			{
-                                sL_set.set( rel );
-                                sL_vec.push_back( rel );
-			}
+//		for ( unsigned j = 0; j < Rpi.size(); j++ )
+//		{
+//			int rel = Rpi[j];
+//			if ( b0.unknown_set().isset(rel) )
+//			{
+//                                sL_set.set( rel );
+//                                sL_vec.push_back( rel );
+//			}
+//                }
+                // 2026.1.26
+                for ( unsigned j = 0; j < Rpi.size(); j++ )
+                {
+                    unsigned rel = Rpi[j];
+
+                    if ( !b0.unknown_set().isset(rel) )
+                        continue;
+
+                    if ( sm_task.has_critical_fluents() && !sm_task.is_critical_fluent(rel) )
+                        continue;
+
+                    sL_set.set( rel );
+                    sL_vec.push_back( rel );
                 }
+
+                // 细致日志：每个 pi 实际参与采样的 unknown literals
+                std::cout << "[Samples][pi] ";
+                sm_task.print_fluent( pi, std::cout );
+                std::cout << " |Rpi|=" << Rpi.size()
+                          << " |sL_filtered|=" << sL_vec.size()
+                          << std::endl;
+
+                for ( unsigned k = 0; k < sL_vec.size(); ++k ) {
+                    std::cout << "  [Samples][pi-lit] ";
+                    sm_task.print_fluent( sL_vec[k], std::cout );
+                    std::cout << std::endl;
+                }
+
 
                 // search for a smaller clause subset of sL
                 int best_clause = -1;
@@ -963,7 +1065,7 @@ double	BeliefSearch::approximate_initial_belief()
                                         //AA: Increases True lits weight to obtain samples as different as possible.
 
                                         if ( (state[i] > 0) 
-                                             && preconds_and_goals_relevant_set.isset(state[i]) )
+                                             && sampling_relevant_set.isset(state[i]) )
                                         {
                                                 int nw = initial_dnnf.lw( state[i] ) + 1;
                                                 initial_dnnf.set_lw( state[i], nw ); 
@@ -1011,13 +1113,13 @@ double	BeliefSearch::approximate_initial_belief()
                 const unsigned max_samples = 20;
                 initialize_dnnf_lit_weights(initial_dnnf);
                                 
-                for ( unsigned r = 0; r < preconds_and_goals_relevants.size(); r++ )
+                for ( unsigned r = 0; r < sampling_relevants.size(); r++ )
                 {
-                        if ( sm_task.fluents()[ preconds_and_goals_relevants[r]]->is_pos() )         
-                                initial_dnnf.set_lw( preconds_and_goals_relevants[r], 1); 
+                        if ( sm_task.fluents()[ sampling_relevants[r]]->is_pos() )
+                                initial_dnnf.set_lw( sampling_relevants[r], 1);
                         else
                         {
-                                int not_l = (int)sm_task.not_equivalent( preconds_and_goals_relevants[r] );
+                                int not_l = (int)sm_task.not_equivalent( sampling_relevants[r] );
                                 if ( not_l )
                                         initial_dnnf.set_lw( -not_l, 1); 
                         }
@@ -1050,7 +1152,7 @@ double	BeliefSearch::approximate_initial_belief()
                         for ( unsigned i = 0; i < state.size(); i++ )
                         {
                                 //AA: Increases True lits weight to obtain samples as different as possible.
-                                if ( (state[i] > 0) && preconds_and_goals_relevant_set.isset(state[i]) )
+                                if ( (state[i] > 0) && sampling_relevant_set.isset(state[i]) )
                                 {
                                         int nw = initial_dnnf.lw( state[i] ) + 1;
                                         initial_dnnf.set_lw( state[i], nw ); 
@@ -1809,8 +1911,32 @@ bool	BeliefSearch::solve()
 	bool                plan_found = false;
         set_root( SearchNode::root() );	
 
+        // 2026.1.27: IMPORTANT FIX
+        // BeliefSearch::m_failed was initialized as true in ctor,
+        // but solve() did not reset it on success. This breaks the outer CEGAR loop
+        // which checks search.failed().
+        m_failed = false;
+        m_last_plan.clear();
+
 	double t0 = time_used();
-	double approx_time = approximate_initial_belief();
+//	double approx_time = approximate_initial_belief();
+
+    // 2026.1.26
+    double approx_time = 0.0;
+
+    // If models already exist (from previous CEGAR iteration), reuse them.
+    // Otherwise generate initial samples as usual.
+    if ( models().empty() )
+    {
+        approx_time = approximate_initial_belief();
+        std::cout << "[Samples] done: |S1|=" << models().size() << std::endl;
+    }
+    else
+    {
+        std::cout << "[Samples] reuse existing samples: |S|=" << models().size() << std::endl;
+        sm_task.set_initial_models( &(m_models) );
+    }
+
 
         if ( !NO_SAT_CALLS || stats.is_width_1() ) 
                 root()->compute_hash( models() );	
@@ -1891,6 +2017,17 @@ bool	BeliefSearch::solve()
 	log.stream() << ";; Plan found:" << std::endl;
         if (opts.output_ipc())
                 ipc.stream() << "linear " << plan.size()-1 << " ";
+
+        // 2026.1.26
+        // Save plan for external CEGAR loop (excluding op==0 dummy)
+        m_last_plan.clear();
+        for ( unsigned k = 0; k < plan.size(); k++ )
+        {
+            if ( plan[k] == 0 ) continue;
+            m_last_plan.push_back( plan[k] );
+        }
+
+        std::cout << "[CEGAR] candidate plan extracted, length=" << m_last_plan.size() << std::endl;
 
 	for ( unsigned k = 0; k < plan.size(); k++ )
 	{

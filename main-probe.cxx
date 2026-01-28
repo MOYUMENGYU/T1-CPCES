@@ -35,6 +35,8 @@
 #include "nff_ipc.hxx"
 #include "nff_planner_stats.hxx"
 #include "nff_mutexes.hxx"
+#include "risk_analysis.hxx"   // 加在顶部
+
 
 void	load_test_sequence( std::string fname, std::vector<PDDL::Operator*>& ops )
 {
@@ -147,13 +149,22 @@ void register_signal_handlers()
 
 }
 
+static bool same_state_vec( const std::vector<int>& a, const std::vector<int>& b )
+{
+    if ( a.size() != b.size() ) return false;
+    for ( size_t i = 0; i < a.size(); ++i )
+        if ( a[i] != b[i] ) return false;
+    return true;
+}
+
+
 int main( int argc, char** argv )
 {
 
-    std::cout << "[TEST] 主程序开始执行 debug1" << std::endl;
+    std::cout << "[TEST] 主程序开始执行" << std::endl;
 	register_signal_handlers();
 	double t0, tf;
-    std::cout << "[TEST] 主程序开始执行 debug12" << std::endl;
+
 
 	NFF_Options::parse_command_line( argc, argv );
 	NFF_Options&	prog_opts = NFF_Options::instance();
@@ -165,13 +176,43 @@ int main( int argc, char** argv )
 	PDDL::Task& task = PDDL::Task::instance();
 	task.setup();
 
-    //2025.12.3
-    task.print_fluent_risk( std::cout );
-    task.print_top_k_risk_variables( 23, std::cout );
-
-
 
 	t0 = time_used();
+
+    // 2026.1.26
+    unsigned topK = 10;
+    std::vector<Risk::RiskScore> ranked = Risk::compute_risk_index(topK);
+
+    std::cout << "[RiskIndex][Debug] ranked.size()=" << ranked.size() << std::endl;
+
+    for (size_t i = 0; i < ranked.size(); ++i)
+    {
+        const Risk::RiskScore& rs = ranked[i];
+        std::cout << "[RiskIndex][Ranked] i=" << i
+                  << " f=" << rs.fluent
+                  << " score=" << rs.score
+                  << " name=";
+        task.print_fluent(rs.fluent, std::cout);
+        std::cout << std::endl;
+    }
+
+    // 你后续要用的关键命题变量集合（先存起来）
+    std::vector<unsigned> critical;
+    for (unsigned i = 0; i < topK && i < ranked.size(); ++i)
+        critical.push_back(ranked[i].fluent);
+
+    // 交给 Task 保存（供样本生成/搜索使用）
+    PDDL::Task::instance().set_critical_fluents( critical );
+
+    // 控制台日志：确认 Task 中最终保存的 critical 集合
+    std::cout << "[RiskIndex] ===== critical fluents stored in Task =====" << std::endl;
+    const std::vector<unsigned>& cf = PDDL::Task::instance().critical_fluents();
+    for (unsigned i = 0; i < cf.size(); ++i) {
+        std::cout << "[RiskIndex][Critical] #" << i << " f=" << cf[i] << " ";
+        PDDL::Task::instance().print_fluent( cf[i], std::cout );
+        std::cout << std::endl;
+    }
+
 	
 	if ( prog_opts.use_invariant_xors() || prog_opts.use_invariant_diameter() )
 	{
@@ -248,8 +289,267 @@ int main( int argc, char** argv )
 		std::exit(0);
 	}
 
-	search.solve();
-	handle_exit();
-	std::exit(0);
-	return 0;
+//	search.solve();
+//	handle_exit();
+//	std::exit(0);
+//	return 0;
+
+    // 2026.1.26
+    // =========================
+    // CPCES/CEGAR outer loop
+    // =========================
+    const unsigned MAX_CEGAR_ITERS = 50; // can be adjusted
+    unsigned it = 0;
+
+    std::vector< std::vector<int> > samples;   // persistent sample set across iterations
+
+    while ( it < MAX_CEGAR_ITERS )
+    {
+        std::cout << "[CEGAR] ================================================" << std::endl;
+        std::cout << "[CEGAR] iter=" << it << " begin" << std::endl;
+
+        NFF::BeliefSearch search;
+
+        // Reuse previous samples if any
+        if ( !samples.empty() )
+        {
+            search.models() = samples;
+            std::cout << "[Samples] begin reuse samples for planning, |S|=" << samples.size() << std::endl;
+        }
+        else
+        {
+            std::cout << "[Samples] begin generate initial samples (first iteration)" << std::endl;
+        }
+
+        bool ok = search.solve();
+        if ( !ok || search.failed() )
+        {
+            std::cout << "[CEGAR] No plan found, terminate." << std::endl;
+            break;
+        }
+
+        const std::vector<unsigned>& plan_ops = search.last_plan();
+        std::cout << "[CEGAR] candidate plan length=" << plan_ops.size() << std::endl;
+
+        // --------
+        // Verify plan by replay + SAT goal entailment test
+        // --------
+        // Replay the plan to build theory_step chain:
+//        NFF::SearchNode* n = NFF::SearchNode::root();
+//        search.set_root(n);
+
+        // Build the initial approximation (must exist)
+        // If this is iter>0, solve() already reused samples and set initial models.
+        // We still need to create theory fragments along the plan prefix:
+//        for ( unsigned k = 0; k < plan_ops.size(); k++ )
+//        {
+//            n = n->successor( plan_ops[k] );
+//            n->belief_tracking_with_sat();
+//        }
+
+
+        // --------
+        // Verify plan by replay + SAT goal entailment test
+        // --------
+
+        // 1) 取 root，并让 root 的 belief/unknown 与 samples 对齐
+        NFF::SearchNode* root = NFF::SearchNode::root();
+        NFF::SearchNode* n = root;
+
+        if ( samples.empty() )
+        {
+            // 理论上不会发生：solve() 成功后 search.models() 至少有初始样本
+            std::cout << "[CEGAR][REPLAY] ERROR: samples empty after solve()" << std::endl;
+        }
+        else
+        {
+            n->do_belief_tracking( samples );
+        }
+
+        // 2) 关键：root 必须有 theory_step（否则第一步 belief_tracking_with_sat 会用 father->theory_step 解引用空指针）
+        if ( n->theory_step == NULL )
+        {
+            n->theory_step = new NFF::Theory_Fragment();
+            std::cout << "[CEGAR][REPLAY] root theory_step initialized (t=0)" << std::endl;
+        }
+
+        // 3) 回放计划：每步 successor 后都要 do_belief_tracking(samples)，再生成该步 theory
+        bool replay_ok = true;
+        for ( unsigned k = 0; k < plan_ops.size(); k++ )
+        {
+            unsigned op_idx = plan_ops[k];
+
+            // 可选但强烈建议：打印每一步动作
+            std::cout << "[CEGAR][REPLAY] step=" << (k+1) << " op_idx=" << op_idx << " ";
+            task.print_operator( op_idx, std::cout );
+            std::cout << std::endl;
+
+            // 动作可执行性检查（避免 silent fail）
+            if ( n->b == NULL || !n->b->can_apply( op_idx ) )
+            {
+                std::cout << "[CEGAR][REPLAY] FAIL: action not applicable at step " << (k+1) << std::endl;
+                replay_ok = false;
+                break;
+            }
+
+            // 生成后继节点
+            n = n->successor( op_idx );
+
+            // 用 samples 更新 belief/unknown/known 等
+            n->do_belief_tracking( samples );
+
+            // 生成这一层 SAT theory（依赖 father->theory_step 已存在）
+            n->belief_tracking_with_sat();
+        }
+
+        if ( !replay_ok )
+        {
+            std::cout << "[CEGAR] Replay failed, terminate." << std::endl;
+            break;
+        }
+
+
+        bool valid = true;
+        std::vector<int> sat_model;
+        unsigned failed_goal = 0;
+
+        PDDL::Task& t = PDDL::Task::instance();
+        std::vector<unsigned>& G = t.goal_state();
+
+
+        for ( unsigned gi = 0; gi < G.size(); gi++ )
+        {
+            unsigned g = G[gi];
+            sat_model.clear();
+
+            // If we can find a model that falsifies goal g => counterexample exists => plan invalid
+            if ( n->get_counterexample_for_literal( g, sat_model ) )
+            {
+                valid = false;
+                failed_goal = g;
+
+                std::cout << "[CEGAR][CEX] counterexample found for goal: ";
+                t.print_fluent( failed_goal, std::cout );
+                std::cout << std::endl;
+                break;
+            }
+        }
+
+        if ( valid )
+        {
+            std::cout << "[CEGAR] Plan verified: goals are entailed. SUCCESS." << std::endl;
+            handle_exit();
+            std::exit(0);
+        }
+
+        // --------
+        // Convert SAT model -> a new sample state, then update S
+        // --------
+        std::vector<int> new_state;
+        new_state.resize( t.fluent_count(), 0 );
+
+        // Build state assignment for positive fluents, and fill their neg equivalents accordingly
+//        for ( unsigned f = 1; f < (unsigned)(t.fluent_count()-1); f++ )
+//        {
+//            if ( !t.fluents()[f]->is_pos() ) continue;
+
+//            unsigned v = n->theory_step->fluent_var(f);
+//            int assn = 0;
+//            if ( v < sat_model.size() )
+//                assn = sat_model[v];
+
+//            // If SAT model doesn't provide assignment, skip (keep 0)
+//            if ( assn == 0 ) continue;
+
+//            int sign_true = (assn > 0 ? 1 : -1);
+//            new_state[f] = sign_true * (int)f;
+
+//            unsigned nf = t.not_equivalent(f);
+//            if ( nf != 0 )
+//                new_state[nf] = -sign_true * (int)nf;
+//        }
+
+        // 2026.1.27
+        // Build state assignment for positive fluents, and fill their neg equivalents accordingly
+        // IMPORTANT: must project SAT model to t=0 variables using root->theory_step
+        unsigned undef_cnt = 0;
+
+        for ( unsigned f = 1; f < (unsigned)(t.fluent_count()-1); f++ )
+        {
+            if ( !t.fluents()[f]->is_pos() ) continue;
+
+            // *** FIX: use root(t=0) mapping, NOT the last node mapping ***
+            unsigned v = root->theory_step->fluent_var( f );
+
+            int assn = 0;
+            if ( v < sat_model.size() )
+                assn = sat_model[v];
+
+            // 处理 Undef：为了形成一个“完整样本”，这里默认当作 false（并打印统计）
+            bool is_true = false;
+            if ( assn == 0 )
+            {
+                undef_cnt++;
+                is_true = false;
+            }
+            else
+            {
+                is_true = (assn > 0);
+            }
+
+            int sign_true = is_true ? 1 : -1;
+            new_state[f] = sign_true * (int)f;
+
+            unsigned nf = t.not_equivalent( f );
+            if ( nf != 0 )
+                new_state[nf] = -sign_true * (int)nf;
+        }
+
+        if ( undef_cnt > 0 )
+        {
+            std::cout << "[CEGAR][CEX] WARN: undef assignments in SAT model=" << undef_cnt
+                      << " (set them to FALSE by default)" << std::endl;
+        }
+
+
+
+        bool is_new = true;
+        for ( unsigned si = 0; si < (samples.empty() ? search.models().size() : samples.size()); si++ )
+        {
+            const std::vector<int>& oldS = (samples.empty() ? search.models()[si] : samples[si]);
+            if ( same_state_vec(oldS, new_state) )
+            {
+                is_new = false;
+                break;
+            }
+        }
+
+//        if ( samples.empty() )
+//            samples = search.models(); // persist initial samples from solve()
+
+        // Always synchronize samples from search (solve() may update/replace models internally)
+        samples = search.models();
+        std::cout << "[Samples] sync from solver, |S|=" << samples.size() << std::endl;
+
+
+        std::cout << "[Samples] current |S|=" << samples.size() << std::endl;
+
+        if ( is_new )
+        {
+            samples.push_back( new_state );
+            std::cout << "[Samples] updated: add 1 counterexample state, new |S|=" << samples.size() << std::endl;
+        }
+        else
+        {
+            std::cout << "[Samples] counterexample duplicates existing sample, |S| unchanged" << std::endl;
+        }
+
+        std::cout << "[CEGAR] iter=" << it << " end, continue replanning" << std::endl;
+        it++;
+    }
+
+    std::cout << "[CEGAR] Terminated after max iterations or failure." << std::endl;
+    handle_exit();
+    std::exit(0);
+
 }

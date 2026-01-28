@@ -41,14 +41,28 @@ int	MiniSAT::solve( std::vector<int>& model )
 	}
 	NFF_Options& opt = NFF_Options::instance();
 	
-	if ( opt.dynamic_samples() )
-	{
-		for (int i = 0; i < m_solver->nVars(); i++)
-			if (m_solver->model[i] != Minisat::l_Undef)
-				model.push_back( ( m_solver->model[i] == Minisat::l_False ? -i : i ) );
-			else
-				model.push_back( 0 );
-	}
+//	if ( opt.dynamic_samples() )
+//	{
+//		for (int i = 0; i < m_solver->nVars(); i++)
+//			if (m_solver->model[i] != Minisat::l_Undef)
+//				model.push_back( ( m_solver->model[i] == Minisat::l_False ? -i : i ) );
+//			else
+//				model.push_back( 0 );
+//	}
+
+    //2026.1.26
+    // Always return a complete assignment when model is requested.
+    // This is required for counterexample extraction in CPCES/CEGAR loop.
+    model.clear();
+    model.reserve(m_solver->nVars());
+    for (int i = 0; i < m_solver->nVars(); i++)
+    {
+        if (m_solver->model[i] != Minisat::l_Undef)
+            model.push_back( ( m_solver->model[i] == Minisat::l_False ? -i : i ) );
+        else
+            model.push_back( 0 );
+    }
+
 
 	return 1;
 }
