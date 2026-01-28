@@ -3882,6 +3882,49 @@ bool SearchNode::project_sat_model_to_initial_state( const std::vector<int>& sat
     return true;
 }
 
+void SearchNode::reset_for_cegar_iteration()
+{
+    // 1. 清理 theory_step
+    if ( theory_step != NULL )
+    {
+        delete theory_step;
+        theory_step = NULL;
+    }
+
+    // 2. 重置 belief 到初始状态
+    if ( b != NULL )
+    {
+        delete b;
+        b = Belief::make_initial_belief();
+    }
+
+    // 3. 重置计数器和启发值
+    gn = 0;
+    hn = 0;
+    hS = 0;
+    hX = 0;
+    fn = 0;
+    tb = 0;
+    op = 0;
+    father = NULL;
+    timestep = 0;
+
+    // 4. 清理 helpful actions
+    m_hS_HA.clear();
+    m_hX_HA.clear();
+    if ( m_hS_HA_set != NULL )
+        m_hS_HA_set->reset();
+    if ( m_hX_HA_set != NULL )
+        m_hX_HA_set->reset();
+}
+
+void SearchNode::reset_root_for_cegar()
+{
+    SearchNode* r = root();
+    if ( r != NULL )
+        r->reset_for_cegar_iteration();
+}
+
 
 
 void   SearchNode::print_clauses()

@@ -1,334 +1,1592 @@
 Rule: 0  from (END)
-     Conditions: <(NOT-ARMED BOMB20), 2> <(NOT-ARMED BOMB19), 2> <(NOT-ARMED BOMB18), 2> <(NOT-ARMED BOMB17), 2> <(NOT-ARMED BOMB16), 2> <(NOT-ARMED BOMB15), 2> <(NOT-ARMED BOMB14), 2> <(NOT-ARMED BOMB13), 2> <(NOT-ARMED BOMB12), 2> <(NOT-ARMED BOMB11), 2> <(NOT-ARMED BOMB10), 2> <(NOT-ARMED BOMB9), 2> <(NOT-ARMED BOMB8), 2> <(NOT-ARMED BOMB7), 2> <(NOT-ARMED BOMB6), 2> <(NOT-ARMED BOMB5), 2> <(NOT-ARMED BOMB4), 2> <(NOT-ARMED BOMB3), 2> <(NOT-ARMED BOMB2), 2> <(NOT-ARMED BOMB1), 2>  Effect: <GOAL, 2> 
-Rule: 1  from (FLUSH TOILET1)
-     Conditions: <(CLOGGED TOILET1), 0>  Effect: <(NOT-CLOGGED TOILET1), 0> 
-Rule: 2  from (FLUSH TOILET1)
-     Conditions: <(CLOGGED TOILET1), 1>  Effect: <(NOT-CLOGGED TOILET1), 1> 
-Rule: 3  from (FLUSH TOILET1)
-     Conditions: <(CLOGGED TOILET1), 2>  Effect: <(NOT-CLOGGED TOILET1), 2> 
-Rule: 4  from (DUNK BOMB20 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB20), 0>  Effect: <(NOT-ARMED BOMB20), 0> 
-Rule: 5  from (DUNK BOMB20 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB20), 1>  Effect: <(NOT-ARMED BOMB20), 1> 
-Rule: 6  from (DUNK BOMB20 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB20), 2>  Effect: <(NOT-ARMED BOMB20), 2> 
-Rule: 7  from (DUNK BOMB20 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 8  from (DUNK BOMB20 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 9  from (DUNK BOMB20 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 10  from (DUNK BOMB19 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB19), 0>  Effect: <(NOT-ARMED BOMB19), 0> 
-Rule: 11  from (DUNK BOMB19 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB19), 1>  Effect: <(NOT-ARMED BOMB19), 1> 
-Rule: 12  from (DUNK BOMB19 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB19), 2>  Effect: <(NOT-ARMED BOMB19), 2> 
-Rule: 13  from (DUNK BOMB19 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 14  from (DUNK BOMB19 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 15  from (DUNK BOMB19 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 16  from (DUNK BOMB18 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB18), 0>  Effect: <(NOT-ARMED BOMB18), 0> 
-Rule: 17  from (DUNK BOMB18 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB18), 1>  Effect: <(NOT-ARMED BOMB18), 1> 
-Rule: 18  from (DUNK BOMB18 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB18), 2>  Effect: <(NOT-ARMED BOMB18), 2> 
-Rule: 19  from (DUNK BOMB18 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 20  from (DUNK BOMB18 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 21  from (DUNK BOMB18 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 22  from (DUNK BOMB17 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB17), 0>  Effect: <(NOT-ARMED BOMB17), 0> 
-Rule: 23  from (DUNK BOMB17 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB17), 1>  Effect: <(NOT-ARMED BOMB17), 1> 
-Rule: 24  from (DUNK BOMB17 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB17), 2>  Effect: <(NOT-ARMED BOMB17), 2> 
-Rule: 25  from (DUNK BOMB17 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 26  from (DUNK BOMB17 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 27  from (DUNK BOMB17 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 28  from (DUNK BOMB16 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB16), 0>  Effect: <(NOT-ARMED BOMB16), 0> 
-Rule: 29  from (DUNK BOMB16 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB16), 1>  Effect: <(NOT-ARMED BOMB16), 1> 
-Rule: 30  from (DUNK BOMB16 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB16), 2>  Effect: <(NOT-ARMED BOMB16), 2> 
-Rule: 31  from (DUNK BOMB16 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 32  from (DUNK BOMB16 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 33  from (DUNK BOMB16 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 34  from (DUNK BOMB15 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB15), 0>  Effect: <(NOT-ARMED BOMB15), 0> 
-Rule: 35  from (DUNK BOMB15 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB15), 1>  Effect: <(NOT-ARMED BOMB15), 1> 
-Rule: 36  from (DUNK BOMB15 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB15), 2>  Effect: <(NOT-ARMED BOMB15), 2> 
-Rule: 37  from (DUNK BOMB15 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 38  from (DUNK BOMB15 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 39  from (DUNK BOMB15 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 40  from (DUNK BOMB14 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB14), 0>  Effect: <(NOT-ARMED BOMB14), 0> 
-Rule: 41  from (DUNK BOMB14 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB14), 1>  Effect: <(NOT-ARMED BOMB14), 1> 
-Rule: 42  from (DUNK BOMB14 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB14), 2>  Effect: <(NOT-ARMED BOMB14), 2> 
-Rule: 43  from (DUNK BOMB14 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 44  from (DUNK BOMB14 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 45  from (DUNK BOMB14 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 46  from (DUNK BOMB13 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB13), 0>  Effect: <(NOT-ARMED BOMB13), 0> 
-Rule: 47  from (DUNK BOMB13 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB13), 1>  Effect: <(NOT-ARMED BOMB13), 1> 
-Rule: 48  from (DUNK BOMB13 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB13), 2>  Effect: <(NOT-ARMED BOMB13), 2> 
-Rule: 49  from (DUNK BOMB13 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 50  from (DUNK BOMB13 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 51  from (DUNK BOMB13 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 52  from (DUNK BOMB12 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB12), 0>  Effect: <(NOT-ARMED BOMB12), 0> 
-Rule: 53  from (DUNK BOMB12 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB12), 1>  Effect: <(NOT-ARMED BOMB12), 1> 
-Rule: 54  from (DUNK BOMB12 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB12), 2>  Effect: <(NOT-ARMED BOMB12), 2> 
-Rule: 55  from (DUNK BOMB12 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 56  from (DUNK BOMB12 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 57  from (DUNK BOMB12 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 58  from (DUNK BOMB11 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB11), 0>  Effect: <(NOT-ARMED BOMB11), 0> 
-Rule: 59  from (DUNK BOMB11 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB11), 1>  Effect: <(NOT-ARMED BOMB11), 1> 
-Rule: 60  from (DUNK BOMB11 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB11), 2>  Effect: <(NOT-ARMED BOMB11), 2> 
-Rule: 61  from (DUNK BOMB11 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 62  from (DUNK BOMB11 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 63  from (DUNK BOMB11 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 64  from (DUNK BOMB10 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB10), 0>  Effect: <(NOT-ARMED BOMB10), 0> 
-Rule: 65  from (DUNK BOMB10 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB10), 1>  Effect: <(NOT-ARMED BOMB10), 1> 
-Rule: 66  from (DUNK BOMB10 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB10), 2>  Effect: <(NOT-ARMED BOMB10), 2> 
-Rule: 67  from (DUNK BOMB10 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 68  from (DUNK BOMB10 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 69  from (DUNK BOMB10 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 70  from (DUNK BOMB9 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB9), 0>  Effect: <(NOT-ARMED BOMB9), 0> 
-Rule: 71  from (DUNK BOMB9 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB9), 1>  Effect: <(NOT-ARMED BOMB9), 1> 
-Rule: 72  from (DUNK BOMB9 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB9), 2>  Effect: <(NOT-ARMED BOMB9), 2> 
-Rule: 73  from (DUNK BOMB9 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 74  from (DUNK BOMB9 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 75  from (DUNK BOMB9 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 76  from (DUNK BOMB8 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB8), 0>  Effect: <(NOT-ARMED BOMB8), 0> 
-Rule: 77  from (DUNK BOMB8 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB8), 1>  Effect: <(NOT-ARMED BOMB8), 1> 
-Rule: 78  from (DUNK BOMB8 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB8), 2>  Effect: <(NOT-ARMED BOMB8), 2> 
-Rule: 79  from (DUNK BOMB8 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 80  from (DUNK BOMB8 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 81  from (DUNK BOMB8 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 82  from (DUNK BOMB7 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB7), 0>  Effect: <(NOT-ARMED BOMB7), 0> 
-Rule: 83  from (DUNK BOMB7 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB7), 1>  Effect: <(NOT-ARMED BOMB7), 1> 
-Rule: 84  from (DUNK BOMB7 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB7), 2>  Effect: <(NOT-ARMED BOMB7), 2> 
-Rule: 85  from (DUNK BOMB7 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 86  from (DUNK BOMB7 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 87  from (DUNK BOMB7 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 88  from (DUNK BOMB6 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB6), 0>  Effect: <(NOT-ARMED BOMB6), 0> 
-Rule: 89  from (DUNK BOMB6 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB6), 1>  Effect: <(NOT-ARMED BOMB6), 1> 
-Rule: 90  from (DUNK BOMB6 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB6), 2>  Effect: <(NOT-ARMED BOMB6), 2> 
-Rule: 91  from (DUNK BOMB6 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 92  from (DUNK BOMB6 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 93  from (DUNK BOMB6 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 94  from (DUNK BOMB5 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB5), 0>  Effect: <(NOT-ARMED BOMB5), 0> 
-Rule: 95  from (DUNK BOMB5 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB5), 1>  Effect: <(NOT-ARMED BOMB5), 1> 
-Rule: 96  from (DUNK BOMB5 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB5), 2>  Effect: <(NOT-ARMED BOMB5), 2> 
-Rule: 97  from (DUNK BOMB5 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 98  from (DUNK BOMB5 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 99  from (DUNK BOMB5 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 100  from (DUNK BOMB4 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB4), 0>  Effect: <(NOT-ARMED BOMB4), 0> 
-Rule: 101  from (DUNK BOMB4 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB4), 1>  Effect: <(NOT-ARMED BOMB4), 1> 
-Rule: 102  from (DUNK BOMB4 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB4), 2>  Effect: <(NOT-ARMED BOMB4), 2> 
-Rule: 103  from (DUNK BOMB4 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 104  from (DUNK BOMB4 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 105  from (DUNK BOMB4 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 106  from (DUNK BOMB3 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB3), 0>  Effect: <(NOT-ARMED BOMB3), 0> 
-Rule: 107  from (DUNK BOMB3 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB3), 1>  Effect: <(NOT-ARMED BOMB3), 1> 
-Rule: 108  from (DUNK BOMB3 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB3), 2>  Effect: <(NOT-ARMED BOMB3), 2> 
-Rule: 109  from (DUNK BOMB3 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 110  from (DUNK BOMB3 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 111  from (DUNK BOMB3 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 112  from (DUNK BOMB2 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB2), 0>  Effect: <(NOT-ARMED BOMB2), 0> 
-Rule: 113  from (DUNK BOMB2 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB2), 1>  Effect: <(NOT-ARMED BOMB2), 1> 
-Rule: 114  from (DUNK BOMB2 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB2), 2>  Effect: <(NOT-ARMED BOMB2), 2> 
-Rule: 115  from (DUNK BOMB2 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 116  from (DUNK BOMB2 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 117  from (DUNK BOMB2 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 118  from (DUNK BOMB1 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB1), 0>  Effect: <(NOT-ARMED BOMB1), 0> 
-Rule: 119  from (DUNK BOMB1 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB1), 1>  Effect: <(NOT-ARMED BOMB1), 1> 
-Rule: 120  from (DUNK BOMB1 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB1), 2>  Effect: <(NOT-ARMED BOMB1), 2> 
-Rule: 121  from (DUNK BOMB1 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
-Rule: 122  from (DUNK BOMB1 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
-Rule: 123  from (DUNK BOMB1 TOILET1)
-     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 124  from MERGE
-     Conditions: <(ARMED BOMB20), 0> <(ARMED BOMB20), 1>  Effect: <(ARMED BOMB20), 2> 
-Rule: 125  from MERGE
-     Conditions: <(NOT-ARMED BOMB20), 0> <(NOT-ARMED BOMB20), 1>  Effect: <(NOT-ARMED BOMB20), 2> 
-Rule: 126  from MERGE
-     Conditions: <(ARMED BOMB19), 0> <(ARMED BOMB19), 1>  Effect: <(ARMED BOMB19), 2> 
-Rule: 127  from MERGE
-     Conditions: <(NOT-ARMED BOMB19), 0> <(NOT-ARMED BOMB19), 1>  Effect: <(NOT-ARMED BOMB19), 2> 
-Rule: 128  from MERGE
-     Conditions: <(ARMED BOMB18), 0> <(ARMED BOMB18), 1>  Effect: <(ARMED BOMB18), 2> 
-Rule: 129  from MERGE
-     Conditions: <(NOT-ARMED BOMB18), 0> <(NOT-ARMED BOMB18), 1>  Effect: <(NOT-ARMED BOMB18), 2> 
-Rule: 130  from MERGE
-     Conditions: <(ARMED BOMB17), 0> <(ARMED BOMB17), 1>  Effect: <(ARMED BOMB17), 2> 
-Rule: 131  from MERGE
-     Conditions: <(NOT-ARMED BOMB17), 0> <(NOT-ARMED BOMB17), 1>  Effect: <(NOT-ARMED BOMB17), 2> 
-Rule: 132  from MERGE
-     Conditions: <(ARMED BOMB16), 0> <(ARMED BOMB16), 1>  Effect: <(ARMED BOMB16), 2> 
-Rule: 133  from MERGE
-     Conditions: <(NOT-ARMED BOMB16), 0> <(NOT-ARMED BOMB16), 1>  Effect: <(NOT-ARMED BOMB16), 2> 
-Rule: 134  from MERGE
-     Conditions: <(ARMED BOMB15), 0> <(ARMED BOMB15), 1>  Effect: <(ARMED BOMB15), 2> 
-Rule: 135  from MERGE
-     Conditions: <(NOT-ARMED BOMB15), 0> <(NOT-ARMED BOMB15), 1>  Effect: <(NOT-ARMED BOMB15), 2> 
-Rule: 136  from MERGE
-     Conditions: <(ARMED BOMB14), 0> <(ARMED BOMB14), 1>  Effect: <(ARMED BOMB14), 2> 
-Rule: 137  from MERGE
-     Conditions: <(NOT-ARMED BOMB14), 0> <(NOT-ARMED BOMB14), 1>  Effect: <(NOT-ARMED BOMB14), 2> 
-Rule: 138  from MERGE
-     Conditions: <(ARMED BOMB13), 0> <(ARMED BOMB13), 1>  Effect: <(ARMED BOMB13), 2> 
-Rule: 139  from MERGE
-     Conditions: <(NOT-ARMED BOMB13), 0> <(NOT-ARMED BOMB13), 1>  Effect: <(NOT-ARMED BOMB13), 2> 
-Rule: 140  from MERGE
-     Conditions: <(ARMED BOMB12), 0> <(ARMED BOMB12), 1>  Effect: <(ARMED BOMB12), 2> 
-Rule: 141  from MERGE
-     Conditions: <(NOT-ARMED BOMB12), 0> <(NOT-ARMED BOMB12), 1>  Effect: <(NOT-ARMED BOMB12), 2> 
-Rule: 142  from MERGE
-     Conditions: <(ARMED BOMB11), 0> <(ARMED BOMB11), 1>  Effect: <(ARMED BOMB11), 2> 
-Rule: 143  from MERGE
-     Conditions: <(NOT-ARMED BOMB11), 0> <(NOT-ARMED BOMB11), 1>  Effect: <(NOT-ARMED BOMB11), 2> 
-Rule: 144  from MERGE
-     Conditions: <(ARMED BOMB10), 0> <(ARMED BOMB10), 1>  Effect: <(ARMED BOMB10), 2> 
-Rule: 145  from MERGE
-     Conditions: <(NOT-ARMED BOMB10), 0> <(NOT-ARMED BOMB10), 1>  Effect: <(NOT-ARMED BOMB10), 2> 
-Rule: 146  from MERGE
-     Conditions: <(ARMED BOMB9), 0> <(ARMED BOMB9), 1>  Effect: <(ARMED BOMB9), 2> 
-Rule: 147  from MERGE
-     Conditions: <(NOT-ARMED BOMB9), 0> <(NOT-ARMED BOMB9), 1>  Effect: <(NOT-ARMED BOMB9), 2> 
-Rule: 148  from MERGE
-     Conditions: <(ARMED BOMB8), 0> <(ARMED BOMB8), 1>  Effect: <(ARMED BOMB8), 2> 
-Rule: 149  from MERGE
-     Conditions: <(NOT-ARMED BOMB8), 0> <(NOT-ARMED BOMB8), 1>  Effect: <(NOT-ARMED BOMB8), 2> 
-Rule: 150  from MERGE
-     Conditions: <(ARMED BOMB7), 0> <(ARMED BOMB7), 1>  Effect: <(ARMED BOMB7), 2> 
-Rule: 151  from MERGE
-     Conditions: <(NOT-ARMED BOMB7), 0> <(NOT-ARMED BOMB7), 1>  Effect: <(NOT-ARMED BOMB7), 2> 
-Rule: 152  from MERGE
-     Conditions: <(ARMED BOMB6), 0> <(ARMED BOMB6), 1>  Effect: <(ARMED BOMB6), 2> 
-Rule: 153  from MERGE
-     Conditions: <(NOT-ARMED BOMB6), 0> <(NOT-ARMED BOMB6), 1>  Effect: <(NOT-ARMED BOMB6), 2> 
-Rule: 154  from MERGE
-     Conditions: <(ARMED BOMB5), 0> <(ARMED BOMB5), 1>  Effect: <(ARMED BOMB5), 2> 
-Rule: 155  from MERGE
-     Conditions: <(NOT-ARMED BOMB5), 0> <(NOT-ARMED BOMB5), 1>  Effect: <(NOT-ARMED BOMB5), 2> 
-Rule: 156  from MERGE
-     Conditions: <(ARMED BOMB4), 0> <(ARMED BOMB4), 1>  Effect: <(ARMED BOMB4), 2> 
-Rule: 157  from MERGE
-     Conditions: <(NOT-ARMED BOMB4), 0> <(NOT-ARMED BOMB4), 1>  Effect: <(NOT-ARMED BOMB4), 2> 
-Rule: 158  from MERGE
-     Conditions: <(ARMED BOMB3), 0> <(ARMED BOMB3), 1>  Effect: <(ARMED BOMB3), 2> 
-Rule: 159  from MERGE
-     Conditions: <(NOT-ARMED BOMB3), 0> <(NOT-ARMED BOMB3), 1>  Effect: <(NOT-ARMED BOMB3), 2> 
-Rule: 160  from MERGE
-     Conditions: <(ARMED BOMB2), 0> <(ARMED BOMB2), 1>  Effect: <(ARMED BOMB2), 2> 
-Rule: 161  from MERGE
-     Conditions: <(NOT-ARMED BOMB2), 0> <(NOT-ARMED BOMB2), 1>  Effect: <(NOT-ARMED BOMB2), 2> 
-Rule: 162  from MERGE
-     Conditions: <(ARMED BOMB1), 0> <(ARMED BOMB1), 1>  Effect: <(ARMED BOMB1), 2> 
-Rule: 163  from MERGE
-     Conditions: <(NOT-ARMED BOMB1), 0> <(NOT-ARMED BOMB1), 1>  Effect: <(NOT-ARMED BOMB1), 2> 
-Rule: 164  from MERGE
-     Conditions: <(CLOGGED TOILET1), 0> <(CLOGGED TOILET1), 1>  Effect: <(CLOGGED TOILET1), 2> 
-Rule: 165  from MERGE
-     Conditions: <(NOT-CLOGGED TOILET1), 0> <(NOT-CLOGGED TOILET1), 1>  Effect: <(NOT-CLOGGED TOILET1), 2> 
-Rule: 166  from MERGE
-     Conditions: <GOAL, 0> <GOAL, 1>  Effect: <GOAL, 2> 
+     Conditions: <(ON C B), 6> <(ON B A), 6> <(ONTABLE A), 6>  Effect: <GOAL, 6> 
+Rule: 1  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 0> <(ON C C), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ON C C), 0> 
+Rule: 2  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 0> <(ON C C), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
+Rule: 3  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 0> <(ON C C), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR C), 0> 
+Rule: 4  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 0> <(ON C C), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING C), 0> 
+Rule: 5  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 1> <(ON C C), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ON C C), 1> 
+Rule: 6  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 1> <(ON C C), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
+Rule: 7  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 1> <(ON C C), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR C), 1> 
+Rule: 8  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 1> <(ON C C), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING C), 1> 
+Rule: 9  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 2> <(ON C C), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ON C C), 2> 
+Rule: 10  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 2> <(ON C C), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
+Rule: 11  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 2> <(ON C C), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR C), 2> 
+Rule: 12  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 2> <(ON C C), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING C), 2> 
+Rule: 13  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 3> <(ON C C), 3> <(HANDEMPTY), 3>  Effect: <(NOT-ON C C), 3> 
+Rule: 14  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 3> <(ON C C), 3> <(HANDEMPTY), 3>  Effect: <(NOT-HANDEMPTY), 3> 
+Rule: 15  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 3> <(ON C C), 3> <(HANDEMPTY), 3>  Effect: <(NOT-CLEAR C), 3> 
+Rule: 16  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 3> <(ON C C), 3> <(HANDEMPTY), 3>  Effect: <(HOLDING C), 3> 
+Rule: 17  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 4> <(ON C C), 4> <(HANDEMPTY), 4>  Effect: <(NOT-ON C C), 4> 
+Rule: 18  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 4> <(ON C C), 4> <(HANDEMPTY), 4>  Effect: <(NOT-HANDEMPTY), 4> 
+Rule: 19  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 4> <(ON C C), 4> <(HANDEMPTY), 4>  Effect: <(NOT-CLEAR C), 4> 
+Rule: 20  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 4> <(ON C C), 4> <(HANDEMPTY), 4>  Effect: <(HOLDING C), 4> 
+Rule: 21  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 5> <(ON C C), 5> <(HANDEMPTY), 5>  Effect: <(NOT-ON C C), 5> 
+Rule: 22  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 5> <(ON C C), 5> <(HANDEMPTY), 5>  Effect: <(NOT-HANDEMPTY), 5> 
+Rule: 23  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 5> <(ON C C), 5> <(HANDEMPTY), 5>  Effect: <(NOT-CLEAR C), 5> 
+Rule: 24  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 5> <(ON C C), 5> <(HANDEMPTY), 5>  Effect: <(HOLDING C), 5> 
+Rule: 25  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 6> <(ON C C), 6> <(HANDEMPTY), 6>  Effect: <(NOT-ON C C), 6> 
+Rule: 26  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 6> <(ON C C), 6> <(HANDEMPTY), 6>  Effect: <(NOT-HANDEMPTY), 6> 
+Rule: 27  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 6> <(ON C C), 6> <(HANDEMPTY), 6>  Effect: <(NOT-CLEAR C), 6> 
+Rule: 28  from (UNSTACK C C)
+     Conditions: <(CLEAR C), 6> <(ON C C), 6> <(HANDEMPTY), 6>  Effect: <(HOLDING C), 6> 
+Rule: 29  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 0> <(ON C B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ON C B), 0> 
+Rule: 30  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 0> <(ON C B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
+Rule: 31  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 0> <(ON C B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR C), 0> 
+Rule: 32  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 0> <(ON C B), 0> <(HANDEMPTY), 0>  Effect: <(CLEAR B), 0> 
+Rule: 33  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 0> <(ON C B), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING C), 0> 
+Rule: 34  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 1> <(ON C B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ON C B), 1> 
+Rule: 35  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 1> <(ON C B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
+Rule: 36  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 1> <(ON C B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR C), 1> 
+Rule: 37  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 1> <(ON C B), 1> <(HANDEMPTY), 1>  Effect: <(CLEAR B), 1> 
+Rule: 38  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 1> <(ON C B), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING C), 1> 
+Rule: 39  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 2> <(ON C B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ON C B), 2> 
+Rule: 40  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 2> <(ON C B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
+Rule: 41  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 2> <(ON C B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR C), 2> 
+Rule: 42  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 2> <(ON C B), 2> <(HANDEMPTY), 2>  Effect: <(CLEAR B), 2> 
+Rule: 43  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 2> <(ON C B), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING C), 2> 
+Rule: 44  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 3> <(ON C B), 3> <(HANDEMPTY), 3>  Effect: <(NOT-ON C B), 3> 
+Rule: 45  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 3> <(ON C B), 3> <(HANDEMPTY), 3>  Effect: <(NOT-HANDEMPTY), 3> 
+Rule: 46  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 3> <(ON C B), 3> <(HANDEMPTY), 3>  Effect: <(NOT-CLEAR C), 3> 
+Rule: 47  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 3> <(ON C B), 3> <(HANDEMPTY), 3>  Effect: <(CLEAR B), 3> 
+Rule: 48  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 3> <(ON C B), 3> <(HANDEMPTY), 3>  Effect: <(HOLDING C), 3> 
+Rule: 49  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 4> <(ON C B), 4> <(HANDEMPTY), 4>  Effect: <(NOT-ON C B), 4> 
+Rule: 50  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 4> <(ON C B), 4> <(HANDEMPTY), 4>  Effect: <(NOT-HANDEMPTY), 4> 
+Rule: 51  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 4> <(ON C B), 4> <(HANDEMPTY), 4>  Effect: <(NOT-CLEAR C), 4> 
+Rule: 52  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 4> <(ON C B), 4> <(HANDEMPTY), 4>  Effect: <(CLEAR B), 4> 
+Rule: 53  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 4> <(ON C B), 4> <(HANDEMPTY), 4>  Effect: <(HOLDING C), 4> 
+Rule: 54  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 5> <(ON C B), 5> <(HANDEMPTY), 5>  Effect: <(NOT-ON C B), 5> 
+Rule: 55  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 5> <(ON C B), 5> <(HANDEMPTY), 5>  Effect: <(NOT-HANDEMPTY), 5> 
+Rule: 56  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 5> <(ON C B), 5> <(HANDEMPTY), 5>  Effect: <(NOT-CLEAR C), 5> 
+Rule: 57  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 5> <(ON C B), 5> <(HANDEMPTY), 5>  Effect: <(CLEAR B), 5> 
+Rule: 58  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 5> <(ON C B), 5> <(HANDEMPTY), 5>  Effect: <(HOLDING C), 5> 
+Rule: 59  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 6> <(ON C B), 6> <(HANDEMPTY), 6>  Effect: <(NOT-ON C B), 6> 
+Rule: 60  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 6> <(ON C B), 6> <(HANDEMPTY), 6>  Effect: <(NOT-HANDEMPTY), 6> 
+Rule: 61  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 6> <(ON C B), 6> <(HANDEMPTY), 6>  Effect: <(NOT-CLEAR C), 6> 
+Rule: 62  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 6> <(ON C B), 6> <(HANDEMPTY), 6>  Effect: <(CLEAR B), 6> 
+Rule: 63  from (UNSTACK C B)
+     Conditions: <(CLEAR C), 6> <(ON C B), 6> <(HANDEMPTY), 6>  Effect: <(HOLDING C), 6> 
+Rule: 64  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 0> <(ON C A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ON C A), 0> 
+Rule: 65  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 0> <(ON C A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
+Rule: 66  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 0> <(ON C A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR C), 0> 
+Rule: 67  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 0> <(ON C A), 0> <(HANDEMPTY), 0>  Effect: <(CLEAR A), 0> 
+Rule: 68  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 0> <(ON C A), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING C), 0> 
+Rule: 69  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 1> <(ON C A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ON C A), 1> 
+Rule: 70  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 1> <(ON C A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
+Rule: 71  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 1> <(ON C A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR C), 1> 
+Rule: 72  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 1> <(ON C A), 1> <(HANDEMPTY), 1>  Effect: <(CLEAR A), 1> 
+Rule: 73  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 1> <(ON C A), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING C), 1> 
+Rule: 74  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 2> <(ON C A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ON C A), 2> 
+Rule: 75  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 2> <(ON C A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
+Rule: 76  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 2> <(ON C A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR C), 2> 
+Rule: 77  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 2> <(ON C A), 2> <(HANDEMPTY), 2>  Effect: <(CLEAR A), 2> 
+Rule: 78  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 2> <(ON C A), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING C), 2> 
+Rule: 79  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 3> <(ON C A), 3> <(HANDEMPTY), 3>  Effect: <(NOT-ON C A), 3> 
+Rule: 80  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 3> <(ON C A), 3> <(HANDEMPTY), 3>  Effect: <(NOT-HANDEMPTY), 3> 
+Rule: 81  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 3> <(ON C A), 3> <(HANDEMPTY), 3>  Effect: <(NOT-CLEAR C), 3> 
+Rule: 82  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 3> <(ON C A), 3> <(HANDEMPTY), 3>  Effect: <(CLEAR A), 3> 
+Rule: 83  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 3> <(ON C A), 3> <(HANDEMPTY), 3>  Effect: <(HOLDING C), 3> 
+Rule: 84  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 4> <(ON C A), 4> <(HANDEMPTY), 4>  Effect: <(NOT-ON C A), 4> 
+Rule: 85  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 4> <(ON C A), 4> <(HANDEMPTY), 4>  Effect: <(NOT-HANDEMPTY), 4> 
+Rule: 86  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 4> <(ON C A), 4> <(HANDEMPTY), 4>  Effect: <(NOT-CLEAR C), 4> 
+Rule: 87  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 4> <(ON C A), 4> <(HANDEMPTY), 4>  Effect: <(CLEAR A), 4> 
+Rule: 88  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 4> <(ON C A), 4> <(HANDEMPTY), 4>  Effect: <(HOLDING C), 4> 
+Rule: 89  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 5> <(ON C A), 5> <(HANDEMPTY), 5>  Effect: <(NOT-ON C A), 5> 
+Rule: 90  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 5> <(ON C A), 5> <(HANDEMPTY), 5>  Effect: <(NOT-HANDEMPTY), 5> 
+Rule: 91  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 5> <(ON C A), 5> <(HANDEMPTY), 5>  Effect: <(NOT-CLEAR C), 5> 
+Rule: 92  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 5> <(ON C A), 5> <(HANDEMPTY), 5>  Effect: <(CLEAR A), 5> 
+Rule: 93  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 5> <(ON C A), 5> <(HANDEMPTY), 5>  Effect: <(HOLDING C), 5> 
+Rule: 94  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 6> <(ON C A), 6> <(HANDEMPTY), 6>  Effect: <(NOT-ON C A), 6> 
+Rule: 95  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 6> <(ON C A), 6> <(HANDEMPTY), 6>  Effect: <(NOT-HANDEMPTY), 6> 
+Rule: 96  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 6> <(ON C A), 6> <(HANDEMPTY), 6>  Effect: <(NOT-CLEAR C), 6> 
+Rule: 97  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 6> <(ON C A), 6> <(HANDEMPTY), 6>  Effect: <(CLEAR A), 6> 
+Rule: 98  from (UNSTACK C A)
+     Conditions: <(CLEAR C), 6> <(ON C A), 6> <(HANDEMPTY), 6>  Effect: <(HOLDING C), 6> 
+Rule: 99  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 0> <(ON B C), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ON B C), 0> 
+Rule: 100  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 0> <(ON B C), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
+Rule: 101  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 0> <(ON B C), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR B), 0> 
+Rule: 102  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 0> <(ON B C), 0> <(HANDEMPTY), 0>  Effect: <(CLEAR C), 0> 
+Rule: 103  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 0> <(ON B C), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING B), 0> 
+Rule: 104  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 1> <(ON B C), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ON B C), 1> 
+Rule: 105  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 1> <(ON B C), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
+Rule: 106  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 1> <(ON B C), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR B), 1> 
+Rule: 107  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 1> <(ON B C), 1> <(HANDEMPTY), 1>  Effect: <(CLEAR C), 1> 
+Rule: 108  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 1> <(ON B C), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING B), 1> 
+Rule: 109  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 2> <(ON B C), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ON B C), 2> 
+Rule: 110  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 2> <(ON B C), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
+Rule: 111  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 2> <(ON B C), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR B), 2> 
+Rule: 112  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 2> <(ON B C), 2> <(HANDEMPTY), 2>  Effect: <(CLEAR C), 2> 
+Rule: 113  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 2> <(ON B C), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING B), 2> 
+Rule: 114  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 3> <(ON B C), 3> <(HANDEMPTY), 3>  Effect: <(NOT-ON B C), 3> 
+Rule: 115  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 3> <(ON B C), 3> <(HANDEMPTY), 3>  Effect: <(NOT-HANDEMPTY), 3> 
+Rule: 116  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 3> <(ON B C), 3> <(HANDEMPTY), 3>  Effect: <(NOT-CLEAR B), 3> 
+Rule: 117  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 3> <(ON B C), 3> <(HANDEMPTY), 3>  Effect: <(CLEAR C), 3> 
+Rule: 118  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 3> <(ON B C), 3> <(HANDEMPTY), 3>  Effect: <(HOLDING B), 3> 
+Rule: 119  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 4> <(ON B C), 4> <(HANDEMPTY), 4>  Effect: <(NOT-ON B C), 4> 
+Rule: 120  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 4> <(ON B C), 4> <(HANDEMPTY), 4>  Effect: <(NOT-HANDEMPTY), 4> 
+Rule: 121  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 4> <(ON B C), 4> <(HANDEMPTY), 4>  Effect: <(NOT-CLEAR B), 4> 
+Rule: 122  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 4> <(ON B C), 4> <(HANDEMPTY), 4>  Effect: <(CLEAR C), 4> 
+Rule: 123  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 4> <(ON B C), 4> <(HANDEMPTY), 4>  Effect: <(HOLDING B), 4> 
+Rule: 124  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 5> <(ON B C), 5> <(HANDEMPTY), 5>  Effect: <(NOT-ON B C), 5> 
+Rule: 125  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 5> <(ON B C), 5> <(HANDEMPTY), 5>  Effect: <(NOT-HANDEMPTY), 5> 
+Rule: 126  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 5> <(ON B C), 5> <(HANDEMPTY), 5>  Effect: <(NOT-CLEAR B), 5> 
+Rule: 127  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 5> <(ON B C), 5> <(HANDEMPTY), 5>  Effect: <(CLEAR C), 5> 
+Rule: 128  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 5> <(ON B C), 5> <(HANDEMPTY), 5>  Effect: <(HOLDING B), 5> 
+Rule: 129  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 6> <(ON B C), 6> <(HANDEMPTY), 6>  Effect: <(NOT-ON B C), 6> 
+Rule: 130  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 6> <(ON B C), 6> <(HANDEMPTY), 6>  Effect: <(NOT-HANDEMPTY), 6> 
+Rule: 131  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 6> <(ON B C), 6> <(HANDEMPTY), 6>  Effect: <(NOT-CLEAR B), 6> 
+Rule: 132  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 6> <(ON B C), 6> <(HANDEMPTY), 6>  Effect: <(CLEAR C), 6> 
+Rule: 133  from (UNSTACK B C)
+     Conditions: <(CLEAR B), 6> <(ON B C), 6> <(HANDEMPTY), 6>  Effect: <(HOLDING B), 6> 
+Rule: 134  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 0> <(ON B B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ON B B), 0> 
+Rule: 135  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 0> <(ON B B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
+Rule: 136  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 0> <(ON B B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR B), 0> 
+Rule: 137  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 0> <(ON B B), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING B), 0> 
+Rule: 138  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 1> <(ON B B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ON B B), 1> 
+Rule: 139  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 1> <(ON B B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
+Rule: 140  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 1> <(ON B B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR B), 1> 
+Rule: 141  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 1> <(ON B B), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING B), 1> 
+Rule: 142  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 2> <(ON B B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ON B B), 2> 
+Rule: 143  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 2> <(ON B B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
+Rule: 144  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 2> <(ON B B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR B), 2> 
+Rule: 145  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 2> <(ON B B), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING B), 2> 
+Rule: 146  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 3> <(ON B B), 3> <(HANDEMPTY), 3>  Effect: <(NOT-ON B B), 3> 
+Rule: 147  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 3> <(ON B B), 3> <(HANDEMPTY), 3>  Effect: <(NOT-HANDEMPTY), 3> 
+Rule: 148  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 3> <(ON B B), 3> <(HANDEMPTY), 3>  Effect: <(NOT-CLEAR B), 3> 
+Rule: 149  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 3> <(ON B B), 3> <(HANDEMPTY), 3>  Effect: <(HOLDING B), 3> 
+Rule: 150  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 4> <(ON B B), 4> <(HANDEMPTY), 4>  Effect: <(NOT-ON B B), 4> 
+Rule: 151  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 4> <(ON B B), 4> <(HANDEMPTY), 4>  Effect: <(NOT-HANDEMPTY), 4> 
+Rule: 152  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 4> <(ON B B), 4> <(HANDEMPTY), 4>  Effect: <(NOT-CLEAR B), 4> 
+Rule: 153  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 4> <(ON B B), 4> <(HANDEMPTY), 4>  Effect: <(HOLDING B), 4> 
+Rule: 154  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 5> <(ON B B), 5> <(HANDEMPTY), 5>  Effect: <(NOT-ON B B), 5> 
+Rule: 155  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 5> <(ON B B), 5> <(HANDEMPTY), 5>  Effect: <(NOT-HANDEMPTY), 5> 
+Rule: 156  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 5> <(ON B B), 5> <(HANDEMPTY), 5>  Effect: <(NOT-CLEAR B), 5> 
+Rule: 157  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 5> <(ON B B), 5> <(HANDEMPTY), 5>  Effect: <(HOLDING B), 5> 
+Rule: 158  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 6> <(ON B B), 6> <(HANDEMPTY), 6>  Effect: <(NOT-ON B B), 6> 
+Rule: 159  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 6> <(ON B B), 6> <(HANDEMPTY), 6>  Effect: <(NOT-HANDEMPTY), 6> 
+Rule: 160  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 6> <(ON B B), 6> <(HANDEMPTY), 6>  Effect: <(NOT-CLEAR B), 6> 
+Rule: 161  from (UNSTACK B B)
+     Conditions: <(CLEAR B), 6> <(ON B B), 6> <(HANDEMPTY), 6>  Effect: <(HOLDING B), 6> 
+Rule: 162  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 0> <(ON B A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ON B A), 0> 
+Rule: 163  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 0> <(ON B A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
+Rule: 164  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 0> <(ON B A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR B), 0> 
+Rule: 165  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 0> <(ON B A), 0> <(HANDEMPTY), 0>  Effect: <(CLEAR A), 0> 
+Rule: 166  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 0> <(ON B A), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING B), 0> 
+Rule: 167  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 1> <(ON B A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ON B A), 1> 
+Rule: 168  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 1> <(ON B A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
+Rule: 169  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 1> <(ON B A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR B), 1> 
+Rule: 170  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 1> <(ON B A), 1> <(HANDEMPTY), 1>  Effect: <(CLEAR A), 1> 
+Rule: 171  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 1> <(ON B A), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING B), 1> 
+Rule: 172  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 2> <(ON B A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ON B A), 2> 
+Rule: 173  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 2> <(ON B A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
+Rule: 174  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 2> <(ON B A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR B), 2> 
+Rule: 175  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 2> <(ON B A), 2> <(HANDEMPTY), 2>  Effect: <(CLEAR A), 2> 
+Rule: 176  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 2> <(ON B A), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING B), 2> 
+Rule: 177  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 3> <(ON B A), 3> <(HANDEMPTY), 3>  Effect: <(NOT-ON B A), 3> 
+Rule: 178  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 3> <(ON B A), 3> <(HANDEMPTY), 3>  Effect: <(NOT-HANDEMPTY), 3> 
+Rule: 179  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 3> <(ON B A), 3> <(HANDEMPTY), 3>  Effect: <(NOT-CLEAR B), 3> 
+Rule: 180  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 3> <(ON B A), 3> <(HANDEMPTY), 3>  Effect: <(CLEAR A), 3> 
+Rule: 181  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 3> <(ON B A), 3> <(HANDEMPTY), 3>  Effect: <(HOLDING B), 3> 
+Rule: 182  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 4> <(ON B A), 4> <(HANDEMPTY), 4>  Effect: <(NOT-ON B A), 4> 
+Rule: 183  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 4> <(ON B A), 4> <(HANDEMPTY), 4>  Effect: <(NOT-HANDEMPTY), 4> 
+Rule: 184  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 4> <(ON B A), 4> <(HANDEMPTY), 4>  Effect: <(NOT-CLEAR B), 4> 
+Rule: 185  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 4> <(ON B A), 4> <(HANDEMPTY), 4>  Effect: <(CLEAR A), 4> 
+Rule: 186  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 4> <(ON B A), 4> <(HANDEMPTY), 4>  Effect: <(HOLDING B), 4> 
+Rule: 187  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 5> <(ON B A), 5> <(HANDEMPTY), 5>  Effect: <(NOT-ON B A), 5> 
+Rule: 188  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 5> <(ON B A), 5> <(HANDEMPTY), 5>  Effect: <(NOT-HANDEMPTY), 5> 
+Rule: 189  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 5> <(ON B A), 5> <(HANDEMPTY), 5>  Effect: <(NOT-CLEAR B), 5> 
+Rule: 190  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 5> <(ON B A), 5> <(HANDEMPTY), 5>  Effect: <(CLEAR A), 5> 
+Rule: 191  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 5> <(ON B A), 5> <(HANDEMPTY), 5>  Effect: <(HOLDING B), 5> 
+Rule: 192  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 6> <(ON B A), 6> <(HANDEMPTY), 6>  Effect: <(NOT-ON B A), 6> 
+Rule: 193  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 6> <(ON B A), 6> <(HANDEMPTY), 6>  Effect: <(NOT-HANDEMPTY), 6> 
+Rule: 194  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 6> <(ON B A), 6> <(HANDEMPTY), 6>  Effect: <(NOT-CLEAR B), 6> 
+Rule: 195  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 6> <(ON B A), 6> <(HANDEMPTY), 6>  Effect: <(CLEAR A), 6> 
+Rule: 196  from (UNSTACK B A)
+     Conditions: <(CLEAR B), 6> <(ON B A), 6> <(HANDEMPTY), 6>  Effect: <(HOLDING B), 6> 
+Rule: 197  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 0> <(ON A C), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ON A C), 0> 
+Rule: 198  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 0> <(ON A C), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
+Rule: 199  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 0> <(ON A C), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR A), 0> 
+Rule: 200  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 0> <(ON A C), 0> <(HANDEMPTY), 0>  Effect: <(CLEAR C), 0> 
+Rule: 201  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 0> <(ON A C), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING A), 0> 
+Rule: 202  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 1> <(ON A C), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ON A C), 1> 
+Rule: 203  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 1> <(ON A C), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
+Rule: 204  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 1> <(ON A C), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR A), 1> 
+Rule: 205  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 1> <(ON A C), 1> <(HANDEMPTY), 1>  Effect: <(CLEAR C), 1> 
+Rule: 206  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 1> <(ON A C), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING A), 1> 
+Rule: 207  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 2> <(ON A C), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ON A C), 2> 
+Rule: 208  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 2> <(ON A C), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
+Rule: 209  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 2> <(ON A C), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR A), 2> 
+Rule: 210  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 2> <(ON A C), 2> <(HANDEMPTY), 2>  Effect: <(CLEAR C), 2> 
+Rule: 211  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 2> <(ON A C), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING A), 2> 
+Rule: 212  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 3> <(ON A C), 3> <(HANDEMPTY), 3>  Effect: <(NOT-ON A C), 3> 
+Rule: 213  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 3> <(ON A C), 3> <(HANDEMPTY), 3>  Effect: <(NOT-HANDEMPTY), 3> 
+Rule: 214  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 3> <(ON A C), 3> <(HANDEMPTY), 3>  Effect: <(NOT-CLEAR A), 3> 
+Rule: 215  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 3> <(ON A C), 3> <(HANDEMPTY), 3>  Effect: <(CLEAR C), 3> 
+Rule: 216  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 3> <(ON A C), 3> <(HANDEMPTY), 3>  Effect: <(HOLDING A), 3> 
+Rule: 217  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 4> <(ON A C), 4> <(HANDEMPTY), 4>  Effect: <(NOT-ON A C), 4> 
+Rule: 218  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 4> <(ON A C), 4> <(HANDEMPTY), 4>  Effect: <(NOT-HANDEMPTY), 4> 
+Rule: 219  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 4> <(ON A C), 4> <(HANDEMPTY), 4>  Effect: <(NOT-CLEAR A), 4> 
+Rule: 220  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 4> <(ON A C), 4> <(HANDEMPTY), 4>  Effect: <(CLEAR C), 4> 
+Rule: 221  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 4> <(ON A C), 4> <(HANDEMPTY), 4>  Effect: <(HOLDING A), 4> 
+Rule: 222  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 5> <(ON A C), 5> <(HANDEMPTY), 5>  Effect: <(NOT-ON A C), 5> 
+Rule: 223  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 5> <(ON A C), 5> <(HANDEMPTY), 5>  Effect: <(NOT-HANDEMPTY), 5> 
+Rule: 224  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 5> <(ON A C), 5> <(HANDEMPTY), 5>  Effect: <(NOT-CLEAR A), 5> 
+Rule: 225  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 5> <(ON A C), 5> <(HANDEMPTY), 5>  Effect: <(CLEAR C), 5> 
+Rule: 226  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 5> <(ON A C), 5> <(HANDEMPTY), 5>  Effect: <(HOLDING A), 5> 
+Rule: 227  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 6> <(ON A C), 6> <(HANDEMPTY), 6>  Effect: <(NOT-ON A C), 6> 
+Rule: 228  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 6> <(ON A C), 6> <(HANDEMPTY), 6>  Effect: <(NOT-HANDEMPTY), 6> 
+Rule: 229  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 6> <(ON A C), 6> <(HANDEMPTY), 6>  Effect: <(NOT-CLEAR A), 6> 
+Rule: 230  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 6> <(ON A C), 6> <(HANDEMPTY), 6>  Effect: <(CLEAR C), 6> 
+Rule: 231  from (UNSTACK A C)
+     Conditions: <(CLEAR A), 6> <(ON A C), 6> <(HANDEMPTY), 6>  Effect: <(HOLDING A), 6> 
+Rule: 232  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 0> <(ON A B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ON A B), 0> 
+Rule: 233  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 0> <(ON A B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
+Rule: 234  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 0> <(ON A B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR A), 0> 
+Rule: 235  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 0> <(ON A B), 0> <(HANDEMPTY), 0>  Effect: <(CLEAR B), 0> 
+Rule: 236  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 0> <(ON A B), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING A), 0> 
+Rule: 237  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 1> <(ON A B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ON A B), 1> 
+Rule: 238  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 1> <(ON A B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
+Rule: 239  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 1> <(ON A B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR A), 1> 
+Rule: 240  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 1> <(ON A B), 1> <(HANDEMPTY), 1>  Effect: <(CLEAR B), 1> 
+Rule: 241  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 1> <(ON A B), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING A), 1> 
+Rule: 242  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 2> <(ON A B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ON A B), 2> 
+Rule: 243  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 2> <(ON A B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
+Rule: 244  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 2> <(ON A B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR A), 2> 
+Rule: 245  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 2> <(ON A B), 2> <(HANDEMPTY), 2>  Effect: <(CLEAR B), 2> 
+Rule: 246  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 2> <(ON A B), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING A), 2> 
+Rule: 247  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 3> <(ON A B), 3> <(HANDEMPTY), 3>  Effect: <(NOT-ON A B), 3> 
+Rule: 248  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 3> <(ON A B), 3> <(HANDEMPTY), 3>  Effect: <(NOT-HANDEMPTY), 3> 
+Rule: 249  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 3> <(ON A B), 3> <(HANDEMPTY), 3>  Effect: <(NOT-CLEAR A), 3> 
+Rule: 250  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 3> <(ON A B), 3> <(HANDEMPTY), 3>  Effect: <(CLEAR B), 3> 
+Rule: 251  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 3> <(ON A B), 3> <(HANDEMPTY), 3>  Effect: <(HOLDING A), 3> 
+Rule: 252  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 4> <(ON A B), 4> <(HANDEMPTY), 4>  Effect: <(NOT-ON A B), 4> 
+Rule: 253  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 4> <(ON A B), 4> <(HANDEMPTY), 4>  Effect: <(NOT-HANDEMPTY), 4> 
+Rule: 254  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 4> <(ON A B), 4> <(HANDEMPTY), 4>  Effect: <(NOT-CLEAR A), 4> 
+Rule: 255  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 4> <(ON A B), 4> <(HANDEMPTY), 4>  Effect: <(CLEAR B), 4> 
+Rule: 256  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 4> <(ON A B), 4> <(HANDEMPTY), 4>  Effect: <(HOLDING A), 4> 
+Rule: 257  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 5> <(ON A B), 5> <(HANDEMPTY), 5>  Effect: <(NOT-ON A B), 5> 
+Rule: 258  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 5> <(ON A B), 5> <(HANDEMPTY), 5>  Effect: <(NOT-HANDEMPTY), 5> 
+Rule: 259  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 5> <(ON A B), 5> <(HANDEMPTY), 5>  Effect: <(NOT-CLEAR A), 5> 
+Rule: 260  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 5> <(ON A B), 5> <(HANDEMPTY), 5>  Effect: <(CLEAR B), 5> 
+Rule: 261  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 5> <(ON A B), 5> <(HANDEMPTY), 5>  Effect: <(HOLDING A), 5> 
+Rule: 262  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 6> <(ON A B), 6> <(HANDEMPTY), 6>  Effect: <(NOT-ON A B), 6> 
+Rule: 263  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 6> <(ON A B), 6> <(HANDEMPTY), 6>  Effect: <(NOT-HANDEMPTY), 6> 
+Rule: 264  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 6> <(ON A B), 6> <(HANDEMPTY), 6>  Effect: <(NOT-CLEAR A), 6> 
+Rule: 265  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 6> <(ON A B), 6> <(HANDEMPTY), 6>  Effect: <(CLEAR B), 6> 
+Rule: 266  from (UNSTACK A B)
+     Conditions: <(CLEAR A), 6> <(ON A B), 6> <(HANDEMPTY), 6>  Effect: <(HOLDING A), 6> 
+Rule: 267  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 0> <(ON A A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ON A A), 0> 
+Rule: 268  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 0> <(ON A A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
+Rule: 269  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 0> <(ON A A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR A), 0> 
+Rule: 270  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 0> <(ON A A), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING A), 0> 
+Rule: 271  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 1> <(ON A A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ON A A), 1> 
+Rule: 272  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 1> <(ON A A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
+Rule: 273  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 1> <(ON A A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR A), 1> 
+Rule: 274  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 1> <(ON A A), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING A), 1> 
+Rule: 275  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 2> <(ON A A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ON A A), 2> 
+Rule: 276  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 2> <(ON A A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
+Rule: 277  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 2> <(ON A A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR A), 2> 
+Rule: 278  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 2> <(ON A A), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING A), 2> 
+Rule: 279  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 3> <(ON A A), 3> <(HANDEMPTY), 3>  Effect: <(NOT-ON A A), 3> 
+Rule: 280  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 3> <(ON A A), 3> <(HANDEMPTY), 3>  Effect: <(NOT-HANDEMPTY), 3> 
+Rule: 281  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 3> <(ON A A), 3> <(HANDEMPTY), 3>  Effect: <(NOT-CLEAR A), 3> 
+Rule: 282  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 3> <(ON A A), 3> <(HANDEMPTY), 3>  Effect: <(HOLDING A), 3> 
+Rule: 283  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 4> <(ON A A), 4> <(HANDEMPTY), 4>  Effect: <(NOT-ON A A), 4> 
+Rule: 284  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 4> <(ON A A), 4> <(HANDEMPTY), 4>  Effect: <(NOT-HANDEMPTY), 4> 
+Rule: 285  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 4> <(ON A A), 4> <(HANDEMPTY), 4>  Effect: <(NOT-CLEAR A), 4> 
+Rule: 286  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 4> <(ON A A), 4> <(HANDEMPTY), 4>  Effect: <(HOLDING A), 4> 
+Rule: 287  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 5> <(ON A A), 5> <(HANDEMPTY), 5>  Effect: <(NOT-ON A A), 5> 
+Rule: 288  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 5> <(ON A A), 5> <(HANDEMPTY), 5>  Effect: <(NOT-HANDEMPTY), 5> 
+Rule: 289  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 5> <(ON A A), 5> <(HANDEMPTY), 5>  Effect: <(NOT-CLEAR A), 5> 
+Rule: 290  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 5> <(ON A A), 5> <(HANDEMPTY), 5>  Effect: <(HOLDING A), 5> 
+Rule: 291  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 6> <(ON A A), 6> <(HANDEMPTY), 6>  Effect: <(NOT-ON A A), 6> 
+Rule: 292  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 6> <(ON A A), 6> <(HANDEMPTY), 6>  Effect: <(NOT-HANDEMPTY), 6> 
+Rule: 293  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 6> <(ON A A), 6> <(HANDEMPTY), 6>  Effect: <(NOT-CLEAR A), 6> 
+Rule: 294  from (UNSTACK A A)
+     Conditions: <(CLEAR A), 6> <(ON A A), 6> <(HANDEMPTY), 6>  Effect: <(HOLDING A), 6> 
+Rule: 295  from (STACK C C)
+     Conditions: <(CLEAR C), 0> <(HOLDING C), 0>  Effect: <(ON C C), 0> 
+Rule: 296  from (STACK C C)
+     Conditions: <(CLEAR C), 0> <(HOLDING C), 0>  Effect: <(HANDEMPTY), 0> 
+Rule: 297  from (STACK C C)
+     Conditions: <(CLEAR C), 0> <(HOLDING C), 0>  Effect: <(NOT-CLEAR C), 0> 
+Rule: 298  from (STACK C C)
+     Conditions: <(CLEAR C), 0> <(HOLDING C), 0>  Effect: <(NOT-HOLDING C), 0> 
+Rule: 299  from (STACK C C)
+     Conditions: <(CLEAR C), 1> <(HOLDING C), 1>  Effect: <(ON C C), 1> 
+Rule: 300  from (STACK C C)
+     Conditions: <(CLEAR C), 1> <(HOLDING C), 1>  Effect: <(HANDEMPTY), 1> 
+Rule: 301  from (STACK C C)
+     Conditions: <(CLEAR C), 1> <(HOLDING C), 1>  Effect: <(NOT-CLEAR C), 1> 
+Rule: 302  from (STACK C C)
+     Conditions: <(CLEAR C), 1> <(HOLDING C), 1>  Effect: <(NOT-HOLDING C), 1> 
+Rule: 303  from (STACK C C)
+     Conditions: <(CLEAR C), 2> <(HOLDING C), 2>  Effect: <(ON C C), 2> 
+Rule: 304  from (STACK C C)
+     Conditions: <(CLEAR C), 2> <(HOLDING C), 2>  Effect: <(HANDEMPTY), 2> 
+Rule: 305  from (STACK C C)
+     Conditions: <(CLEAR C), 2> <(HOLDING C), 2>  Effect: <(NOT-CLEAR C), 2> 
+Rule: 306  from (STACK C C)
+     Conditions: <(CLEAR C), 2> <(HOLDING C), 2>  Effect: <(NOT-HOLDING C), 2> 
+Rule: 307  from (STACK C C)
+     Conditions: <(CLEAR C), 3> <(HOLDING C), 3>  Effect: <(ON C C), 3> 
+Rule: 308  from (STACK C C)
+     Conditions: <(CLEAR C), 3> <(HOLDING C), 3>  Effect: <(HANDEMPTY), 3> 
+Rule: 309  from (STACK C C)
+     Conditions: <(CLEAR C), 3> <(HOLDING C), 3>  Effect: <(NOT-CLEAR C), 3> 
+Rule: 310  from (STACK C C)
+     Conditions: <(CLEAR C), 3> <(HOLDING C), 3>  Effect: <(NOT-HOLDING C), 3> 
+Rule: 311  from (STACK C C)
+     Conditions: <(CLEAR C), 4> <(HOLDING C), 4>  Effect: <(ON C C), 4> 
+Rule: 312  from (STACK C C)
+     Conditions: <(CLEAR C), 4> <(HOLDING C), 4>  Effect: <(HANDEMPTY), 4> 
+Rule: 313  from (STACK C C)
+     Conditions: <(CLEAR C), 4> <(HOLDING C), 4>  Effect: <(NOT-CLEAR C), 4> 
+Rule: 314  from (STACK C C)
+     Conditions: <(CLEAR C), 4> <(HOLDING C), 4>  Effect: <(NOT-HOLDING C), 4> 
+Rule: 315  from (STACK C C)
+     Conditions: <(CLEAR C), 5> <(HOLDING C), 5>  Effect: <(ON C C), 5> 
+Rule: 316  from (STACK C C)
+     Conditions: <(CLEAR C), 5> <(HOLDING C), 5>  Effect: <(HANDEMPTY), 5> 
+Rule: 317  from (STACK C C)
+     Conditions: <(CLEAR C), 5> <(HOLDING C), 5>  Effect: <(NOT-CLEAR C), 5> 
+Rule: 318  from (STACK C C)
+     Conditions: <(CLEAR C), 5> <(HOLDING C), 5>  Effect: <(NOT-HOLDING C), 5> 
+Rule: 319  from (STACK C C)
+     Conditions: <(CLEAR C), 6> <(HOLDING C), 6>  Effect: <(ON C C), 6> 
+Rule: 320  from (STACK C C)
+     Conditions: <(CLEAR C), 6> <(HOLDING C), 6>  Effect: <(HANDEMPTY), 6> 
+Rule: 321  from (STACK C C)
+     Conditions: <(CLEAR C), 6> <(HOLDING C), 6>  Effect: <(NOT-CLEAR C), 6> 
+Rule: 322  from (STACK C C)
+     Conditions: <(CLEAR C), 6> <(HOLDING C), 6>  Effect: <(NOT-HOLDING C), 6> 
+Rule: 323  from (STACK C B)
+     Conditions: <(CLEAR B), 0> <(HOLDING C), 0>  Effect: <(ON C B), 0> 
+Rule: 324  from (STACK C B)
+     Conditions: <(CLEAR B), 0> <(HOLDING C), 0>  Effect: <(HANDEMPTY), 0> 
+Rule: 325  from (STACK C B)
+     Conditions: <(CLEAR B), 0> <(HOLDING C), 0>  Effect: <(CLEAR C), 0> 
+Rule: 326  from (STACK C B)
+     Conditions: <(CLEAR B), 0> <(HOLDING C), 0>  Effect: <(NOT-CLEAR B), 0> 
+Rule: 327  from (STACK C B)
+     Conditions: <(CLEAR B), 0> <(HOLDING C), 0>  Effect: <(NOT-HOLDING C), 0> 
+Rule: 328  from (STACK C B)
+     Conditions: <(CLEAR B), 1> <(HOLDING C), 1>  Effect: <(ON C B), 1> 
+Rule: 329  from (STACK C B)
+     Conditions: <(CLEAR B), 1> <(HOLDING C), 1>  Effect: <(HANDEMPTY), 1> 
+Rule: 330  from (STACK C B)
+     Conditions: <(CLEAR B), 1> <(HOLDING C), 1>  Effect: <(CLEAR C), 1> 
+Rule: 331  from (STACK C B)
+     Conditions: <(CLEAR B), 1> <(HOLDING C), 1>  Effect: <(NOT-CLEAR B), 1> 
+Rule: 332  from (STACK C B)
+     Conditions: <(CLEAR B), 1> <(HOLDING C), 1>  Effect: <(NOT-HOLDING C), 1> 
+Rule: 333  from (STACK C B)
+     Conditions: <(CLEAR B), 2> <(HOLDING C), 2>  Effect: <(ON C B), 2> 
+Rule: 334  from (STACK C B)
+     Conditions: <(CLEAR B), 2> <(HOLDING C), 2>  Effect: <(HANDEMPTY), 2> 
+Rule: 335  from (STACK C B)
+     Conditions: <(CLEAR B), 2> <(HOLDING C), 2>  Effect: <(CLEAR C), 2> 
+Rule: 336  from (STACK C B)
+     Conditions: <(CLEAR B), 2> <(HOLDING C), 2>  Effect: <(NOT-CLEAR B), 2> 
+Rule: 337  from (STACK C B)
+     Conditions: <(CLEAR B), 2> <(HOLDING C), 2>  Effect: <(NOT-HOLDING C), 2> 
+Rule: 338  from (STACK C B)
+     Conditions: <(CLEAR B), 3> <(HOLDING C), 3>  Effect: <(ON C B), 3> 
+Rule: 339  from (STACK C B)
+     Conditions: <(CLEAR B), 3> <(HOLDING C), 3>  Effect: <(HANDEMPTY), 3> 
+Rule: 340  from (STACK C B)
+     Conditions: <(CLEAR B), 3> <(HOLDING C), 3>  Effect: <(CLEAR C), 3> 
+Rule: 341  from (STACK C B)
+     Conditions: <(CLEAR B), 3> <(HOLDING C), 3>  Effect: <(NOT-CLEAR B), 3> 
+Rule: 342  from (STACK C B)
+     Conditions: <(CLEAR B), 3> <(HOLDING C), 3>  Effect: <(NOT-HOLDING C), 3> 
+Rule: 343  from (STACK C B)
+     Conditions: <(CLEAR B), 4> <(HOLDING C), 4>  Effect: <(ON C B), 4> 
+Rule: 344  from (STACK C B)
+     Conditions: <(CLEAR B), 4> <(HOLDING C), 4>  Effect: <(HANDEMPTY), 4> 
+Rule: 345  from (STACK C B)
+     Conditions: <(CLEAR B), 4> <(HOLDING C), 4>  Effect: <(CLEAR C), 4> 
+Rule: 346  from (STACK C B)
+     Conditions: <(CLEAR B), 4> <(HOLDING C), 4>  Effect: <(NOT-CLEAR B), 4> 
+Rule: 347  from (STACK C B)
+     Conditions: <(CLEAR B), 4> <(HOLDING C), 4>  Effect: <(NOT-HOLDING C), 4> 
+Rule: 348  from (STACK C B)
+     Conditions: <(CLEAR B), 5> <(HOLDING C), 5>  Effect: <(ON C B), 5> 
+Rule: 349  from (STACK C B)
+     Conditions: <(CLEAR B), 5> <(HOLDING C), 5>  Effect: <(HANDEMPTY), 5> 
+Rule: 350  from (STACK C B)
+     Conditions: <(CLEAR B), 5> <(HOLDING C), 5>  Effect: <(CLEAR C), 5> 
+Rule: 351  from (STACK C B)
+     Conditions: <(CLEAR B), 5> <(HOLDING C), 5>  Effect: <(NOT-CLEAR B), 5> 
+Rule: 352  from (STACK C B)
+     Conditions: <(CLEAR B), 5> <(HOLDING C), 5>  Effect: <(NOT-HOLDING C), 5> 
+Rule: 353  from (STACK C B)
+     Conditions: <(CLEAR B), 6> <(HOLDING C), 6>  Effect: <(ON C B), 6> 
+Rule: 354  from (STACK C B)
+     Conditions: <(CLEAR B), 6> <(HOLDING C), 6>  Effect: <(HANDEMPTY), 6> 
+Rule: 355  from (STACK C B)
+     Conditions: <(CLEAR B), 6> <(HOLDING C), 6>  Effect: <(CLEAR C), 6> 
+Rule: 356  from (STACK C B)
+     Conditions: <(CLEAR B), 6> <(HOLDING C), 6>  Effect: <(NOT-CLEAR B), 6> 
+Rule: 357  from (STACK C B)
+     Conditions: <(CLEAR B), 6> <(HOLDING C), 6>  Effect: <(NOT-HOLDING C), 6> 
+Rule: 358  from (STACK C A)
+     Conditions: <(CLEAR A), 0> <(HOLDING C), 0>  Effect: <(ON C A), 0> 
+Rule: 359  from (STACK C A)
+     Conditions: <(CLEAR A), 0> <(HOLDING C), 0>  Effect: <(HANDEMPTY), 0> 
+Rule: 360  from (STACK C A)
+     Conditions: <(CLEAR A), 0> <(HOLDING C), 0>  Effect: <(CLEAR C), 0> 
+Rule: 361  from (STACK C A)
+     Conditions: <(CLEAR A), 0> <(HOLDING C), 0>  Effect: <(NOT-CLEAR A), 0> 
+Rule: 362  from (STACK C A)
+     Conditions: <(CLEAR A), 0> <(HOLDING C), 0>  Effect: <(NOT-HOLDING C), 0> 
+Rule: 363  from (STACK C A)
+     Conditions: <(CLEAR A), 1> <(HOLDING C), 1>  Effect: <(ON C A), 1> 
+Rule: 364  from (STACK C A)
+     Conditions: <(CLEAR A), 1> <(HOLDING C), 1>  Effect: <(HANDEMPTY), 1> 
+Rule: 365  from (STACK C A)
+     Conditions: <(CLEAR A), 1> <(HOLDING C), 1>  Effect: <(CLEAR C), 1> 
+Rule: 366  from (STACK C A)
+     Conditions: <(CLEAR A), 1> <(HOLDING C), 1>  Effect: <(NOT-CLEAR A), 1> 
+Rule: 367  from (STACK C A)
+     Conditions: <(CLEAR A), 1> <(HOLDING C), 1>  Effect: <(NOT-HOLDING C), 1> 
+Rule: 368  from (STACK C A)
+     Conditions: <(CLEAR A), 2> <(HOLDING C), 2>  Effect: <(ON C A), 2> 
+Rule: 369  from (STACK C A)
+     Conditions: <(CLEAR A), 2> <(HOLDING C), 2>  Effect: <(HANDEMPTY), 2> 
+Rule: 370  from (STACK C A)
+     Conditions: <(CLEAR A), 2> <(HOLDING C), 2>  Effect: <(CLEAR C), 2> 
+Rule: 371  from (STACK C A)
+     Conditions: <(CLEAR A), 2> <(HOLDING C), 2>  Effect: <(NOT-CLEAR A), 2> 
+Rule: 372  from (STACK C A)
+     Conditions: <(CLEAR A), 2> <(HOLDING C), 2>  Effect: <(NOT-HOLDING C), 2> 
+Rule: 373  from (STACK C A)
+     Conditions: <(CLEAR A), 3> <(HOLDING C), 3>  Effect: <(ON C A), 3> 
+Rule: 374  from (STACK C A)
+     Conditions: <(CLEAR A), 3> <(HOLDING C), 3>  Effect: <(HANDEMPTY), 3> 
+Rule: 375  from (STACK C A)
+     Conditions: <(CLEAR A), 3> <(HOLDING C), 3>  Effect: <(CLEAR C), 3> 
+Rule: 376  from (STACK C A)
+     Conditions: <(CLEAR A), 3> <(HOLDING C), 3>  Effect: <(NOT-CLEAR A), 3> 
+Rule: 377  from (STACK C A)
+     Conditions: <(CLEAR A), 3> <(HOLDING C), 3>  Effect: <(NOT-HOLDING C), 3> 
+Rule: 378  from (STACK C A)
+     Conditions: <(CLEAR A), 4> <(HOLDING C), 4>  Effect: <(ON C A), 4> 
+Rule: 379  from (STACK C A)
+     Conditions: <(CLEAR A), 4> <(HOLDING C), 4>  Effect: <(HANDEMPTY), 4> 
+Rule: 380  from (STACK C A)
+     Conditions: <(CLEAR A), 4> <(HOLDING C), 4>  Effect: <(CLEAR C), 4> 
+Rule: 381  from (STACK C A)
+     Conditions: <(CLEAR A), 4> <(HOLDING C), 4>  Effect: <(NOT-CLEAR A), 4> 
+Rule: 382  from (STACK C A)
+     Conditions: <(CLEAR A), 4> <(HOLDING C), 4>  Effect: <(NOT-HOLDING C), 4> 
+Rule: 383  from (STACK C A)
+     Conditions: <(CLEAR A), 5> <(HOLDING C), 5>  Effect: <(ON C A), 5> 
+Rule: 384  from (STACK C A)
+     Conditions: <(CLEAR A), 5> <(HOLDING C), 5>  Effect: <(HANDEMPTY), 5> 
+Rule: 385  from (STACK C A)
+     Conditions: <(CLEAR A), 5> <(HOLDING C), 5>  Effect: <(CLEAR C), 5> 
+Rule: 386  from (STACK C A)
+     Conditions: <(CLEAR A), 5> <(HOLDING C), 5>  Effect: <(NOT-CLEAR A), 5> 
+Rule: 387  from (STACK C A)
+     Conditions: <(CLEAR A), 5> <(HOLDING C), 5>  Effect: <(NOT-HOLDING C), 5> 
+Rule: 388  from (STACK C A)
+     Conditions: <(CLEAR A), 6> <(HOLDING C), 6>  Effect: <(ON C A), 6> 
+Rule: 389  from (STACK C A)
+     Conditions: <(CLEAR A), 6> <(HOLDING C), 6>  Effect: <(HANDEMPTY), 6> 
+Rule: 390  from (STACK C A)
+     Conditions: <(CLEAR A), 6> <(HOLDING C), 6>  Effect: <(CLEAR C), 6> 
+Rule: 391  from (STACK C A)
+     Conditions: <(CLEAR A), 6> <(HOLDING C), 6>  Effect: <(NOT-CLEAR A), 6> 
+Rule: 392  from (STACK C A)
+     Conditions: <(CLEAR A), 6> <(HOLDING C), 6>  Effect: <(NOT-HOLDING C), 6> 
+Rule: 393  from (STACK B C)
+     Conditions: <(CLEAR C), 0> <(HOLDING B), 0>  Effect: <(ON B C), 0> 
+Rule: 394  from (STACK B C)
+     Conditions: <(CLEAR C), 0> <(HOLDING B), 0>  Effect: <(HANDEMPTY), 0> 
+Rule: 395  from (STACK B C)
+     Conditions: <(CLEAR C), 0> <(HOLDING B), 0>  Effect: <(CLEAR B), 0> 
+Rule: 396  from (STACK B C)
+     Conditions: <(CLEAR C), 0> <(HOLDING B), 0>  Effect: <(NOT-CLEAR C), 0> 
+Rule: 397  from (STACK B C)
+     Conditions: <(CLEAR C), 0> <(HOLDING B), 0>  Effect: <(NOT-HOLDING B), 0> 
+Rule: 398  from (STACK B C)
+     Conditions: <(CLEAR C), 1> <(HOLDING B), 1>  Effect: <(ON B C), 1> 
+Rule: 399  from (STACK B C)
+     Conditions: <(CLEAR C), 1> <(HOLDING B), 1>  Effect: <(HANDEMPTY), 1> 
+Rule: 400  from (STACK B C)
+     Conditions: <(CLEAR C), 1> <(HOLDING B), 1>  Effect: <(CLEAR B), 1> 
+Rule: 401  from (STACK B C)
+     Conditions: <(CLEAR C), 1> <(HOLDING B), 1>  Effect: <(NOT-CLEAR C), 1> 
+Rule: 402  from (STACK B C)
+     Conditions: <(CLEAR C), 1> <(HOLDING B), 1>  Effect: <(NOT-HOLDING B), 1> 
+Rule: 403  from (STACK B C)
+     Conditions: <(CLEAR C), 2> <(HOLDING B), 2>  Effect: <(ON B C), 2> 
+Rule: 404  from (STACK B C)
+     Conditions: <(CLEAR C), 2> <(HOLDING B), 2>  Effect: <(HANDEMPTY), 2> 
+Rule: 405  from (STACK B C)
+     Conditions: <(CLEAR C), 2> <(HOLDING B), 2>  Effect: <(CLEAR B), 2> 
+Rule: 406  from (STACK B C)
+     Conditions: <(CLEAR C), 2> <(HOLDING B), 2>  Effect: <(NOT-CLEAR C), 2> 
+Rule: 407  from (STACK B C)
+     Conditions: <(CLEAR C), 2> <(HOLDING B), 2>  Effect: <(NOT-HOLDING B), 2> 
+Rule: 408  from (STACK B C)
+     Conditions: <(CLEAR C), 3> <(HOLDING B), 3>  Effect: <(ON B C), 3> 
+Rule: 409  from (STACK B C)
+     Conditions: <(CLEAR C), 3> <(HOLDING B), 3>  Effect: <(HANDEMPTY), 3> 
+Rule: 410  from (STACK B C)
+     Conditions: <(CLEAR C), 3> <(HOLDING B), 3>  Effect: <(CLEAR B), 3> 
+Rule: 411  from (STACK B C)
+     Conditions: <(CLEAR C), 3> <(HOLDING B), 3>  Effect: <(NOT-CLEAR C), 3> 
+Rule: 412  from (STACK B C)
+     Conditions: <(CLEAR C), 3> <(HOLDING B), 3>  Effect: <(NOT-HOLDING B), 3> 
+Rule: 413  from (STACK B C)
+     Conditions: <(CLEAR C), 4> <(HOLDING B), 4>  Effect: <(ON B C), 4> 
+Rule: 414  from (STACK B C)
+     Conditions: <(CLEAR C), 4> <(HOLDING B), 4>  Effect: <(HANDEMPTY), 4> 
+Rule: 415  from (STACK B C)
+     Conditions: <(CLEAR C), 4> <(HOLDING B), 4>  Effect: <(CLEAR B), 4> 
+Rule: 416  from (STACK B C)
+     Conditions: <(CLEAR C), 4> <(HOLDING B), 4>  Effect: <(NOT-CLEAR C), 4> 
+Rule: 417  from (STACK B C)
+     Conditions: <(CLEAR C), 4> <(HOLDING B), 4>  Effect: <(NOT-HOLDING B), 4> 
+Rule: 418  from (STACK B C)
+     Conditions: <(CLEAR C), 5> <(HOLDING B), 5>  Effect: <(ON B C), 5> 
+Rule: 419  from (STACK B C)
+     Conditions: <(CLEAR C), 5> <(HOLDING B), 5>  Effect: <(HANDEMPTY), 5> 
+Rule: 420  from (STACK B C)
+     Conditions: <(CLEAR C), 5> <(HOLDING B), 5>  Effect: <(CLEAR B), 5> 
+Rule: 421  from (STACK B C)
+     Conditions: <(CLEAR C), 5> <(HOLDING B), 5>  Effect: <(NOT-CLEAR C), 5> 
+Rule: 422  from (STACK B C)
+     Conditions: <(CLEAR C), 5> <(HOLDING B), 5>  Effect: <(NOT-HOLDING B), 5> 
+Rule: 423  from (STACK B C)
+     Conditions: <(CLEAR C), 6> <(HOLDING B), 6>  Effect: <(ON B C), 6> 
+Rule: 424  from (STACK B C)
+     Conditions: <(CLEAR C), 6> <(HOLDING B), 6>  Effect: <(HANDEMPTY), 6> 
+Rule: 425  from (STACK B C)
+     Conditions: <(CLEAR C), 6> <(HOLDING B), 6>  Effect: <(CLEAR B), 6> 
+Rule: 426  from (STACK B C)
+     Conditions: <(CLEAR C), 6> <(HOLDING B), 6>  Effect: <(NOT-CLEAR C), 6> 
+Rule: 427  from (STACK B C)
+     Conditions: <(CLEAR C), 6> <(HOLDING B), 6>  Effect: <(NOT-HOLDING B), 6> 
+Rule: 428  from (STACK B B)
+     Conditions: <(CLEAR B), 0> <(HOLDING B), 0>  Effect: <(ON B B), 0> 
+Rule: 429  from (STACK B B)
+     Conditions: <(CLEAR B), 0> <(HOLDING B), 0>  Effect: <(HANDEMPTY), 0> 
+Rule: 430  from (STACK B B)
+     Conditions: <(CLEAR B), 0> <(HOLDING B), 0>  Effect: <(NOT-CLEAR B), 0> 
+Rule: 431  from (STACK B B)
+     Conditions: <(CLEAR B), 0> <(HOLDING B), 0>  Effect: <(NOT-HOLDING B), 0> 
+Rule: 432  from (STACK B B)
+     Conditions: <(CLEAR B), 1> <(HOLDING B), 1>  Effect: <(ON B B), 1> 
+Rule: 433  from (STACK B B)
+     Conditions: <(CLEAR B), 1> <(HOLDING B), 1>  Effect: <(HANDEMPTY), 1> 
+Rule: 434  from (STACK B B)
+     Conditions: <(CLEAR B), 1> <(HOLDING B), 1>  Effect: <(NOT-CLEAR B), 1> 
+Rule: 435  from (STACK B B)
+     Conditions: <(CLEAR B), 1> <(HOLDING B), 1>  Effect: <(NOT-HOLDING B), 1> 
+Rule: 436  from (STACK B B)
+     Conditions: <(CLEAR B), 2> <(HOLDING B), 2>  Effect: <(ON B B), 2> 
+Rule: 437  from (STACK B B)
+     Conditions: <(CLEAR B), 2> <(HOLDING B), 2>  Effect: <(HANDEMPTY), 2> 
+Rule: 438  from (STACK B B)
+     Conditions: <(CLEAR B), 2> <(HOLDING B), 2>  Effect: <(NOT-CLEAR B), 2> 
+Rule: 439  from (STACK B B)
+     Conditions: <(CLEAR B), 2> <(HOLDING B), 2>  Effect: <(NOT-HOLDING B), 2> 
+Rule: 440  from (STACK B B)
+     Conditions: <(CLEAR B), 3> <(HOLDING B), 3>  Effect: <(ON B B), 3> 
+Rule: 441  from (STACK B B)
+     Conditions: <(CLEAR B), 3> <(HOLDING B), 3>  Effect: <(HANDEMPTY), 3> 
+Rule: 442  from (STACK B B)
+     Conditions: <(CLEAR B), 3> <(HOLDING B), 3>  Effect: <(NOT-CLEAR B), 3> 
+Rule: 443  from (STACK B B)
+     Conditions: <(CLEAR B), 3> <(HOLDING B), 3>  Effect: <(NOT-HOLDING B), 3> 
+Rule: 444  from (STACK B B)
+     Conditions: <(CLEAR B), 4> <(HOLDING B), 4>  Effect: <(ON B B), 4> 
+Rule: 445  from (STACK B B)
+     Conditions: <(CLEAR B), 4> <(HOLDING B), 4>  Effect: <(HANDEMPTY), 4> 
+Rule: 446  from (STACK B B)
+     Conditions: <(CLEAR B), 4> <(HOLDING B), 4>  Effect: <(NOT-CLEAR B), 4> 
+Rule: 447  from (STACK B B)
+     Conditions: <(CLEAR B), 4> <(HOLDING B), 4>  Effect: <(NOT-HOLDING B), 4> 
+Rule: 448  from (STACK B B)
+     Conditions: <(CLEAR B), 5> <(HOLDING B), 5>  Effect: <(ON B B), 5> 
+Rule: 449  from (STACK B B)
+     Conditions: <(CLEAR B), 5> <(HOLDING B), 5>  Effect: <(HANDEMPTY), 5> 
+Rule: 450  from (STACK B B)
+     Conditions: <(CLEAR B), 5> <(HOLDING B), 5>  Effect: <(NOT-CLEAR B), 5> 
+Rule: 451  from (STACK B B)
+     Conditions: <(CLEAR B), 5> <(HOLDING B), 5>  Effect: <(NOT-HOLDING B), 5> 
+Rule: 452  from (STACK B B)
+     Conditions: <(CLEAR B), 6> <(HOLDING B), 6>  Effect: <(ON B B), 6> 
+Rule: 453  from (STACK B B)
+     Conditions: <(CLEAR B), 6> <(HOLDING B), 6>  Effect: <(HANDEMPTY), 6> 
+Rule: 454  from (STACK B B)
+     Conditions: <(CLEAR B), 6> <(HOLDING B), 6>  Effect: <(NOT-CLEAR B), 6> 
+Rule: 455  from (STACK B B)
+     Conditions: <(CLEAR B), 6> <(HOLDING B), 6>  Effect: <(NOT-HOLDING B), 6> 
+Rule: 456  from (STACK B A)
+     Conditions: <(CLEAR A), 0> <(HOLDING B), 0>  Effect: <(ON B A), 0> 
+Rule: 457  from (STACK B A)
+     Conditions: <(CLEAR A), 0> <(HOLDING B), 0>  Effect: <(HANDEMPTY), 0> 
+Rule: 458  from (STACK B A)
+     Conditions: <(CLEAR A), 0> <(HOLDING B), 0>  Effect: <(CLEAR B), 0> 
+Rule: 459  from (STACK B A)
+     Conditions: <(CLEAR A), 0> <(HOLDING B), 0>  Effect: <(NOT-CLEAR A), 0> 
+Rule: 460  from (STACK B A)
+     Conditions: <(CLEAR A), 0> <(HOLDING B), 0>  Effect: <(NOT-HOLDING B), 0> 
+Rule: 461  from (STACK B A)
+     Conditions: <(CLEAR A), 1> <(HOLDING B), 1>  Effect: <(ON B A), 1> 
+Rule: 462  from (STACK B A)
+     Conditions: <(CLEAR A), 1> <(HOLDING B), 1>  Effect: <(HANDEMPTY), 1> 
+Rule: 463  from (STACK B A)
+     Conditions: <(CLEAR A), 1> <(HOLDING B), 1>  Effect: <(CLEAR B), 1> 
+Rule: 464  from (STACK B A)
+     Conditions: <(CLEAR A), 1> <(HOLDING B), 1>  Effect: <(NOT-CLEAR A), 1> 
+Rule: 465  from (STACK B A)
+     Conditions: <(CLEAR A), 1> <(HOLDING B), 1>  Effect: <(NOT-HOLDING B), 1> 
+Rule: 466  from (STACK B A)
+     Conditions: <(CLEAR A), 2> <(HOLDING B), 2>  Effect: <(ON B A), 2> 
+Rule: 467  from (STACK B A)
+     Conditions: <(CLEAR A), 2> <(HOLDING B), 2>  Effect: <(HANDEMPTY), 2> 
+Rule: 468  from (STACK B A)
+     Conditions: <(CLEAR A), 2> <(HOLDING B), 2>  Effect: <(CLEAR B), 2> 
+Rule: 469  from (STACK B A)
+     Conditions: <(CLEAR A), 2> <(HOLDING B), 2>  Effect: <(NOT-CLEAR A), 2> 
+Rule: 470  from (STACK B A)
+     Conditions: <(CLEAR A), 2> <(HOLDING B), 2>  Effect: <(NOT-HOLDING B), 2> 
+Rule: 471  from (STACK B A)
+     Conditions: <(CLEAR A), 3> <(HOLDING B), 3>  Effect: <(ON B A), 3> 
+Rule: 472  from (STACK B A)
+     Conditions: <(CLEAR A), 3> <(HOLDING B), 3>  Effect: <(HANDEMPTY), 3> 
+Rule: 473  from (STACK B A)
+     Conditions: <(CLEAR A), 3> <(HOLDING B), 3>  Effect: <(CLEAR B), 3> 
+Rule: 474  from (STACK B A)
+     Conditions: <(CLEAR A), 3> <(HOLDING B), 3>  Effect: <(NOT-CLEAR A), 3> 
+Rule: 475  from (STACK B A)
+     Conditions: <(CLEAR A), 3> <(HOLDING B), 3>  Effect: <(NOT-HOLDING B), 3> 
+Rule: 476  from (STACK B A)
+     Conditions: <(CLEAR A), 4> <(HOLDING B), 4>  Effect: <(ON B A), 4> 
+Rule: 477  from (STACK B A)
+     Conditions: <(CLEAR A), 4> <(HOLDING B), 4>  Effect: <(HANDEMPTY), 4> 
+Rule: 478  from (STACK B A)
+     Conditions: <(CLEAR A), 4> <(HOLDING B), 4>  Effect: <(CLEAR B), 4> 
+Rule: 479  from (STACK B A)
+     Conditions: <(CLEAR A), 4> <(HOLDING B), 4>  Effect: <(NOT-CLEAR A), 4> 
+Rule: 480  from (STACK B A)
+     Conditions: <(CLEAR A), 4> <(HOLDING B), 4>  Effect: <(NOT-HOLDING B), 4> 
+Rule: 481  from (STACK B A)
+     Conditions: <(CLEAR A), 5> <(HOLDING B), 5>  Effect: <(ON B A), 5> 
+Rule: 482  from (STACK B A)
+     Conditions: <(CLEAR A), 5> <(HOLDING B), 5>  Effect: <(HANDEMPTY), 5> 
+Rule: 483  from (STACK B A)
+     Conditions: <(CLEAR A), 5> <(HOLDING B), 5>  Effect: <(CLEAR B), 5> 
+Rule: 484  from (STACK B A)
+     Conditions: <(CLEAR A), 5> <(HOLDING B), 5>  Effect: <(NOT-CLEAR A), 5> 
+Rule: 485  from (STACK B A)
+     Conditions: <(CLEAR A), 5> <(HOLDING B), 5>  Effect: <(NOT-HOLDING B), 5> 
+Rule: 486  from (STACK B A)
+     Conditions: <(CLEAR A), 6> <(HOLDING B), 6>  Effect: <(ON B A), 6> 
+Rule: 487  from (STACK B A)
+     Conditions: <(CLEAR A), 6> <(HOLDING B), 6>  Effect: <(HANDEMPTY), 6> 
+Rule: 488  from (STACK B A)
+     Conditions: <(CLEAR A), 6> <(HOLDING B), 6>  Effect: <(CLEAR B), 6> 
+Rule: 489  from (STACK B A)
+     Conditions: <(CLEAR A), 6> <(HOLDING B), 6>  Effect: <(NOT-CLEAR A), 6> 
+Rule: 490  from (STACK B A)
+     Conditions: <(CLEAR A), 6> <(HOLDING B), 6>  Effect: <(NOT-HOLDING B), 6> 
+Rule: 491  from (STACK A C)
+     Conditions: <(CLEAR C), 0> <(HOLDING A), 0>  Effect: <(ON A C), 0> 
+Rule: 492  from (STACK A C)
+     Conditions: <(CLEAR C), 0> <(HOLDING A), 0>  Effect: <(HANDEMPTY), 0> 
+Rule: 493  from (STACK A C)
+     Conditions: <(CLEAR C), 0> <(HOLDING A), 0>  Effect: <(CLEAR A), 0> 
+Rule: 494  from (STACK A C)
+     Conditions: <(CLEAR C), 0> <(HOLDING A), 0>  Effect: <(NOT-CLEAR C), 0> 
+Rule: 495  from (STACK A C)
+     Conditions: <(CLEAR C), 0> <(HOLDING A), 0>  Effect: <(NOT-HOLDING A), 0> 
+Rule: 496  from (STACK A C)
+     Conditions: <(CLEAR C), 1> <(HOLDING A), 1>  Effect: <(ON A C), 1> 
+Rule: 497  from (STACK A C)
+     Conditions: <(CLEAR C), 1> <(HOLDING A), 1>  Effect: <(HANDEMPTY), 1> 
+Rule: 498  from (STACK A C)
+     Conditions: <(CLEAR C), 1> <(HOLDING A), 1>  Effect: <(CLEAR A), 1> 
+Rule: 499  from (STACK A C)
+     Conditions: <(CLEAR C), 1> <(HOLDING A), 1>  Effect: <(NOT-CLEAR C), 1> 
+Rule: 500  from (STACK A C)
+     Conditions: <(CLEAR C), 1> <(HOLDING A), 1>  Effect: <(NOT-HOLDING A), 1> 
+Rule: 501  from (STACK A C)
+     Conditions: <(CLEAR C), 2> <(HOLDING A), 2>  Effect: <(ON A C), 2> 
+Rule: 502  from (STACK A C)
+     Conditions: <(CLEAR C), 2> <(HOLDING A), 2>  Effect: <(HANDEMPTY), 2> 
+Rule: 503  from (STACK A C)
+     Conditions: <(CLEAR C), 2> <(HOLDING A), 2>  Effect: <(CLEAR A), 2> 
+Rule: 504  from (STACK A C)
+     Conditions: <(CLEAR C), 2> <(HOLDING A), 2>  Effect: <(NOT-CLEAR C), 2> 
+Rule: 505  from (STACK A C)
+     Conditions: <(CLEAR C), 2> <(HOLDING A), 2>  Effect: <(NOT-HOLDING A), 2> 
+Rule: 506  from (STACK A C)
+     Conditions: <(CLEAR C), 3> <(HOLDING A), 3>  Effect: <(ON A C), 3> 
+Rule: 507  from (STACK A C)
+     Conditions: <(CLEAR C), 3> <(HOLDING A), 3>  Effect: <(HANDEMPTY), 3> 
+Rule: 508  from (STACK A C)
+     Conditions: <(CLEAR C), 3> <(HOLDING A), 3>  Effect: <(CLEAR A), 3> 
+Rule: 509  from (STACK A C)
+     Conditions: <(CLEAR C), 3> <(HOLDING A), 3>  Effect: <(NOT-CLEAR C), 3> 
+Rule: 510  from (STACK A C)
+     Conditions: <(CLEAR C), 3> <(HOLDING A), 3>  Effect: <(NOT-HOLDING A), 3> 
+Rule: 511  from (STACK A C)
+     Conditions: <(CLEAR C), 4> <(HOLDING A), 4>  Effect: <(ON A C), 4> 
+Rule: 512  from (STACK A C)
+     Conditions: <(CLEAR C), 4> <(HOLDING A), 4>  Effect: <(HANDEMPTY), 4> 
+Rule: 513  from (STACK A C)
+     Conditions: <(CLEAR C), 4> <(HOLDING A), 4>  Effect: <(CLEAR A), 4> 
+Rule: 514  from (STACK A C)
+     Conditions: <(CLEAR C), 4> <(HOLDING A), 4>  Effect: <(NOT-CLEAR C), 4> 
+Rule: 515  from (STACK A C)
+     Conditions: <(CLEAR C), 4> <(HOLDING A), 4>  Effect: <(NOT-HOLDING A), 4> 
+Rule: 516  from (STACK A C)
+     Conditions: <(CLEAR C), 5> <(HOLDING A), 5>  Effect: <(ON A C), 5> 
+Rule: 517  from (STACK A C)
+     Conditions: <(CLEAR C), 5> <(HOLDING A), 5>  Effect: <(HANDEMPTY), 5> 
+Rule: 518  from (STACK A C)
+     Conditions: <(CLEAR C), 5> <(HOLDING A), 5>  Effect: <(CLEAR A), 5> 
+Rule: 519  from (STACK A C)
+     Conditions: <(CLEAR C), 5> <(HOLDING A), 5>  Effect: <(NOT-CLEAR C), 5> 
+Rule: 520  from (STACK A C)
+     Conditions: <(CLEAR C), 5> <(HOLDING A), 5>  Effect: <(NOT-HOLDING A), 5> 
+Rule: 521  from (STACK A C)
+     Conditions: <(CLEAR C), 6> <(HOLDING A), 6>  Effect: <(ON A C), 6> 
+Rule: 522  from (STACK A C)
+     Conditions: <(CLEAR C), 6> <(HOLDING A), 6>  Effect: <(HANDEMPTY), 6> 
+Rule: 523  from (STACK A C)
+     Conditions: <(CLEAR C), 6> <(HOLDING A), 6>  Effect: <(CLEAR A), 6> 
+Rule: 524  from (STACK A C)
+     Conditions: <(CLEAR C), 6> <(HOLDING A), 6>  Effect: <(NOT-CLEAR C), 6> 
+Rule: 525  from (STACK A C)
+     Conditions: <(CLEAR C), 6> <(HOLDING A), 6>  Effect: <(NOT-HOLDING A), 6> 
+Rule: 526  from (STACK A B)
+     Conditions: <(CLEAR B), 0> <(HOLDING A), 0>  Effect: <(ON A B), 0> 
+Rule: 527  from (STACK A B)
+     Conditions: <(CLEAR B), 0> <(HOLDING A), 0>  Effect: <(HANDEMPTY), 0> 
+Rule: 528  from (STACK A B)
+     Conditions: <(CLEAR B), 0> <(HOLDING A), 0>  Effect: <(CLEAR A), 0> 
+Rule: 529  from (STACK A B)
+     Conditions: <(CLEAR B), 0> <(HOLDING A), 0>  Effect: <(NOT-CLEAR B), 0> 
+Rule: 530  from (STACK A B)
+     Conditions: <(CLEAR B), 0> <(HOLDING A), 0>  Effect: <(NOT-HOLDING A), 0> 
+Rule: 531  from (STACK A B)
+     Conditions: <(CLEAR B), 1> <(HOLDING A), 1>  Effect: <(ON A B), 1> 
+Rule: 532  from (STACK A B)
+     Conditions: <(CLEAR B), 1> <(HOLDING A), 1>  Effect: <(HANDEMPTY), 1> 
+Rule: 533  from (STACK A B)
+     Conditions: <(CLEAR B), 1> <(HOLDING A), 1>  Effect: <(CLEAR A), 1> 
+Rule: 534  from (STACK A B)
+     Conditions: <(CLEAR B), 1> <(HOLDING A), 1>  Effect: <(NOT-CLEAR B), 1> 
+Rule: 535  from (STACK A B)
+     Conditions: <(CLEAR B), 1> <(HOLDING A), 1>  Effect: <(NOT-HOLDING A), 1> 
+Rule: 536  from (STACK A B)
+     Conditions: <(CLEAR B), 2> <(HOLDING A), 2>  Effect: <(ON A B), 2> 
+Rule: 537  from (STACK A B)
+     Conditions: <(CLEAR B), 2> <(HOLDING A), 2>  Effect: <(HANDEMPTY), 2> 
+Rule: 538  from (STACK A B)
+     Conditions: <(CLEAR B), 2> <(HOLDING A), 2>  Effect: <(CLEAR A), 2> 
+Rule: 539  from (STACK A B)
+     Conditions: <(CLEAR B), 2> <(HOLDING A), 2>  Effect: <(NOT-CLEAR B), 2> 
+Rule: 540  from (STACK A B)
+     Conditions: <(CLEAR B), 2> <(HOLDING A), 2>  Effect: <(NOT-HOLDING A), 2> 
+Rule: 541  from (STACK A B)
+     Conditions: <(CLEAR B), 3> <(HOLDING A), 3>  Effect: <(ON A B), 3> 
+Rule: 542  from (STACK A B)
+     Conditions: <(CLEAR B), 3> <(HOLDING A), 3>  Effect: <(HANDEMPTY), 3> 
+Rule: 543  from (STACK A B)
+     Conditions: <(CLEAR B), 3> <(HOLDING A), 3>  Effect: <(CLEAR A), 3> 
+Rule: 544  from (STACK A B)
+     Conditions: <(CLEAR B), 3> <(HOLDING A), 3>  Effect: <(NOT-CLEAR B), 3> 
+Rule: 545  from (STACK A B)
+     Conditions: <(CLEAR B), 3> <(HOLDING A), 3>  Effect: <(NOT-HOLDING A), 3> 
+Rule: 546  from (STACK A B)
+     Conditions: <(CLEAR B), 4> <(HOLDING A), 4>  Effect: <(ON A B), 4> 
+Rule: 547  from (STACK A B)
+     Conditions: <(CLEAR B), 4> <(HOLDING A), 4>  Effect: <(HANDEMPTY), 4> 
+Rule: 548  from (STACK A B)
+     Conditions: <(CLEAR B), 4> <(HOLDING A), 4>  Effect: <(CLEAR A), 4> 
+Rule: 549  from (STACK A B)
+     Conditions: <(CLEAR B), 4> <(HOLDING A), 4>  Effect: <(NOT-CLEAR B), 4> 
+Rule: 550  from (STACK A B)
+     Conditions: <(CLEAR B), 4> <(HOLDING A), 4>  Effect: <(NOT-HOLDING A), 4> 
+Rule: 551  from (STACK A B)
+     Conditions: <(CLEAR B), 5> <(HOLDING A), 5>  Effect: <(ON A B), 5> 
+Rule: 552  from (STACK A B)
+     Conditions: <(CLEAR B), 5> <(HOLDING A), 5>  Effect: <(HANDEMPTY), 5> 
+Rule: 553  from (STACK A B)
+     Conditions: <(CLEAR B), 5> <(HOLDING A), 5>  Effect: <(CLEAR A), 5> 
+Rule: 554  from (STACK A B)
+     Conditions: <(CLEAR B), 5> <(HOLDING A), 5>  Effect: <(NOT-CLEAR B), 5> 
+Rule: 555  from (STACK A B)
+     Conditions: <(CLEAR B), 5> <(HOLDING A), 5>  Effect: <(NOT-HOLDING A), 5> 
+Rule: 556  from (STACK A B)
+     Conditions: <(CLEAR B), 6> <(HOLDING A), 6>  Effect: <(ON A B), 6> 
+Rule: 557  from (STACK A B)
+     Conditions: <(CLEAR B), 6> <(HOLDING A), 6>  Effect: <(HANDEMPTY), 6> 
+Rule: 558  from (STACK A B)
+     Conditions: <(CLEAR B), 6> <(HOLDING A), 6>  Effect: <(CLEAR A), 6> 
+Rule: 559  from (STACK A B)
+     Conditions: <(CLEAR B), 6> <(HOLDING A), 6>  Effect: <(NOT-CLEAR B), 6> 
+Rule: 560  from (STACK A B)
+     Conditions: <(CLEAR B), 6> <(HOLDING A), 6>  Effect: <(NOT-HOLDING A), 6> 
+Rule: 561  from (STACK A A)
+     Conditions: <(CLEAR A), 0> <(HOLDING A), 0>  Effect: <(ON A A), 0> 
+Rule: 562  from (STACK A A)
+     Conditions: <(CLEAR A), 0> <(HOLDING A), 0>  Effect: <(HANDEMPTY), 0> 
+Rule: 563  from (STACK A A)
+     Conditions: <(CLEAR A), 0> <(HOLDING A), 0>  Effect: <(NOT-CLEAR A), 0> 
+Rule: 564  from (STACK A A)
+     Conditions: <(CLEAR A), 0> <(HOLDING A), 0>  Effect: <(NOT-HOLDING A), 0> 
+Rule: 565  from (STACK A A)
+     Conditions: <(CLEAR A), 1> <(HOLDING A), 1>  Effect: <(ON A A), 1> 
+Rule: 566  from (STACK A A)
+     Conditions: <(CLEAR A), 1> <(HOLDING A), 1>  Effect: <(HANDEMPTY), 1> 
+Rule: 567  from (STACK A A)
+     Conditions: <(CLEAR A), 1> <(HOLDING A), 1>  Effect: <(NOT-CLEAR A), 1> 
+Rule: 568  from (STACK A A)
+     Conditions: <(CLEAR A), 1> <(HOLDING A), 1>  Effect: <(NOT-HOLDING A), 1> 
+Rule: 569  from (STACK A A)
+     Conditions: <(CLEAR A), 2> <(HOLDING A), 2>  Effect: <(ON A A), 2> 
+Rule: 570  from (STACK A A)
+     Conditions: <(CLEAR A), 2> <(HOLDING A), 2>  Effect: <(HANDEMPTY), 2> 
+Rule: 571  from (STACK A A)
+     Conditions: <(CLEAR A), 2> <(HOLDING A), 2>  Effect: <(NOT-CLEAR A), 2> 
+Rule: 572  from (STACK A A)
+     Conditions: <(CLEAR A), 2> <(HOLDING A), 2>  Effect: <(NOT-HOLDING A), 2> 
+Rule: 573  from (STACK A A)
+     Conditions: <(CLEAR A), 3> <(HOLDING A), 3>  Effect: <(ON A A), 3> 
+Rule: 574  from (STACK A A)
+     Conditions: <(CLEAR A), 3> <(HOLDING A), 3>  Effect: <(HANDEMPTY), 3> 
+Rule: 575  from (STACK A A)
+     Conditions: <(CLEAR A), 3> <(HOLDING A), 3>  Effect: <(NOT-CLEAR A), 3> 
+Rule: 576  from (STACK A A)
+     Conditions: <(CLEAR A), 3> <(HOLDING A), 3>  Effect: <(NOT-HOLDING A), 3> 
+Rule: 577  from (STACK A A)
+     Conditions: <(CLEAR A), 4> <(HOLDING A), 4>  Effect: <(ON A A), 4> 
+Rule: 578  from (STACK A A)
+     Conditions: <(CLEAR A), 4> <(HOLDING A), 4>  Effect: <(HANDEMPTY), 4> 
+Rule: 579  from (STACK A A)
+     Conditions: <(CLEAR A), 4> <(HOLDING A), 4>  Effect: <(NOT-CLEAR A), 4> 
+Rule: 580  from (STACK A A)
+     Conditions: <(CLEAR A), 4> <(HOLDING A), 4>  Effect: <(NOT-HOLDING A), 4> 
+Rule: 581  from (STACK A A)
+     Conditions: <(CLEAR A), 5> <(HOLDING A), 5>  Effect: <(ON A A), 5> 
+Rule: 582  from (STACK A A)
+     Conditions: <(CLEAR A), 5> <(HOLDING A), 5>  Effect: <(HANDEMPTY), 5> 
+Rule: 583  from (STACK A A)
+     Conditions: <(CLEAR A), 5> <(HOLDING A), 5>  Effect: <(NOT-CLEAR A), 5> 
+Rule: 584  from (STACK A A)
+     Conditions: <(CLEAR A), 5> <(HOLDING A), 5>  Effect: <(NOT-HOLDING A), 5> 
+Rule: 585  from (STACK A A)
+     Conditions: <(CLEAR A), 6> <(HOLDING A), 6>  Effect: <(ON A A), 6> 
+Rule: 586  from (STACK A A)
+     Conditions: <(CLEAR A), 6> <(HOLDING A), 6>  Effect: <(HANDEMPTY), 6> 
+Rule: 587  from (STACK A A)
+     Conditions: <(CLEAR A), 6> <(HOLDING A), 6>  Effect: <(NOT-CLEAR A), 6> 
+Rule: 588  from (STACK A A)
+     Conditions: <(CLEAR A), 6> <(HOLDING A), 6>  Effect: <(NOT-HOLDING A), 6> 
+Rule: 589  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 0>  Effect: <(ONTABLE C), 0> 
+Rule: 590  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 0>  Effect: <(HANDEMPTY), 0> 
+Rule: 591  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 0>  Effect: <(CLEAR C), 0> 
+Rule: 592  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 0>  Effect: <(NOT-HOLDING C), 0> 
+Rule: 593  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 1>  Effect: <(ONTABLE C), 1> 
+Rule: 594  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 1>  Effect: <(HANDEMPTY), 1> 
+Rule: 595  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 1>  Effect: <(CLEAR C), 1> 
+Rule: 596  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 1>  Effect: <(NOT-HOLDING C), 1> 
+Rule: 597  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 2>  Effect: <(ONTABLE C), 2> 
+Rule: 598  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 2>  Effect: <(HANDEMPTY), 2> 
+Rule: 599  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 2>  Effect: <(CLEAR C), 2> 
+Rule: 600  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 2>  Effect: <(NOT-HOLDING C), 2> 
+Rule: 601  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 3>  Effect: <(ONTABLE C), 3> 
+Rule: 602  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 3>  Effect: <(HANDEMPTY), 3> 
+Rule: 603  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 3>  Effect: <(CLEAR C), 3> 
+Rule: 604  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 3>  Effect: <(NOT-HOLDING C), 3> 
+Rule: 605  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 4>  Effect: <(ONTABLE C), 4> 
+Rule: 606  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 4>  Effect: <(HANDEMPTY), 4> 
+Rule: 607  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 4>  Effect: <(CLEAR C), 4> 
+Rule: 608  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 4>  Effect: <(NOT-HOLDING C), 4> 
+Rule: 609  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 5>  Effect: <(ONTABLE C), 5> 
+Rule: 610  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 5>  Effect: <(HANDEMPTY), 5> 
+Rule: 611  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 5>  Effect: <(CLEAR C), 5> 
+Rule: 612  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 5>  Effect: <(NOT-HOLDING C), 5> 
+Rule: 613  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 6>  Effect: <(ONTABLE C), 6> 
+Rule: 614  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 6>  Effect: <(HANDEMPTY), 6> 
+Rule: 615  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 6>  Effect: <(CLEAR C), 6> 
+Rule: 616  from (PUT-DOWN C)
+     Conditions: <(HOLDING C), 6>  Effect: <(NOT-HOLDING C), 6> 
+Rule: 617  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 0>  Effect: <(ONTABLE B), 0> 
+Rule: 618  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 0>  Effect: <(HANDEMPTY), 0> 
+Rule: 619  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 0>  Effect: <(CLEAR B), 0> 
+Rule: 620  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 0>  Effect: <(NOT-HOLDING B), 0> 
+Rule: 621  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 1>  Effect: <(ONTABLE B), 1> 
+Rule: 622  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 1>  Effect: <(HANDEMPTY), 1> 
+Rule: 623  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 1>  Effect: <(CLEAR B), 1> 
+Rule: 624  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 1>  Effect: <(NOT-HOLDING B), 1> 
+Rule: 625  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 2>  Effect: <(ONTABLE B), 2> 
+Rule: 626  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 2>  Effect: <(HANDEMPTY), 2> 
+Rule: 627  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 2>  Effect: <(CLEAR B), 2> 
+Rule: 628  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 2>  Effect: <(NOT-HOLDING B), 2> 
+Rule: 629  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 3>  Effect: <(ONTABLE B), 3> 
+Rule: 630  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 3>  Effect: <(HANDEMPTY), 3> 
+Rule: 631  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 3>  Effect: <(CLEAR B), 3> 
+Rule: 632  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 3>  Effect: <(NOT-HOLDING B), 3> 
+Rule: 633  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 4>  Effect: <(ONTABLE B), 4> 
+Rule: 634  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 4>  Effect: <(HANDEMPTY), 4> 
+Rule: 635  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 4>  Effect: <(CLEAR B), 4> 
+Rule: 636  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 4>  Effect: <(NOT-HOLDING B), 4> 
+Rule: 637  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 5>  Effect: <(ONTABLE B), 5> 
+Rule: 638  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 5>  Effect: <(HANDEMPTY), 5> 
+Rule: 639  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 5>  Effect: <(CLEAR B), 5> 
+Rule: 640  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 5>  Effect: <(NOT-HOLDING B), 5> 
+Rule: 641  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 6>  Effect: <(ONTABLE B), 6> 
+Rule: 642  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 6>  Effect: <(HANDEMPTY), 6> 
+Rule: 643  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 6>  Effect: <(CLEAR B), 6> 
+Rule: 644  from (PUT-DOWN B)
+     Conditions: <(HOLDING B), 6>  Effect: <(NOT-HOLDING B), 6> 
+Rule: 645  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 0>  Effect: <(ONTABLE A), 0> 
+Rule: 646  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 0>  Effect: <(HANDEMPTY), 0> 
+Rule: 647  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 0>  Effect: <(CLEAR A), 0> 
+Rule: 648  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 0>  Effect: <(NOT-HOLDING A), 0> 
+Rule: 649  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 1>  Effect: <(ONTABLE A), 1> 
+Rule: 650  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 1>  Effect: <(HANDEMPTY), 1> 
+Rule: 651  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 1>  Effect: <(CLEAR A), 1> 
+Rule: 652  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 1>  Effect: <(NOT-HOLDING A), 1> 
+Rule: 653  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 2>  Effect: <(ONTABLE A), 2> 
+Rule: 654  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 2>  Effect: <(HANDEMPTY), 2> 
+Rule: 655  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 2>  Effect: <(CLEAR A), 2> 
+Rule: 656  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 2>  Effect: <(NOT-HOLDING A), 2> 
+Rule: 657  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 3>  Effect: <(ONTABLE A), 3> 
+Rule: 658  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 3>  Effect: <(HANDEMPTY), 3> 
+Rule: 659  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 3>  Effect: <(CLEAR A), 3> 
+Rule: 660  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 3>  Effect: <(NOT-HOLDING A), 3> 
+Rule: 661  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 4>  Effect: <(ONTABLE A), 4> 
+Rule: 662  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 4>  Effect: <(HANDEMPTY), 4> 
+Rule: 663  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 4>  Effect: <(CLEAR A), 4> 
+Rule: 664  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 4>  Effect: <(NOT-HOLDING A), 4> 
+Rule: 665  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 5>  Effect: <(ONTABLE A), 5> 
+Rule: 666  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 5>  Effect: <(HANDEMPTY), 5> 
+Rule: 667  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 5>  Effect: <(CLEAR A), 5> 
+Rule: 668  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 5>  Effect: <(NOT-HOLDING A), 5> 
+Rule: 669  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 6>  Effect: <(ONTABLE A), 6> 
+Rule: 670  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 6>  Effect: <(HANDEMPTY), 6> 
+Rule: 671  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 6>  Effect: <(CLEAR A), 6> 
+Rule: 672  from (PUT-DOWN A)
+     Conditions: <(HOLDING A), 6>  Effect: <(NOT-HOLDING A), 6> 
+Rule: 673  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 0> <(CLEAR C), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING C), 0> 
+Rule: 674  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 0> <(CLEAR C), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
+Rule: 675  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 0> <(CLEAR C), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR C), 0> 
+Rule: 676  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 0> <(CLEAR C), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ONTABLE C), 0> 
+Rule: 677  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 1> <(CLEAR C), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING C), 1> 
+Rule: 678  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 1> <(CLEAR C), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
+Rule: 679  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 1> <(CLEAR C), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR C), 1> 
+Rule: 680  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 1> <(CLEAR C), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ONTABLE C), 1> 
+Rule: 681  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 2> <(CLEAR C), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING C), 2> 
+Rule: 682  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 2> <(CLEAR C), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
+Rule: 683  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 2> <(CLEAR C), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR C), 2> 
+Rule: 684  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 2> <(CLEAR C), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ONTABLE C), 2> 
+Rule: 685  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 3> <(CLEAR C), 3> <(HANDEMPTY), 3>  Effect: <(HOLDING C), 3> 
+Rule: 686  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 3> <(CLEAR C), 3> <(HANDEMPTY), 3>  Effect: <(NOT-HANDEMPTY), 3> 
+Rule: 687  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 3> <(CLEAR C), 3> <(HANDEMPTY), 3>  Effect: <(NOT-CLEAR C), 3> 
+Rule: 688  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 3> <(CLEAR C), 3> <(HANDEMPTY), 3>  Effect: <(NOT-ONTABLE C), 3> 
+Rule: 689  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 4> <(CLEAR C), 4> <(HANDEMPTY), 4>  Effect: <(HOLDING C), 4> 
+Rule: 690  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 4> <(CLEAR C), 4> <(HANDEMPTY), 4>  Effect: <(NOT-HANDEMPTY), 4> 
+Rule: 691  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 4> <(CLEAR C), 4> <(HANDEMPTY), 4>  Effect: <(NOT-CLEAR C), 4> 
+Rule: 692  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 4> <(CLEAR C), 4> <(HANDEMPTY), 4>  Effect: <(NOT-ONTABLE C), 4> 
+Rule: 693  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 5> <(CLEAR C), 5> <(HANDEMPTY), 5>  Effect: <(HOLDING C), 5> 
+Rule: 694  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 5> <(CLEAR C), 5> <(HANDEMPTY), 5>  Effect: <(NOT-HANDEMPTY), 5> 
+Rule: 695  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 5> <(CLEAR C), 5> <(HANDEMPTY), 5>  Effect: <(NOT-CLEAR C), 5> 
+Rule: 696  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 5> <(CLEAR C), 5> <(HANDEMPTY), 5>  Effect: <(NOT-ONTABLE C), 5> 
+Rule: 697  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 6> <(CLEAR C), 6> <(HANDEMPTY), 6>  Effect: <(HOLDING C), 6> 
+Rule: 698  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 6> <(CLEAR C), 6> <(HANDEMPTY), 6>  Effect: <(NOT-HANDEMPTY), 6> 
+Rule: 699  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 6> <(CLEAR C), 6> <(HANDEMPTY), 6>  Effect: <(NOT-CLEAR C), 6> 
+Rule: 700  from (PICK-UP C)
+     Conditions: <(ONTABLE C), 6> <(CLEAR C), 6> <(HANDEMPTY), 6>  Effect: <(NOT-ONTABLE C), 6> 
+Rule: 701  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 0> <(CLEAR B), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING B), 0> 
+Rule: 702  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 0> <(CLEAR B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
+Rule: 703  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 0> <(CLEAR B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR B), 0> 
+Rule: 704  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 0> <(CLEAR B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ONTABLE B), 0> 
+Rule: 705  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 1> <(CLEAR B), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING B), 1> 
+Rule: 706  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 1> <(CLEAR B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
+Rule: 707  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 1> <(CLEAR B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR B), 1> 
+Rule: 708  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 1> <(CLEAR B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ONTABLE B), 1> 
+Rule: 709  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 2> <(CLEAR B), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING B), 2> 
+Rule: 710  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 2> <(CLEAR B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
+Rule: 711  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 2> <(CLEAR B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR B), 2> 
+Rule: 712  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 2> <(CLEAR B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ONTABLE B), 2> 
+Rule: 713  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 3> <(CLEAR B), 3> <(HANDEMPTY), 3>  Effect: <(HOLDING B), 3> 
+Rule: 714  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 3> <(CLEAR B), 3> <(HANDEMPTY), 3>  Effect: <(NOT-HANDEMPTY), 3> 
+Rule: 715  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 3> <(CLEAR B), 3> <(HANDEMPTY), 3>  Effect: <(NOT-CLEAR B), 3> 
+Rule: 716  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 3> <(CLEAR B), 3> <(HANDEMPTY), 3>  Effect: <(NOT-ONTABLE B), 3> 
+Rule: 717  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 4> <(CLEAR B), 4> <(HANDEMPTY), 4>  Effect: <(HOLDING B), 4> 
+Rule: 718  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 4> <(CLEAR B), 4> <(HANDEMPTY), 4>  Effect: <(NOT-HANDEMPTY), 4> 
+Rule: 719  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 4> <(CLEAR B), 4> <(HANDEMPTY), 4>  Effect: <(NOT-CLEAR B), 4> 
+Rule: 720  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 4> <(CLEAR B), 4> <(HANDEMPTY), 4>  Effect: <(NOT-ONTABLE B), 4> 
+Rule: 721  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 5> <(CLEAR B), 5> <(HANDEMPTY), 5>  Effect: <(HOLDING B), 5> 
+Rule: 722  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 5> <(CLEAR B), 5> <(HANDEMPTY), 5>  Effect: <(NOT-HANDEMPTY), 5> 
+Rule: 723  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 5> <(CLEAR B), 5> <(HANDEMPTY), 5>  Effect: <(NOT-CLEAR B), 5> 
+Rule: 724  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 5> <(CLEAR B), 5> <(HANDEMPTY), 5>  Effect: <(NOT-ONTABLE B), 5> 
+Rule: 725  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 6> <(CLEAR B), 6> <(HANDEMPTY), 6>  Effect: <(HOLDING B), 6> 
+Rule: 726  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 6> <(CLEAR B), 6> <(HANDEMPTY), 6>  Effect: <(NOT-HANDEMPTY), 6> 
+Rule: 727  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 6> <(CLEAR B), 6> <(HANDEMPTY), 6>  Effect: <(NOT-CLEAR B), 6> 
+Rule: 728  from (PICK-UP B)
+     Conditions: <(ONTABLE B), 6> <(CLEAR B), 6> <(HANDEMPTY), 6>  Effect: <(NOT-ONTABLE B), 6> 
+Rule: 729  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 0> <(CLEAR A), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING A), 0> 
+Rule: 730  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 0> <(CLEAR A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
+Rule: 731  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 0> <(CLEAR A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR A), 0> 
+Rule: 732  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 0> <(CLEAR A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ONTABLE A), 0> 
+Rule: 733  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 1> <(CLEAR A), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING A), 1> 
+Rule: 734  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 1> <(CLEAR A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
+Rule: 735  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 1> <(CLEAR A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR A), 1> 
+Rule: 736  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 1> <(CLEAR A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ONTABLE A), 1> 
+Rule: 737  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 2> <(CLEAR A), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING A), 2> 
+Rule: 738  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 2> <(CLEAR A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
+Rule: 739  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 2> <(CLEAR A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR A), 2> 
+Rule: 740  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 2> <(CLEAR A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ONTABLE A), 2> 
+Rule: 741  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 3> <(CLEAR A), 3> <(HANDEMPTY), 3>  Effect: <(HOLDING A), 3> 
+Rule: 742  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 3> <(CLEAR A), 3> <(HANDEMPTY), 3>  Effect: <(NOT-HANDEMPTY), 3> 
+Rule: 743  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 3> <(CLEAR A), 3> <(HANDEMPTY), 3>  Effect: <(NOT-CLEAR A), 3> 
+Rule: 744  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 3> <(CLEAR A), 3> <(HANDEMPTY), 3>  Effect: <(NOT-ONTABLE A), 3> 
+Rule: 745  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 4> <(CLEAR A), 4> <(HANDEMPTY), 4>  Effect: <(HOLDING A), 4> 
+Rule: 746  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 4> <(CLEAR A), 4> <(HANDEMPTY), 4>  Effect: <(NOT-HANDEMPTY), 4> 
+Rule: 747  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 4> <(CLEAR A), 4> <(HANDEMPTY), 4>  Effect: <(NOT-CLEAR A), 4> 
+Rule: 748  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 4> <(CLEAR A), 4> <(HANDEMPTY), 4>  Effect: <(NOT-ONTABLE A), 4> 
+Rule: 749  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 5> <(CLEAR A), 5> <(HANDEMPTY), 5>  Effect: <(HOLDING A), 5> 
+Rule: 750  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 5> <(CLEAR A), 5> <(HANDEMPTY), 5>  Effect: <(NOT-HANDEMPTY), 5> 
+Rule: 751  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 5> <(CLEAR A), 5> <(HANDEMPTY), 5>  Effect: <(NOT-CLEAR A), 5> 
+Rule: 752  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 5> <(CLEAR A), 5> <(HANDEMPTY), 5>  Effect: <(NOT-ONTABLE A), 5> 
+Rule: 753  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 6> <(CLEAR A), 6> <(HANDEMPTY), 6>  Effect: <(HOLDING A), 6> 
+Rule: 754  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 6> <(CLEAR A), 6> <(HANDEMPTY), 6>  Effect: <(NOT-HANDEMPTY), 6> 
+Rule: 755  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 6> <(CLEAR A), 6> <(HANDEMPTY), 6>  Effect: <(NOT-CLEAR A), 6> 
+Rule: 756  from (PICK-UP A)
+     Conditions: <(ONTABLE A), 6> <(CLEAR A), 6> <(HANDEMPTY), 6>  Effect: <(NOT-ONTABLE A), 6> 
+Rule: 757  from MERGE
+     Conditions: <(HOLDING C), 0> <(HOLDING C), 1> <(HOLDING C), 2> <(HOLDING C), 3> <(HOLDING C), 4> <(HOLDING C), 5>  Effect: <(HOLDING C), 6> 
+Rule: 758  from MERGE
+     Conditions: <(NOT-HOLDING C), 0> <(NOT-HOLDING C), 1> <(NOT-HOLDING C), 2> <(NOT-HOLDING C), 3> <(NOT-HOLDING C), 4> <(NOT-HOLDING C), 5>  Effect: <(NOT-HOLDING C), 6> 
+Rule: 759  from MERGE
+     Conditions: <(HOLDING B), 0> <(HOLDING B), 1> <(HOLDING B), 2> <(HOLDING B), 3> <(HOLDING B), 4> <(HOLDING B), 5>  Effect: <(HOLDING B), 6> 
+Rule: 760  from MERGE
+     Conditions: <(NOT-HOLDING B), 0> <(NOT-HOLDING B), 1> <(NOT-HOLDING B), 2> <(NOT-HOLDING B), 3> <(NOT-HOLDING B), 4> <(NOT-HOLDING B), 5>  Effect: <(NOT-HOLDING B), 6> 
+Rule: 761  from MERGE
+     Conditions: <(HOLDING A), 0> <(HOLDING A), 1> <(HOLDING A), 2> <(HOLDING A), 3> <(HOLDING A), 4> <(HOLDING A), 5>  Effect: <(HOLDING A), 6> 
+Rule: 762  from MERGE
+     Conditions: <(NOT-HOLDING A), 0> <(NOT-HOLDING A), 1> <(NOT-HOLDING A), 2> <(NOT-HOLDING A), 3> <(NOT-HOLDING A), 4> <(NOT-HOLDING A), 5>  Effect: <(NOT-HOLDING A), 6> 
+Rule: 763  from MERGE
+     Conditions: <(HANDEMPTY), 0> <(HANDEMPTY), 1> <(HANDEMPTY), 2> <(HANDEMPTY), 3> <(HANDEMPTY), 4> <(HANDEMPTY), 5>  Effect: <(HANDEMPTY), 6> 
+Rule: 764  from MERGE
+     Conditions: <(NOT-HANDEMPTY), 0> <(NOT-HANDEMPTY), 1> <(NOT-HANDEMPTY), 2> <(NOT-HANDEMPTY), 3> <(NOT-HANDEMPTY), 4> <(NOT-HANDEMPTY), 5>  Effect: <(NOT-HANDEMPTY), 6> 
+Rule: 765  from MERGE
+     Conditions: <(CLEAR C), 0> <(CLEAR C), 1> <(CLEAR C), 2> <(CLEAR C), 3> <(CLEAR C), 4> <(CLEAR C), 5>  Effect: <(CLEAR C), 6> 
+Rule: 766  from MERGE
+     Conditions: <(NOT-CLEAR C), 0> <(NOT-CLEAR C), 1> <(NOT-CLEAR C), 2> <(NOT-CLEAR C), 3> <(NOT-CLEAR C), 4> <(NOT-CLEAR C), 5>  Effect: <(NOT-CLEAR C), 6> 
+Rule: 767  from MERGE
+     Conditions: <(CLEAR B), 0> <(CLEAR B), 1> <(CLEAR B), 2> <(CLEAR B), 3> <(CLEAR B), 4> <(CLEAR B), 5>  Effect: <(CLEAR B), 6> 
+Rule: 768  from MERGE
+     Conditions: <(NOT-CLEAR B), 0> <(NOT-CLEAR B), 1> <(NOT-CLEAR B), 2> <(NOT-CLEAR B), 3> <(NOT-CLEAR B), 4> <(NOT-CLEAR B), 5>  Effect: <(NOT-CLEAR B), 6> 
+Rule: 769  from MERGE
+     Conditions: <(CLEAR A), 0> <(CLEAR A), 1> <(CLEAR A), 2> <(CLEAR A), 3> <(CLEAR A), 4> <(CLEAR A), 5>  Effect: <(CLEAR A), 6> 
+Rule: 770  from MERGE
+     Conditions: <(NOT-CLEAR A), 0> <(NOT-CLEAR A), 1> <(NOT-CLEAR A), 2> <(NOT-CLEAR A), 3> <(NOT-CLEAR A), 4> <(NOT-CLEAR A), 5>  Effect: <(NOT-CLEAR A), 6> 
+Rule: 771  from MERGE
+     Conditions: <(ONTABLE C), 0> <(ONTABLE C), 1> <(ONTABLE C), 2> <(ONTABLE C), 3> <(ONTABLE C), 4> <(ONTABLE C), 5>  Effect: <(ONTABLE C), 6> 
+Rule: 772  from MERGE
+     Conditions: <(NOT-ONTABLE C), 0> <(NOT-ONTABLE C), 1> <(NOT-ONTABLE C), 2> <(NOT-ONTABLE C), 3> <(NOT-ONTABLE C), 4> <(NOT-ONTABLE C), 5>  Effect: <(NOT-ONTABLE C), 6> 
+Rule: 773  from MERGE
+     Conditions: <(ONTABLE B), 0> <(ONTABLE B), 1> <(ONTABLE B), 2> <(ONTABLE B), 3> <(ONTABLE B), 4> <(ONTABLE B), 5>  Effect: <(ONTABLE B), 6> 
+Rule: 774  from MERGE
+     Conditions: <(NOT-ONTABLE B), 0> <(NOT-ONTABLE B), 1> <(NOT-ONTABLE B), 2> <(NOT-ONTABLE B), 3> <(NOT-ONTABLE B), 4> <(NOT-ONTABLE B), 5>  Effect: <(NOT-ONTABLE B), 6> 
+Rule: 775  from MERGE
+     Conditions: <(ONTABLE A), 0> <(ONTABLE A), 1> <(ONTABLE A), 2> <(ONTABLE A), 3> <(ONTABLE A), 4> <(ONTABLE A), 5>  Effect: <(ONTABLE A), 6> 
+Rule: 776  from MERGE
+     Conditions: <(NOT-ONTABLE A), 0> <(NOT-ONTABLE A), 1> <(NOT-ONTABLE A), 2> <(NOT-ONTABLE A), 3> <(NOT-ONTABLE A), 4> <(NOT-ONTABLE A), 5>  Effect: <(NOT-ONTABLE A), 6> 
+Rule: 777  from MERGE
+     Conditions: <(ON C B), 0> <(ON C B), 1> <(ON C B), 2> <(ON C B), 3> <(ON C B), 4> <(ON C B), 5>  Effect: <(ON C B), 6> 
+Rule: 778  from MERGE
+     Conditions: <(NOT-ON C B), 0> <(NOT-ON C B), 1> <(NOT-ON C B), 2> <(NOT-ON C B), 3> <(NOT-ON C B), 4> <(NOT-ON C B), 5>  Effect: <(NOT-ON C B), 6> 
+Rule: 779  from MERGE
+     Conditions: <(ON C A), 0> <(ON C A), 1> <(ON C A), 2> <(ON C A), 3> <(ON C A), 4> <(ON C A), 5>  Effect: <(ON C A), 6> 
+Rule: 780  from MERGE
+     Conditions: <(NOT-ON C A), 0> <(NOT-ON C A), 1> <(NOT-ON C A), 2> <(NOT-ON C A), 3> <(NOT-ON C A), 4> <(NOT-ON C A), 5>  Effect: <(NOT-ON C A), 6> 
+Rule: 781  from MERGE
+     Conditions: <(ON B C), 0> <(ON B C), 1> <(ON B C), 2> <(ON B C), 3> <(ON B C), 4> <(ON B C), 5>  Effect: <(ON B C), 6> 
+Rule: 782  from MERGE
+     Conditions: <(NOT-ON B C), 0> <(NOT-ON B C), 1> <(NOT-ON B C), 2> <(NOT-ON B C), 3> <(NOT-ON B C), 4> <(NOT-ON B C), 5>  Effect: <(NOT-ON B C), 6> 
+Rule: 783  from MERGE
+     Conditions: <(ON B A), 0> <(ON B A), 1> <(ON B A), 2> <(ON B A), 3> <(ON B A), 4> <(ON B A), 5>  Effect: <(ON B A), 6> 
+Rule: 784  from MERGE
+     Conditions: <(NOT-ON B A), 0> <(NOT-ON B A), 1> <(NOT-ON B A), 2> <(NOT-ON B A), 3> <(NOT-ON B A), 4> <(NOT-ON B A), 5>  Effect: <(NOT-ON B A), 6> 
+Rule: 785  from MERGE
+     Conditions: <(ON A C), 0> <(ON A C), 1> <(ON A C), 2> <(ON A C), 3> <(ON A C), 4> <(ON A C), 5>  Effect: <(ON A C), 6> 
+Rule: 786  from MERGE
+     Conditions: <(NOT-ON A C), 0> <(NOT-ON A C), 1> <(NOT-ON A C), 2> <(NOT-ON A C), 3> <(NOT-ON A C), 4> <(NOT-ON A C), 5>  Effect: <(NOT-ON A C), 6> 
+Rule: 787  from MERGE
+     Conditions: <(ON A B), 0> <(ON A B), 1> <(ON A B), 2> <(ON A B), 3> <(ON A B), 4> <(ON A B), 5>  Effect: <(ON A B), 6> 
+Rule: 788  from MERGE
+     Conditions: <(NOT-ON A B), 0> <(NOT-ON A B), 1> <(NOT-ON A B), 2> <(NOT-ON A B), 3> <(NOT-ON A B), 4> <(NOT-ON A B), 5>  Effect: <(NOT-ON A B), 6> 
+Rule: 789  from MERGE
+     Conditions: <(ON A A), 0> <(ON A A), 1> <(ON A A), 2> <(ON A A), 3> <(ON A A), 4> <(ON A A), 5>  Effect: <(ON A A), 6> 
+Rule: 790  from MERGE
+     Conditions: <(NOT-ON A A), 0> <(NOT-ON A A), 1> <(NOT-ON A A), 2> <(NOT-ON A A), 3> <(NOT-ON A A), 4> <(NOT-ON A A), 5>  Effect: <(NOT-ON A A), 6> 
+Rule: 791  from MERGE
+     Conditions: <(ON B B), 0> <(ON B B), 1> <(ON B B), 2> <(ON B B), 3> <(ON B B), 4> <(ON B B), 5>  Effect: <(ON B B), 6> 
+Rule: 792  from MERGE
+     Conditions: <(NOT-ON B B), 0> <(NOT-ON B B), 1> <(NOT-ON B B), 2> <(NOT-ON B B), 3> <(NOT-ON B B), 4> <(NOT-ON B B), 5>  Effect: <(NOT-ON B B), 6> 
+Rule: 793  from MERGE
+     Conditions: <(ON C C), 0> <(ON C C), 1> <(ON C C), 2> <(ON C C), 3> <(ON C C), 4> <(ON C C), 5>  Effect: <(ON C C), 6> 
+Rule: 794  from MERGE
+     Conditions: <(NOT-ON C C), 0> <(NOT-ON C C), 1> <(NOT-ON C C), 2> <(NOT-ON C C), 3> <(NOT-ON C C), 4> <(NOT-ON C C), 5>  Effect: <(NOT-ON C C), 6> 
+Rule: 795  from MERGE
+     Conditions: <GOAL, 0> <GOAL, 1> <GOAL, 2> <GOAL, 3> <GOAL, 4> <GOAL, 5>  Effect: <GOAL, 6> 

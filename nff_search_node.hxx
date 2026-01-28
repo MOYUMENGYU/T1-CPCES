@@ -1,4 +1,4 @@
-/*
+﻿/*
   Alexandre Albore, Miguel Ramirez, Hector Geffner
   T1 conformant Planner
   Copyright (C) 2010  
@@ -139,6 +139,9 @@ namespace NFF
         bool project_sat_model_to_initial_state( const std::vector<int>& sat_model,
                                                  std::vector<int>& init_state );
 
+        // 2026.1.28: CEGAR 迭代重置
+        void reset_for_cegar_iteration();
+        static void reset_root_for_cegar();
 
 	protected:
 		std::vector<unsigned>		m_hS_HA;
