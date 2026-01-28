@@ -1,360 +1,334 @@
 Rule: 0  from (END)
-     Conditions: <(ON B A), 2> <(ONTABLE A), 2>  Effect: <GOAL, 2> 
-Rule: 1  from (UNSTACK B B)
-     Conditions: <(CLEAR B), 0> <(ON B B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ON B B), 0> 
-Rule: 2  from (UNSTACK B B)
-     Conditions: <(CLEAR B), 0> <(ON B B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
-Rule: 3  from (UNSTACK B B)
-     Conditions: <(CLEAR B), 0> <(ON B B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR B), 0> 
-Rule: 4  from (UNSTACK B B)
-     Conditions: <(CLEAR B), 0> <(ON B B), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING B), 0> 
-Rule: 5  from (UNSTACK B B)
-     Conditions: <(CLEAR B), 1> <(ON B B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ON B B), 1> 
-Rule: 6  from (UNSTACK B B)
-     Conditions: <(CLEAR B), 1> <(ON B B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
-Rule: 7  from (UNSTACK B B)
-     Conditions: <(CLEAR B), 1> <(ON B B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR B), 1> 
-Rule: 8  from (UNSTACK B B)
-     Conditions: <(CLEAR B), 1> <(ON B B), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING B), 1> 
-Rule: 9  from (UNSTACK B B)
-     Conditions: <(CLEAR B), 2> <(ON B B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ON B B), 2> 
-Rule: 10  from (UNSTACK B B)
-     Conditions: <(CLEAR B), 2> <(ON B B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
-Rule: 11  from (UNSTACK B B)
-     Conditions: <(CLEAR B), 2> <(ON B B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR B), 2> 
-Rule: 12  from (UNSTACK B B)
-     Conditions: <(CLEAR B), 2> <(ON B B), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING B), 2> 
-Rule: 13  from (UNSTACK B A)
-     Conditions: <(CLEAR B), 0> <(ON B A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ON B A), 0> 
-Rule: 14  from (UNSTACK B A)
-     Conditions: <(CLEAR B), 0> <(ON B A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
-Rule: 15  from (UNSTACK B A)
-     Conditions: <(CLEAR B), 0> <(ON B A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR B), 0> 
-Rule: 16  from (UNSTACK B A)
-     Conditions: <(CLEAR B), 0> <(ON B A), 0> <(HANDEMPTY), 0>  Effect: <(CLEAR A), 0> 
-Rule: 17  from (UNSTACK B A)
-     Conditions: <(CLEAR B), 0> <(ON B A), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING B), 0> 
-Rule: 18  from (UNSTACK B A)
-     Conditions: <(CLEAR B), 1> <(ON B A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ON B A), 1> 
-Rule: 19  from (UNSTACK B A)
-     Conditions: <(CLEAR B), 1> <(ON B A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
-Rule: 20  from (UNSTACK B A)
-     Conditions: <(CLEAR B), 1> <(ON B A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR B), 1> 
-Rule: 21  from (UNSTACK B A)
-     Conditions: <(CLEAR B), 1> <(ON B A), 1> <(HANDEMPTY), 1>  Effect: <(CLEAR A), 1> 
-Rule: 22  from (UNSTACK B A)
-     Conditions: <(CLEAR B), 1> <(ON B A), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING B), 1> 
-Rule: 23  from (UNSTACK B A)
-     Conditions: <(CLEAR B), 2> <(ON B A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ON B A), 2> 
-Rule: 24  from (UNSTACK B A)
-     Conditions: <(CLEAR B), 2> <(ON B A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
-Rule: 25  from (UNSTACK B A)
-     Conditions: <(CLEAR B), 2> <(ON B A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR B), 2> 
-Rule: 26  from (UNSTACK B A)
-     Conditions: <(CLEAR B), 2> <(ON B A), 2> <(HANDEMPTY), 2>  Effect: <(CLEAR A), 2> 
-Rule: 27  from (UNSTACK B A)
-     Conditions: <(CLEAR B), 2> <(ON B A), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING B), 2> 
-Rule: 28  from (UNSTACK A B)
-     Conditions: <(CLEAR A), 0> <(ON A B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ON A B), 0> 
-Rule: 29  from (UNSTACK A B)
-     Conditions: <(CLEAR A), 0> <(ON A B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
-Rule: 30  from (UNSTACK A B)
-     Conditions: <(CLEAR A), 0> <(ON A B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR A), 0> 
-Rule: 31  from (UNSTACK A B)
-     Conditions: <(CLEAR A), 0> <(ON A B), 0> <(HANDEMPTY), 0>  Effect: <(CLEAR B), 0> 
-Rule: 32  from (UNSTACK A B)
-     Conditions: <(CLEAR A), 0> <(ON A B), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING A), 0> 
-Rule: 33  from (UNSTACK A B)
-     Conditions: <(CLEAR A), 1> <(ON A B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ON A B), 1> 
-Rule: 34  from (UNSTACK A B)
-     Conditions: <(CLEAR A), 1> <(ON A B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
-Rule: 35  from (UNSTACK A B)
-     Conditions: <(CLEAR A), 1> <(ON A B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR A), 1> 
-Rule: 36  from (UNSTACK A B)
-     Conditions: <(CLEAR A), 1> <(ON A B), 1> <(HANDEMPTY), 1>  Effect: <(CLEAR B), 1> 
-Rule: 37  from (UNSTACK A B)
-     Conditions: <(CLEAR A), 1> <(ON A B), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING A), 1> 
-Rule: 38  from (UNSTACK A B)
-     Conditions: <(CLEAR A), 2> <(ON A B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ON A B), 2> 
-Rule: 39  from (UNSTACK A B)
-     Conditions: <(CLEAR A), 2> <(ON A B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
-Rule: 40  from (UNSTACK A B)
-     Conditions: <(CLEAR A), 2> <(ON A B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR A), 2> 
-Rule: 41  from (UNSTACK A B)
-     Conditions: <(CLEAR A), 2> <(ON A B), 2> <(HANDEMPTY), 2>  Effect: <(CLEAR B), 2> 
-Rule: 42  from (UNSTACK A B)
-     Conditions: <(CLEAR A), 2> <(ON A B), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING A), 2> 
-Rule: 43  from (UNSTACK A A)
-     Conditions: <(CLEAR A), 0> <(ON A A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ON A A), 0> 
-Rule: 44  from (UNSTACK A A)
-     Conditions: <(CLEAR A), 0> <(ON A A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
-Rule: 45  from (UNSTACK A A)
-     Conditions: <(CLEAR A), 0> <(ON A A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR A), 0> 
-Rule: 46  from (UNSTACK A A)
-     Conditions: <(CLEAR A), 0> <(ON A A), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING A), 0> 
-Rule: 47  from (UNSTACK A A)
-     Conditions: <(CLEAR A), 1> <(ON A A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ON A A), 1> 
-Rule: 48  from (UNSTACK A A)
-     Conditions: <(CLEAR A), 1> <(ON A A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
-Rule: 49  from (UNSTACK A A)
-     Conditions: <(CLEAR A), 1> <(ON A A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR A), 1> 
-Rule: 50  from (UNSTACK A A)
-     Conditions: <(CLEAR A), 1> <(ON A A), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING A), 1> 
-Rule: 51  from (UNSTACK A A)
-     Conditions: <(CLEAR A), 2> <(ON A A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ON A A), 2> 
-Rule: 52  from (UNSTACK A A)
-     Conditions: <(CLEAR A), 2> <(ON A A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
-Rule: 53  from (UNSTACK A A)
-     Conditions: <(CLEAR A), 2> <(ON A A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR A), 2> 
-Rule: 54  from (UNSTACK A A)
-     Conditions: <(CLEAR A), 2> <(ON A A), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING A), 2> 
-Rule: 55  from (STACK B B)
-     Conditions: <(CLEAR B), 0> <(HOLDING B), 0>  Effect: <(ON B B), 0> 
-Rule: 56  from (STACK B B)
-     Conditions: <(CLEAR B), 0> <(HOLDING B), 0>  Effect: <(HANDEMPTY), 0> 
-Rule: 57  from (STACK B B)
-     Conditions: <(CLEAR B), 0> <(HOLDING B), 0>  Effect: <(NOT-CLEAR B), 0> 
-Rule: 58  from (STACK B B)
-     Conditions: <(CLEAR B), 0> <(HOLDING B), 0>  Effect: <(NOT-HOLDING B), 0> 
-Rule: 59  from (STACK B B)
-     Conditions: <(CLEAR B), 1> <(HOLDING B), 1>  Effect: <(ON B B), 1> 
-Rule: 60  from (STACK B B)
-     Conditions: <(CLEAR B), 1> <(HOLDING B), 1>  Effect: <(HANDEMPTY), 1> 
-Rule: 61  from (STACK B B)
-     Conditions: <(CLEAR B), 1> <(HOLDING B), 1>  Effect: <(NOT-CLEAR B), 1> 
-Rule: 62  from (STACK B B)
-     Conditions: <(CLEAR B), 1> <(HOLDING B), 1>  Effect: <(NOT-HOLDING B), 1> 
-Rule: 63  from (STACK B B)
-     Conditions: <(CLEAR B), 2> <(HOLDING B), 2>  Effect: <(ON B B), 2> 
-Rule: 64  from (STACK B B)
-     Conditions: <(CLEAR B), 2> <(HOLDING B), 2>  Effect: <(HANDEMPTY), 2> 
-Rule: 65  from (STACK B B)
-     Conditions: <(CLEAR B), 2> <(HOLDING B), 2>  Effect: <(NOT-CLEAR B), 2> 
-Rule: 66  from (STACK B B)
-     Conditions: <(CLEAR B), 2> <(HOLDING B), 2>  Effect: <(NOT-HOLDING B), 2> 
-Rule: 67  from (STACK B A)
-     Conditions: <(CLEAR A), 0> <(HOLDING B), 0>  Effect: <(ON B A), 0> 
-Rule: 68  from (STACK B A)
-     Conditions: <(CLEAR A), 0> <(HOLDING B), 0>  Effect: <(HANDEMPTY), 0> 
-Rule: 69  from (STACK B A)
-     Conditions: <(CLEAR A), 0> <(HOLDING B), 0>  Effect: <(CLEAR B), 0> 
-Rule: 70  from (STACK B A)
-     Conditions: <(CLEAR A), 0> <(HOLDING B), 0>  Effect: <(NOT-CLEAR A), 0> 
-Rule: 71  from (STACK B A)
-     Conditions: <(CLEAR A), 0> <(HOLDING B), 0>  Effect: <(NOT-HOLDING B), 0> 
-Rule: 72  from (STACK B A)
-     Conditions: <(CLEAR A), 1> <(HOLDING B), 1>  Effect: <(ON B A), 1> 
-Rule: 73  from (STACK B A)
-     Conditions: <(CLEAR A), 1> <(HOLDING B), 1>  Effect: <(HANDEMPTY), 1> 
-Rule: 74  from (STACK B A)
-     Conditions: <(CLEAR A), 1> <(HOLDING B), 1>  Effect: <(CLEAR B), 1> 
-Rule: 75  from (STACK B A)
-     Conditions: <(CLEAR A), 1> <(HOLDING B), 1>  Effect: <(NOT-CLEAR A), 1> 
-Rule: 76  from (STACK B A)
-     Conditions: <(CLEAR A), 1> <(HOLDING B), 1>  Effect: <(NOT-HOLDING B), 1> 
-Rule: 77  from (STACK B A)
-     Conditions: <(CLEAR A), 2> <(HOLDING B), 2>  Effect: <(ON B A), 2> 
-Rule: 78  from (STACK B A)
-     Conditions: <(CLEAR A), 2> <(HOLDING B), 2>  Effect: <(HANDEMPTY), 2> 
-Rule: 79  from (STACK B A)
-     Conditions: <(CLEAR A), 2> <(HOLDING B), 2>  Effect: <(CLEAR B), 2> 
-Rule: 80  from (STACK B A)
-     Conditions: <(CLEAR A), 2> <(HOLDING B), 2>  Effect: <(NOT-CLEAR A), 2> 
-Rule: 81  from (STACK B A)
-     Conditions: <(CLEAR A), 2> <(HOLDING B), 2>  Effect: <(NOT-HOLDING B), 2> 
-Rule: 82  from (STACK A B)
-     Conditions: <(CLEAR B), 0> <(HOLDING A), 0>  Effect: <(ON A B), 0> 
-Rule: 83  from (STACK A B)
-     Conditions: <(CLEAR B), 0> <(HOLDING A), 0>  Effect: <(HANDEMPTY), 0> 
-Rule: 84  from (STACK A B)
-     Conditions: <(CLEAR B), 0> <(HOLDING A), 0>  Effect: <(CLEAR A), 0> 
-Rule: 85  from (STACK A B)
-     Conditions: <(CLEAR B), 0> <(HOLDING A), 0>  Effect: <(NOT-CLEAR B), 0> 
-Rule: 86  from (STACK A B)
-     Conditions: <(CLEAR B), 0> <(HOLDING A), 0>  Effect: <(NOT-HOLDING A), 0> 
-Rule: 87  from (STACK A B)
-     Conditions: <(CLEAR B), 1> <(HOLDING A), 1>  Effect: <(ON A B), 1> 
-Rule: 88  from (STACK A B)
-     Conditions: <(CLEAR B), 1> <(HOLDING A), 1>  Effect: <(HANDEMPTY), 1> 
-Rule: 89  from (STACK A B)
-     Conditions: <(CLEAR B), 1> <(HOLDING A), 1>  Effect: <(CLEAR A), 1> 
-Rule: 90  from (STACK A B)
-     Conditions: <(CLEAR B), 1> <(HOLDING A), 1>  Effect: <(NOT-CLEAR B), 1> 
-Rule: 91  from (STACK A B)
-     Conditions: <(CLEAR B), 1> <(HOLDING A), 1>  Effect: <(NOT-HOLDING A), 1> 
-Rule: 92  from (STACK A B)
-     Conditions: <(CLEAR B), 2> <(HOLDING A), 2>  Effect: <(ON A B), 2> 
-Rule: 93  from (STACK A B)
-     Conditions: <(CLEAR B), 2> <(HOLDING A), 2>  Effect: <(HANDEMPTY), 2> 
-Rule: 94  from (STACK A B)
-     Conditions: <(CLEAR B), 2> <(HOLDING A), 2>  Effect: <(CLEAR A), 2> 
-Rule: 95  from (STACK A B)
-     Conditions: <(CLEAR B), 2> <(HOLDING A), 2>  Effect: <(NOT-CLEAR B), 2> 
-Rule: 96  from (STACK A B)
-     Conditions: <(CLEAR B), 2> <(HOLDING A), 2>  Effect: <(NOT-HOLDING A), 2> 
-Rule: 97  from (STACK A A)
-     Conditions: <(CLEAR A), 0> <(HOLDING A), 0>  Effect: <(ON A A), 0> 
-Rule: 98  from (STACK A A)
-     Conditions: <(CLEAR A), 0> <(HOLDING A), 0>  Effect: <(HANDEMPTY), 0> 
-Rule: 99  from (STACK A A)
-     Conditions: <(CLEAR A), 0> <(HOLDING A), 0>  Effect: <(NOT-CLEAR A), 0> 
-Rule: 100  from (STACK A A)
-     Conditions: <(CLEAR A), 0> <(HOLDING A), 0>  Effect: <(NOT-HOLDING A), 0> 
-Rule: 101  from (STACK A A)
-     Conditions: <(CLEAR A), 1> <(HOLDING A), 1>  Effect: <(ON A A), 1> 
-Rule: 102  from (STACK A A)
-     Conditions: <(CLEAR A), 1> <(HOLDING A), 1>  Effect: <(HANDEMPTY), 1> 
-Rule: 103  from (STACK A A)
-     Conditions: <(CLEAR A), 1> <(HOLDING A), 1>  Effect: <(NOT-CLEAR A), 1> 
-Rule: 104  from (STACK A A)
-     Conditions: <(CLEAR A), 1> <(HOLDING A), 1>  Effect: <(NOT-HOLDING A), 1> 
-Rule: 105  from (STACK A A)
-     Conditions: <(CLEAR A), 2> <(HOLDING A), 2>  Effect: <(ON A A), 2> 
-Rule: 106  from (STACK A A)
-     Conditions: <(CLEAR A), 2> <(HOLDING A), 2>  Effect: <(HANDEMPTY), 2> 
-Rule: 107  from (STACK A A)
-     Conditions: <(CLEAR A), 2> <(HOLDING A), 2>  Effect: <(NOT-CLEAR A), 2> 
-Rule: 108  from (STACK A A)
-     Conditions: <(CLEAR A), 2> <(HOLDING A), 2>  Effect: <(NOT-HOLDING A), 2> 
-Rule: 109  from (PUT-DOWN B)
-     Conditions: <(HOLDING B), 0>  Effect: <(ONTABLE B), 0> 
-Rule: 110  from (PUT-DOWN B)
-     Conditions: <(HOLDING B), 0>  Effect: <(HANDEMPTY), 0> 
-Rule: 111  from (PUT-DOWN B)
-     Conditions: <(HOLDING B), 0>  Effect: <(CLEAR B), 0> 
-Rule: 112  from (PUT-DOWN B)
-     Conditions: <(HOLDING B), 0>  Effect: <(NOT-HOLDING B), 0> 
-Rule: 113  from (PUT-DOWN B)
-     Conditions: <(HOLDING B), 1>  Effect: <(ONTABLE B), 1> 
-Rule: 114  from (PUT-DOWN B)
-     Conditions: <(HOLDING B), 1>  Effect: <(HANDEMPTY), 1> 
-Rule: 115  from (PUT-DOWN B)
-     Conditions: <(HOLDING B), 1>  Effect: <(CLEAR B), 1> 
-Rule: 116  from (PUT-DOWN B)
-     Conditions: <(HOLDING B), 1>  Effect: <(NOT-HOLDING B), 1> 
-Rule: 117  from (PUT-DOWN B)
-     Conditions: <(HOLDING B), 2>  Effect: <(ONTABLE B), 2> 
-Rule: 118  from (PUT-DOWN B)
-     Conditions: <(HOLDING B), 2>  Effect: <(HANDEMPTY), 2> 
-Rule: 119  from (PUT-DOWN B)
-     Conditions: <(HOLDING B), 2>  Effect: <(CLEAR B), 2> 
-Rule: 120  from (PUT-DOWN B)
-     Conditions: <(HOLDING B), 2>  Effect: <(NOT-HOLDING B), 2> 
-Rule: 121  from (PUT-DOWN A)
-     Conditions: <(HOLDING A), 0>  Effect: <(ONTABLE A), 0> 
-Rule: 122  from (PUT-DOWN A)
-     Conditions: <(HOLDING A), 0>  Effect: <(HANDEMPTY), 0> 
-Rule: 123  from (PUT-DOWN A)
-     Conditions: <(HOLDING A), 0>  Effect: <(CLEAR A), 0> 
-Rule: 124  from (PUT-DOWN A)
-     Conditions: <(HOLDING A), 0>  Effect: <(NOT-HOLDING A), 0> 
-Rule: 125  from (PUT-DOWN A)
-     Conditions: <(HOLDING A), 1>  Effect: <(ONTABLE A), 1> 
-Rule: 126  from (PUT-DOWN A)
-     Conditions: <(HOLDING A), 1>  Effect: <(HANDEMPTY), 1> 
-Rule: 127  from (PUT-DOWN A)
-     Conditions: <(HOLDING A), 1>  Effect: <(CLEAR A), 1> 
-Rule: 128  from (PUT-DOWN A)
-     Conditions: <(HOLDING A), 1>  Effect: <(NOT-HOLDING A), 1> 
-Rule: 129  from (PUT-DOWN A)
-     Conditions: <(HOLDING A), 2>  Effect: <(ONTABLE A), 2> 
-Rule: 130  from (PUT-DOWN A)
-     Conditions: <(HOLDING A), 2>  Effect: <(HANDEMPTY), 2> 
-Rule: 131  from (PUT-DOWN A)
-     Conditions: <(HOLDING A), 2>  Effect: <(CLEAR A), 2> 
-Rule: 132  from (PUT-DOWN A)
-     Conditions: <(HOLDING A), 2>  Effect: <(NOT-HOLDING A), 2> 
-Rule: 133  from (PICK-UP B)
-     Conditions: <(ONTABLE B), 0> <(CLEAR B), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING B), 0> 
-Rule: 134  from (PICK-UP B)
-     Conditions: <(ONTABLE B), 0> <(CLEAR B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
-Rule: 135  from (PICK-UP B)
-     Conditions: <(ONTABLE B), 0> <(CLEAR B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR B), 0> 
-Rule: 136  from (PICK-UP B)
-     Conditions: <(ONTABLE B), 0> <(CLEAR B), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ONTABLE B), 0> 
-Rule: 137  from (PICK-UP B)
-     Conditions: <(ONTABLE B), 1> <(CLEAR B), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING B), 1> 
-Rule: 138  from (PICK-UP B)
-     Conditions: <(ONTABLE B), 1> <(CLEAR B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
-Rule: 139  from (PICK-UP B)
-     Conditions: <(ONTABLE B), 1> <(CLEAR B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR B), 1> 
-Rule: 140  from (PICK-UP B)
-     Conditions: <(ONTABLE B), 1> <(CLEAR B), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ONTABLE B), 1> 
-Rule: 141  from (PICK-UP B)
-     Conditions: <(ONTABLE B), 2> <(CLEAR B), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING B), 2> 
-Rule: 142  from (PICK-UP B)
-     Conditions: <(ONTABLE B), 2> <(CLEAR B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
-Rule: 143  from (PICK-UP B)
-     Conditions: <(ONTABLE B), 2> <(CLEAR B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR B), 2> 
-Rule: 144  from (PICK-UP B)
-     Conditions: <(ONTABLE B), 2> <(CLEAR B), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ONTABLE B), 2> 
-Rule: 145  from (PICK-UP A)
-     Conditions: <(ONTABLE A), 0> <(CLEAR A), 0> <(HANDEMPTY), 0>  Effect: <(HOLDING A), 0> 
-Rule: 146  from (PICK-UP A)
-     Conditions: <(ONTABLE A), 0> <(CLEAR A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-HANDEMPTY), 0> 
-Rule: 147  from (PICK-UP A)
-     Conditions: <(ONTABLE A), 0> <(CLEAR A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-CLEAR A), 0> 
-Rule: 148  from (PICK-UP A)
-     Conditions: <(ONTABLE A), 0> <(CLEAR A), 0> <(HANDEMPTY), 0>  Effect: <(NOT-ONTABLE A), 0> 
-Rule: 149  from (PICK-UP A)
-     Conditions: <(ONTABLE A), 1> <(CLEAR A), 1> <(HANDEMPTY), 1>  Effect: <(HOLDING A), 1> 
-Rule: 150  from (PICK-UP A)
-     Conditions: <(ONTABLE A), 1> <(CLEAR A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 1> 
-Rule: 151  from (PICK-UP A)
-     Conditions: <(ONTABLE A), 1> <(CLEAR A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-CLEAR A), 1> 
-Rule: 152  from (PICK-UP A)
-     Conditions: <(ONTABLE A), 1> <(CLEAR A), 1> <(HANDEMPTY), 1>  Effect: <(NOT-ONTABLE A), 1> 
-Rule: 153  from (PICK-UP A)
-     Conditions: <(ONTABLE A), 2> <(CLEAR A), 2> <(HANDEMPTY), 2>  Effect: <(HOLDING A), 2> 
-Rule: 154  from (PICK-UP A)
-     Conditions: <(ONTABLE A), 2> <(CLEAR A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-HANDEMPTY), 2> 
-Rule: 155  from (PICK-UP A)
-     Conditions: <(ONTABLE A), 2> <(CLEAR A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-CLEAR A), 2> 
-Rule: 156  from (PICK-UP A)
-     Conditions: <(ONTABLE A), 2> <(CLEAR A), 2> <(HANDEMPTY), 2>  Effect: <(NOT-ONTABLE A), 2> 
+     Conditions: <(NOT-ARMED BOMB20), 2> <(NOT-ARMED BOMB19), 2> <(NOT-ARMED BOMB18), 2> <(NOT-ARMED BOMB17), 2> <(NOT-ARMED BOMB16), 2> <(NOT-ARMED BOMB15), 2> <(NOT-ARMED BOMB14), 2> <(NOT-ARMED BOMB13), 2> <(NOT-ARMED BOMB12), 2> <(NOT-ARMED BOMB11), 2> <(NOT-ARMED BOMB10), 2> <(NOT-ARMED BOMB9), 2> <(NOT-ARMED BOMB8), 2> <(NOT-ARMED BOMB7), 2> <(NOT-ARMED BOMB6), 2> <(NOT-ARMED BOMB5), 2> <(NOT-ARMED BOMB4), 2> <(NOT-ARMED BOMB3), 2> <(NOT-ARMED BOMB2), 2> <(NOT-ARMED BOMB1), 2>  Effect: <GOAL, 2> 
+Rule: 1  from (FLUSH TOILET1)
+     Conditions: <(CLOGGED TOILET1), 0>  Effect: <(NOT-CLOGGED TOILET1), 0> 
+Rule: 2  from (FLUSH TOILET1)
+     Conditions: <(CLOGGED TOILET1), 1>  Effect: <(NOT-CLOGGED TOILET1), 1> 
+Rule: 3  from (FLUSH TOILET1)
+     Conditions: <(CLOGGED TOILET1), 2>  Effect: <(NOT-CLOGGED TOILET1), 2> 
+Rule: 4  from (DUNK BOMB20 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB20), 0>  Effect: <(NOT-ARMED BOMB20), 0> 
+Rule: 5  from (DUNK BOMB20 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB20), 1>  Effect: <(NOT-ARMED BOMB20), 1> 
+Rule: 6  from (DUNK BOMB20 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB20), 2>  Effect: <(NOT-ARMED BOMB20), 2> 
+Rule: 7  from (DUNK BOMB20 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 8  from (DUNK BOMB20 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 9  from (DUNK BOMB20 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 10  from (DUNK BOMB19 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB19), 0>  Effect: <(NOT-ARMED BOMB19), 0> 
+Rule: 11  from (DUNK BOMB19 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB19), 1>  Effect: <(NOT-ARMED BOMB19), 1> 
+Rule: 12  from (DUNK BOMB19 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB19), 2>  Effect: <(NOT-ARMED BOMB19), 2> 
+Rule: 13  from (DUNK BOMB19 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 14  from (DUNK BOMB19 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 15  from (DUNK BOMB19 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 16  from (DUNK BOMB18 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB18), 0>  Effect: <(NOT-ARMED BOMB18), 0> 
+Rule: 17  from (DUNK BOMB18 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB18), 1>  Effect: <(NOT-ARMED BOMB18), 1> 
+Rule: 18  from (DUNK BOMB18 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB18), 2>  Effect: <(NOT-ARMED BOMB18), 2> 
+Rule: 19  from (DUNK BOMB18 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 20  from (DUNK BOMB18 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 21  from (DUNK BOMB18 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 22  from (DUNK BOMB17 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB17), 0>  Effect: <(NOT-ARMED BOMB17), 0> 
+Rule: 23  from (DUNK BOMB17 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB17), 1>  Effect: <(NOT-ARMED BOMB17), 1> 
+Rule: 24  from (DUNK BOMB17 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB17), 2>  Effect: <(NOT-ARMED BOMB17), 2> 
+Rule: 25  from (DUNK BOMB17 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 26  from (DUNK BOMB17 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 27  from (DUNK BOMB17 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 28  from (DUNK BOMB16 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB16), 0>  Effect: <(NOT-ARMED BOMB16), 0> 
+Rule: 29  from (DUNK BOMB16 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB16), 1>  Effect: <(NOT-ARMED BOMB16), 1> 
+Rule: 30  from (DUNK BOMB16 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB16), 2>  Effect: <(NOT-ARMED BOMB16), 2> 
+Rule: 31  from (DUNK BOMB16 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 32  from (DUNK BOMB16 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 33  from (DUNK BOMB16 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 34  from (DUNK BOMB15 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB15), 0>  Effect: <(NOT-ARMED BOMB15), 0> 
+Rule: 35  from (DUNK BOMB15 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB15), 1>  Effect: <(NOT-ARMED BOMB15), 1> 
+Rule: 36  from (DUNK BOMB15 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB15), 2>  Effect: <(NOT-ARMED BOMB15), 2> 
+Rule: 37  from (DUNK BOMB15 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 38  from (DUNK BOMB15 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 39  from (DUNK BOMB15 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 40  from (DUNK BOMB14 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB14), 0>  Effect: <(NOT-ARMED BOMB14), 0> 
+Rule: 41  from (DUNK BOMB14 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB14), 1>  Effect: <(NOT-ARMED BOMB14), 1> 
+Rule: 42  from (DUNK BOMB14 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB14), 2>  Effect: <(NOT-ARMED BOMB14), 2> 
+Rule: 43  from (DUNK BOMB14 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 44  from (DUNK BOMB14 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 45  from (DUNK BOMB14 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 46  from (DUNK BOMB13 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB13), 0>  Effect: <(NOT-ARMED BOMB13), 0> 
+Rule: 47  from (DUNK BOMB13 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB13), 1>  Effect: <(NOT-ARMED BOMB13), 1> 
+Rule: 48  from (DUNK BOMB13 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB13), 2>  Effect: <(NOT-ARMED BOMB13), 2> 
+Rule: 49  from (DUNK BOMB13 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 50  from (DUNK BOMB13 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 51  from (DUNK BOMB13 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 52  from (DUNK BOMB12 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB12), 0>  Effect: <(NOT-ARMED BOMB12), 0> 
+Rule: 53  from (DUNK BOMB12 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB12), 1>  Effect: <(NOT-ARMED BOMB12), 1> 
+Rule: 54  from (DUNK BOMB12 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB12), 2>  Effect: <(NOT-ARMED BOMB12), 2> 
+Rule: 55  from (DUNK BOMB12 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 56  from (DUNK BOMB12 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 57  from (DUNK BOMB12 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 58  from (DUNK BOMB11 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB11), 0>  Effect: <(NOT-ARMED BOMB11), 0> 
+Rule: 59  from (DUNK BOMB11 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB11), 1>  Effect: <(NOT-ARMED BOMB11), 1> 
+Rule: 60  from (DUNK BOMB11 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB11), 2>  Effect: <(NOT-ARMED BOMB11), 2> 
+Rule: 61  from (DUNK BOMB11 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 62  from (DUNK BOMB11 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 63  from (DUNK BOMB11 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 64  from (DUNK BOMB10 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB10), 0>  Effect: <(NOT-ARMED BOMB10), 0> 
+Rule: 65  from (DUNK BOMB10 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB10), 1>  Effect: <(NOT-ARMED BOMB10), 1> 
+Rule: 66  from (DUNK BOMB10 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB10), 2>  Effect: <(NOT-ARMED BOMB10), 2> 
+Rule: 67  from (DUNK BOMB10 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 68  from (DUNK BOMB10 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 69  from (DUNK BOMB10 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 70  from (DUNK BOMB9 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB9), 0>  Effect: <(NOT-ARMED BOMB9), 0> 
+Rule: 71  from (DUNK BOMB9 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB9), 1>  Effect: <(NOT-ARMED BOMB9), 1> 
+Rule: 72  from (DUNK BOMB9 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB9), 2>  Effect: <(NOT-ARMED BOMB9), 2> 
+Rule: 73  from (DUNK BOMB9 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 74  from (DUNK BOMB9 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 75  from (DUNK BOMB9 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 76  from (DUNK BOMB8 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB8), 0>  Effect: <(NOT-ARMED BOMB8), 0> 
+Rule: 77  from (DUNK BOMB8 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB8), 1>  Effect: <(NOT-ARMED BOMB8), 1> 
+Rule: 78  from (DUNK BOMB8 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB8), 2>  Effect: <(NOT-ARMED BOMB8), 2> 
+Rule: 79  from (DUNK BOMB8 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 80  from (DUNK BOMB8 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 81  from (DUNK BOMB8 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 82  from (DUNK BOMB7 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB7), 0>  Effect: <(NOT-ARMED BOMB7), 0> 
+Rule: 83  from (DUNK BOMB7 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB7), 1>  Effect: <(NOT-ARMED BOMB7), 1> 
+Rule: 84  from (DUNK BOMB7 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB7), 2>  Effect: <(NOT-ARMED BOMB7), 2> 
+Rule: 85  from (DUNK BOMB7 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 86  from (DUNK BOMB7 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 87  from (DUNK BOMB7 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 88  from (DUNK BOMB6 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB6), 0>  Effect: <(NOT-ARMED BOMB6), 0> 
+Rule: 89  from (DUNK BOMB6 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB6), 1>  Effect: <(NOT-ARMED BOMB6), 1> 
+Rule: 90  from (DUNK BOMB6 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB6), 2>  Effect: <(NOT-ARMED BOMB6), 2> 
+Rule: 91  from (DUNK BOMB6 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 92  from (DUNK BOMB6 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 93  from (DUNK BOMB6 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 94  from (DUNK BOMB5 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB5), 0>  Effect: <(NOT-ARMED BOMB5), 0> 
+Rule: 95  from (DUNK BOMB5 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB5), 1>  Effect: <(NOT-ARMED BOMB5), 1> 
+Rule: 96  from (DUNK BOMB5 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB5), 2>  Effect: <(NOT-ARMED BOMB5), 2> 
+Rule: 97  from (DUNK BOMB5 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 98  from (DUNK BOMB5 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 99  from (DUNK BOMB5 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 100  from (DUNK BOMB4 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB4), 0>  Effect: <(NOT-ARMED BOMB4), 0> 
+Rule: 101  from (DUNK BOMB4 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB4), 1>  Effect: <(NOT-ARMED BOMB4), 1> 
+Rule: 102  from (DUNK BOMB4 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB4), 2>  Effect: <(NOT-ARMED BOMB4), 2> 
+Rule: 103  from (DUNK BOMB4 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 104  from (DUNK BOMB4 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 105  from (DUNK BOMB4 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 106  from (DUNK BOMB3 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB3), 0>  Effect: <(NOT-ARMED BOMB3), 0> 
+Rule: 107  from (DUNK BOMB3 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB3), 1>  Effect: <(NOT-ARMED BOMB3), 1> 
+Rule: 108  from (DUNK BOMB3 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB3), 2>  Effect: <(NOT-ARMED BOMB3), 2> 
+Rule: 109  from (DUNK BOMB3 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 110  from (DUNK BOMB3 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 111  from (DUNK BOMB3 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 112  from (DUNK BOMB2 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB2), 0>  Effect: <(NOT-ARMED BOMB2), 0> 
+Rule: 113  from (DUNK BOMB2 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB2), 1>  Effect: <(NOT-ARMED BOMB2), 1> 
+Rule: 114  from (DUNK BOMB2 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB2), 2>  Effect: <(NOT-ARMED BOMB2), 2> 
+Rule: 115  from (DUNK BOMB2 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 116  from (DUNK BOMB2 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 117  from (DUNK BOMB2 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 118  from (DUNK BOMB1 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB1), 0>  Effect: <(NOT-ARMED BOMB1), 0> 
+Rule: 119  from (DUNK BOMB1 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB1), 1>  Effect: <(NOT-ARMED BOMB1), 1> 
+Rule: 120  from (DUNK BOMB1 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2> <(ARMED BOMB1), 2>  Effect: <(NOT-ARMED BOMB1), 2> 
+Rule: 121  from (DUNK BOMB1 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 0> 
+Rule: 122  from (DUNK BOMB1 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 1> 
+Rule: 123  from (DUNK BOMB1 TOILET1)
+     Conditions: <(NOT-CLOGGED TOILET1), 2>  Effect: <(CLOGGED TOILET1), 2> 
+Rule: 124  from MERGE
+     Conditions: <(ARMED BOMB20), 0> <(ARMED BOMB20), 1>  Effect: <(ARMED BOMB20), 2> 
+Rule: 125  from MERGE
+     Conditions: <(NOT-ARMED BOMB20), 0> <(NOT-ARMED BOMB20), 1>  Effect: <(NOT-ARMED BOMB20), 2> 
+Rule: 126  from MERGE
+     Conditions: <(ARMED BOMB19), 0> <(ARMED BOMB19), 1>  Effect: <(ARMED BOMB19), 2> 
+Rule: 127  from MERGE
+     Conditions: <(NOT-ARMED BOMB19), 0> <(NOT-ARMED BOMB19), 1>  Effect: <(NOT-ARMED BOMB19), 2> 
+Rule: 128  from MERGE
+     Conditions: <(ARMED BOMB18), 0> <(ARMED BOMB18), 1>  Effect: <(ARMED BOMB18), 2> 
+Rule: 129  from MERGE
+     Conditions: <(NOT-ARMED BOMB18), 0> <(NOT-ARMED BOMB18), 1>  Effect: <(NOT-ARMED BOMB18), 2> 
+Rule: 130  from MERGE
+     Conditions: <(ARMED BOMB17), 0> <(ARMED BOMB17), 1>  Effect: <(ARMED BOMB17), 2> 
+Rule: 131  from MERGE
+     Conditions: <(NOT-ARMED BOMB17), 0> <(NOT-ARMED BOMB17), 1>  Effect: <(NOT-ARMED BOMB17), 2> 
+Rule: 132  from MERGE
+     Conditions: <(ARMED BOMB16), 0> <(ARMED BOMB16), 1>  Effect: <(ARMED BOMB16), 2> 
+Rule: 133  from MERGE
+     Conditions: <(NOT-ARMED BOMB16), 0> <(NOT-ARMED BOMB16), 1>  Effect: <(NOT-ARMED BOMB16), 2> 
+Rule: 134  from MERGE
+     Conditions: <(ARMED BOMB15), 0> <(ARMED BOMB15), 1>  Effect: <(ARMED BOMB15), 2> 
+Rule: 135  from MERGE
+     Conditions: <(NOT-ARMED BOMB15), 0> <(NOT-ARMED BOMB15), 1>  Effect: <(NOT-ARMED BOMB15), 2> 
+Rule: 136  from MERGE
+     Conditions: <(ARMED BOMB14), 0> <(ARMED BOMB14), 1>  Effect: <(ARMED BOMB14), 2> 
+Rule: 137  from MERGE
+     Conditions: <(NOT-ARMED BOMB14), 0> <(NOT-ARMED BOMB14), 1>  Effect: <(NOT-ARMED BOMB14), 2> 
+Rule: 138  from MERGE
+     Conditions: <(ARMED BOMB13), 0> <(ARMED BOMB13), 1>  Effect: <(ARMED BOMB13), 2> 
+Rule: 139  from MERGE
+     Conditions: <(NOT-ARMED BOMB13), 0> <(NOT-ARMED BOMB13), 1>  Effect: <(NOT-ARMED BOMB13), 2> 
+Rule: 140  from MERGE
+     Conditions: <(ARMED BOMB12), 0> <(ARMED BOMB12), 1>  Effect: <(ARMED BOMB12), 2> 
+Rule: 141  from MERGE
+     Conditions: <(NOT-ARMED BOMB12), 0> <(NOT-ARMED BOMB12), 1>  Effect: <(NOT-ARMED BOMB12), 2> 
+Rule: 142  from MERGE
+     Conditions: <(ARMED BOMB11), 0> <(ARMED BOMB11), 1>  Effect: <(ARMED BOMB11), 2> 
+Rule: 143  from MERGE
+     Conditions: <(NOT-ARMED BOMB11), 0> <(NOT-ARMED BOMB11), 1>  Effect: <(NOT-ARMED BOMB11), 2> 
+Rule: 144  from MERGE
+     Conditions: <(ARMED BOMB10), 0> <(ARMED BOMB10), 1>  Effect: <(ARMED BOMB10), 2> 
+Rule: 145  from MERGE
+     Conditions: <(NOT-ARMED BOMB10), 0> <(NOT-ARMED BOMB10), 1>  Effect: <(NOT-ARMED BOMB10), 2> 
+Rule: 146  from MERGE
+     Conditions: <(ARMED BOMB9), 0> <(ARMED BOMB9), 1>  Effect: <(ARMED BOMB9), 2> 
+Rule: 147  from MERGE
+     Conditions: <(NOT-ARMED BOMB9), 0> <(NOT-ARMED BOMB9), 1>  Effect: <(NOT-ARMED BOMB9), 2> 
+Rule: 148  from MERGE
+     Conditions: <(ARMED BOMB8), 0> <(ARMED BOMB8), 1>  Effect: <(ARMED BOMB8), 2> 
+Rule: 149  from MERGE
+     Conditions: <(NOT-ARMED BOMB8), 0> <(NOT-ARMED BOMB8), 1>  Effect: <(NOT-ARMED BOMB8), 2> 
+Rule: 150  from MERGE
+     Conditions: <(ARMED BOMB7), 0> <(ARMED BOMB7), 1>  Effect: <(ARMED BOMB7), 2> 
+Rule: 151  from MERGE
+     Conditions: <(NOT-ARMED BOMB7), 0> <(NOT-ARMED BOMB7), 1>  Effect: <(NOT-ARMED BOMB7), 2> 
+Rule: 152  from MERGE
+     Conditions: <(ARMED BOMB6), 0> <(ARMED BOMB6), 1>  Effect: <(ARMED BOMB6), 2> 
+Rule: 153  from MERGE
+     Conditions: <(NOT-ARMED BOMB6), 0> <(NOT-ARMED BOMB6), 1>  Effect: <(NOT-ARMED BOMB6), 2> 
+Rule: 154  from MERGE
+     Conditions: <(ARMED BOMB5), 0> <(ARMED BOMB5), 1>  Effect: <(ARMED BOMB5), 2> 
+Rule: 155  from MERGE
+     Conditions: <(NOT-ARMED BOMB5), 0> <(NOT-ARMED BOMB5), 1>  Effect: <(NOT-ARMED BOMB5), 2> 
+Rule: 156  from MERGE
+     Conditions: <(ARMED BOMB4), 0> <(ARMED BOMB4), 1>  Effect: <(ARMED BOMB4), 2> 
 Rule: 157  from MERGE
-     Conditions: <(HOLDING A), 0> <(HOLDING A), 1>  Effect: <(HOLDING A), 2> 
+     Conditions: <(NOT-ARMED BOMB4), 0> <(NOT-ARMED BOMB4), 1>  Effect: <(NOT-ARMED BOMB4), 2> 
 Rule: 158  from MERGE
-     Conditions: <(NOT-HOLDING A), 0> <(NOT-HOLDING A), 1>  Effect: <(NOT-HOLDING A), 2> 
+     Conditions: <(ARMED BOMB3), 0> <(ARMED BOMB3), 1>  Effect: <(ARMED BOMB3), 2> 
 Rule: 159  from MERGE
-     Conditions: <(HOLDING B), 0> <(HOLDING B), 1>  Effect: <(HOLDING B), 2> 
+     Conditions: <(NOT-ARMED BOMB3), 0> <(NOT-ARMED BOMB3), 1>  Effect: <(NOT-ARMED BOMB3), 2> 
 Rule: 160  from MERGE
-     Conditions: <(NOT-HOLDING B), 0> <(NOT-HOLDING B), 1>  Effect: <(NOT-HOLDING B), 2> 
+     Conditions: <(ARMED BOMB2), 0> <(ARMED BOMB2), 1>  Effect: <(ARMED BOMB2), 2> 
 Rule: 161  from MERGE
-     Conditions: <(HANDEMPTY), 0> <(HANDEMPTY), 1>  Effect: <(HANDEMPTY), 2> 
+     Conditions: <(NOT-ARMED BOMB2), 0> <(NOT-ARMED BOMB2), 1>  Effect: <(NOT-ARMED BOMB2), 2> 
 Rule: 162  from MERGE
-     Conditions: <(NOT-HANDEMPTY), 0> <(NOT-HANDEMPTY), 1>  Effect: <(NOT-HANDEMPTY), 2> 
+     Conditions: <(ARMED BOMB1), 0> <(ARMED BOMB1), 1>  Effect: <(ARMED BOMB1), 2> 
 Rule: 163  from MERGE
-     Conditions: <(CLEAR B), 0> <(CLEAR B), 1>  Effect: <(CLEAR B), 2> 
+     Conditions: <(NOT-ARMED BOMB1), 0> <(NOT-ARMED BOMB1), 1>  Effect: <(NOT-ARMED BOMB1), 2> 
 Rule: 164  from MERGE
-     Conditions: <(NOT-CLEAR B), 0> <(NOT-CLEAR B), 1>  Effect: <(NOT-CLEAR B), 2> 
+     Conditions: <(CLOGGED TOILET1), 0> <(CLOGGED TOILET1), 1>  Effect: <(CLOGGED TOILET1), 2> 
 Rule: 165  from MERGE
-     Conditions: <(CLEAR A), 0> <(CLEAR A), 1>  Effect: <(CLEAR A), 2> 
+     Conditions: <(NOT-CLOGGED TOILET1), 0> <(NOT-CLOGGED TOILET1), 1>  Effect: <(NOT-CLOGGED TOILET1), 2> 
 Rule: 166  from MERGE
-     Conditions: <(NOT-CLEAR A), 0> <(NOT-CLEAR A), 1>  Effect: <(NOT-CLEAR A), 2> 
-Rule: 167  from MERGE
-     Conditions: <(ONTABLE B), 0> <(ONTABLE B), 1>  Effect: <(ONTABLE B), 2> 
-Rule: 168  from MERGE
-     Conditions: <(NOT-ONTABLE B), 0> <(NOT-ONTABLE B), 1>  Effect: <(NOT-ONTABLE B), 2> 
-Rule: 169  from MERGE
-     Conditions: <(ONTABLE A), 0> <(ONTABLE A), 1>  Effect: <(ONTABLE A), 2> 
-Rule: 170  from MERGE
-     Conditions: <(NOT-ONTABLE A), 0> <(NOT-ONTABLE A), 1>  Effect: <(NOT-ONTABLE A), 2> 
-Rule: 171  from MERGE
-     Conditions: <(ON B A), 0> <(ON B A), 1>  Effect: <(ON B A), 2> 
-Rule: 172  from MERGE
-     Conditions: <(NOT-ON B A), 0> <(NOT-ON B A), 1>  Effect: <(NOT-ON B A), 2> 
-Rule: 173  from MERGE
-     Conditions: <(ON A B), 0> <(ON A B), 1>  Effect: <(ON A B), 2> 
-Rule: 174  from MERGE
-     Conditions: <(NOT-ON A B), 0> <(NOT-ON A B), 1>  Effect: <(NOT-ON A B), 2> 
-Rule: 175  from MERGE
-     Conditions: <(ON A A), 0> <(ON A A), 1>  Effect: <(ON A A), 2> 
-Rule: 176  from MERGE
-     Conditions: <(NOT-ON A A), 0> <(NOT-ON A A), 1>  Effect: <(NOT-ON A A), 2> 
-Rule: 177  from MERGE
-     Conditions: <(ON B B), 0> <(ON B B), 1>  Effect: <(ON B B), 2> 
-Rule: 178  from MERGE
-     Conditions: <(NOT-ON B B), 0> <(NOT-ON B B), 1>  Effect: <(NOT-ON B B), 2> 
-Rule: 179  from MERGE
      Conditions: <GOAL, 0> <GOAL, 1>  Effect: <GOAL, 2> 

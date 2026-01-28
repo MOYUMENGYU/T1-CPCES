@@ -1,36 +1,51 @@
 ;; t1 - A Heuristic Search Conformant Planner
 ;; Alexandre Albore, Hector Geffner & Miquel Ramirez (c) 2010
 ;; preprocessing=<1 msec
-;; domain=BLOCKS
-;; problem=B2
-;; fluents=24
-;; operators=16
+;; domain=BOMB
+;; problem=BOMB-20-1
+;; fluents=44
+;; operators=45
 ;; size_of_b0_approx=2
-;; heuristic_setup_time=0.031
+;; heuristic_setup_time=0.026
 ;; initial_heuristic_value=0
-;; search_time=0.012
+;; search_time=0.048
 ;; Plan found:
-(UNSTACK A B)
-(PUT-DOWN A)
-(PICK-UP B)
-(STACK B A)
-;; plan_length=4
-;; heuristic_computations=5
+(DUNK BOMB20 TOILET1)
+(FLUSH TOILET1)
+(DUNK BOMB10 TOILET1)
+(FLUSH TOILET1)
+(DUNK BOMB9 TOILET1)
+(FLUSH TOILET1)
+(DUNK BOMB8 TOILET1)
+(FLUSH TOILET1)
+(DUNK BOMB7 TOILET1)
+(FLUSH TOILET1)
+(DUNK BOMB6 TOILET1)
+(FLUSH TOILET1)
+(DUNK BOMB5 TOILET1)
+(FLUSH TOILET1)
+(DUNK BOMB4 TOILET1)
+(FLUSH TOILET1)
+(DUNK BOMB3 TOILET1)
+(FLUSH TOILET1)
+(DUNK BOMB2 TOILET1)
+;; plan_length=19
+;; heuristic_computations=19
 ;; expanded_ehc=0
 ;; generated_ehc=0
-;; expanded_bfs=4
-;; generated_bfs=70
-;; primary_expansions=2
-;; secondary_expansions=2
+;; expanded_bfs=18
+;; generated_bfs=283
+;; primary_expansions=9
+;; secondary_expansions=9
 ;; tertiary_expansions=0
-;; entailment_tests=1
-;; sat_solver_calls=32
-;; max_num_clauses=263
+;; entailment_tests=0
+;; sat_solver_calls=4
+;; max_num_clauses=40
 ;; problem_inconsistent=no
-;; initial_sample_h=5
-;; initial_card_h=6
+;; initial_sample_h=10
+;; initial_card_h=10
 ;; avg_dead_models=0
 ;; dead_samples_replaced=0
-;; width_1=no
-;; nodes_mem=0.135
+;; width_1=yes
+;; nodes_mem=0.454
 ;; b0_mc=0
