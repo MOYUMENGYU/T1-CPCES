@@ -153,7 +153,7 @@ std::vector<RiskScore> compute_risk_index( unsigned topK, float alpha, float bet
     std::cout << "[RiskIndex] --------------------------------------------------" << std::endl;
     std::cout << "[RiskIndex] Top-" << topK << " risk fluents:" << std::endl;
 
-    for ( unsigned i = 0; i < topK && i < ranked.size(); ++i )
+    for ( unsigned i = 0; i < topK*ranked.size() && i < ranked.size(); ++i )
     {
         const RiskScore& r = ranked[i];
         std::cout << "[RiskIndex][Top] rank=" << std::setw(3) << i

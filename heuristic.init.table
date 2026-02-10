@@ -1,273 +1,95 @@
-<(HOLDING C), 0>: 0
-<(HOLDING C), 1>: 0
-<(HOLDING C), 2>: 0
-<(HOLDING C), 3>: 0
-<(HOLDING C), 4>: 0
-<(HOLDING C), 5>: 0
-<(HOLDING C), 6>: oo
-<(NOT-HOLDING C), 0>: oo
-<(NOT-HOLDING C), 1>: oo
-<(NOT-HOLDING C), 2>: oo
-<(NOT-HOLDING C), 3>: oo
-<(NOT-HOLDING C), 4>: oo
-<(NOT-HOLDING C), 5>: oo
-<(NOT-HOLDING C), 6>: oo
-<(HOLDING B), 0>: oo
-<(HOLDING B), 1>: oo
-<(HOLDING B), 2>: oo
-<(HOLDING B), 3>: oo
-<(HOLDING B), 4>: oo
-<(HOLDING B), 5>: oo
-<(HOLDING B), 6>: oo
-<(NOT-HOLDING B), 0>: 0
-<(NOT-HOLDING B), 1>: 0
-<(NOT-HOLDING B), 2>: 0
-<(NOT-HOLDING B), 3>: 0
-<(NOT-HOLDING B), 4>: 0
-<(NOT-HOLDING B), 5>: 0
-<(NOT-HOLDING B), 6>: oo
-<(HOLDING A), 0>: oo
-<(HOLDING A), 1>: oo
-<(HOLDING A), 2>: oo
-<(HOLDING A), 3>: oo
-<(HOLDING A), 4>: oo
-<(HOLDING A), 5>: oo
-<(HOLDING A), 6>: oo
-<(NOT-HOLDING A), 0>: 0
-<(NOT-HOLDING A), 1>: 0
-<(NOT-HOLDING A), 2>: 0
-<(NOT-HOLDING A), 3>: 0
-<(NOT-HOLDING A), 4>: 0
-<(NOT-HOLDING A), 5>: 0
-<(NOT-HOLDING A), 6>: 0
-<(HANDEMPTY), 0>: oo
-<(HANDEMPTY), 1>: oo
-<(HANDEMPTY), 2>: oo
-<(HANDEMPTY), 3>: oo
-<(HANDEMPTY), 4>: oo
-<(HANDEMPTY), 5>: oo
-<(HANDEMPTY), 6>: oo
-<(NOT-HANDEMPTY), 0>: 0
-<(NOT-HANDEMPTY), 1>: 0
-<(NOT-HANDEMPTY), 2>: 0
-<(NOT-HANDEMPTY), 3>: 0
-<(NOT-HANDEMPTY), 4>: 0
-<(NOT-HANDEMPTY), 5>: 0
-<(NOT-HANDEMPTY), 6>: oo
-<(CLEAR C), 0>: oo
-<(CLEAR C), 1>: oo
-<(CLEAR C), 2>: oo
-<(CLEAR C), 3>: oo
-<(CLEAR C), 4>: oo
-<(CLEAR C), 5>: oo
-<(CLEAR C), 6>: oo
-<(NOT-CLEAR C), 0>: 0
-<(NOT-CLEAR C), 1>: 0
-<(NOT-CLEAR C), 2>: 0
-<(NOT-CLEAR C), 3>: 0
-<(NOT-CLEAR C), 4>: 0
-<(NOT-CLEAR C), 5>: 0
-<(NOT-CLEAR C), 6>: oo
-<(CLEAR B), 0>: 0
-<(CLEAR B), 1>: 0
-<(CLEAR B), 2>: 0
-<(CLEAR B), 3>: 0
-<(CLEAR B), 4>: 0
-<(CLEAR B), 5>: 0
-<(CLEAR B), 6>: oo
-<(NOT-CLEAR B), 0>: oo
-<(NOT-CLEAR B), 1>: oo
-<(NOT-CLEAR B), 2>: oo
-<(NOT-CLEAR B), 3>: oo
-<(NOT-CLEAR B), 4>: oo
-<(NOT-CLEAR B), 5>: oo
-<(NOT-CLEAR B), 6>: oo
-<(CLEAR A), 0>: oo
-<(CLEAR A), 1>: oo
-<(CLEAR A), 2>: oo
-<(CLEAR A), 3>: oo
-<(CLEAR A), 4>: oo
-<(CLEAR A), 5>: oo
-<(CLEAR A), 6>: oo
-<(NOT-CLEAR A), 0>: 0
-<(NOT-CLEAR A), 1>: 0
-<(NOT-CLEAR A), 2>: 0
-<(NOT-CLEAR A), 3>: 0
-<(NOT-CLEAR A), 4>: 0
-<(NOT-CLEAR A), 5>: 0
-<(NOT-CLEAR A), 6>: oo
-<(ONTABLE C), 0>: oo
-<(ONTABLE C), 1>: oo
-<(ONTABLE C), 2>: oo
-<(ONTABLE C), 3>: oo
-<(ONTABLE C), 4>: oo
-<(ONTABLE C), 5>: oo
-<(ONTABLE C), 6>: oo
-<(NOT-ONTABLE C), 0>: 0
-<(NOT-ONTABLE C), 1>: 0
-<(NOT-ONTABLE C), 2>: 0
-<(NOT-ONTABLE C), 3>: 0
-<(NOT-ONTABLE C), 4>: 0
-<(NOT-ONTABLE C), 5>: 0
-<(NOT-ONTABLE C), 6>: oo
-<(ONTABLE B), 0>: oo
-<(ONTABLE B), 1>: oo
-<(ONTABLE B), 2>: oo
-<(ONTABLE B), 3>: oo
-<(ONTABLE B), 4>: oo
-<(ONTABLE B), 5>: oo
-<(ONTABLE B), 6>: oo
-<(NOT-ONTABLE B), 0>: 0
-<(NOT-ONTABLE B), 1>: 0
-<(NOT-ONTABLE B), 2>: 0
-<(NOT-ONTABLE B), 3>: 0
-<(NOT-ONTABLE B), 4>: 0
-<(NOT-ONTABLE B), 5>: 0
-<(NOT-ONTABLE B), 6>: oo
-<(ONTABLE A), 0>: 0
-<(ONTABLE A), 1>: 0
-<(ONTABLE A), 2>: 0
-<(ONTABLE A), 3>: 0
-<(ONTABLE A), 4>: 0
-<(ONTABLE A), 5>: 0
-<(ONTABLE A), 6>: oo
-<(NOT-ONTABLE A), 0>: oo
-<(NOT-ONTABLE A), 1>: oo
-<(NOT-ONTABLE A), 2>: oo
-<(NOT-ONTABLE A), 3>: oo
-<(NOT-ONTABLE A), 4>: oo
-<(NOT-ONTABLE A), 5>: oo
-<(NOT-ONTABLE A), 6>: oo
-<(ON C B), 0>: oo
-<(ON C B), 1>: oo
-<(ON C B), 2>: oo
-<(ON C B), 3>: oo
-<(ON C B), 4>: oo
-<(ON C B), 5>: oo
-<(ON C B), 6>: oo
-<(NOT-ON C B), 0>: 0
-<(NOT-ON C B), 1>: 0
-<(NOT-ON C B), 2>: 0
-<(NOT-ON C B), 3>: 0
-<(NOT-ON C B), 4>: 0
-<(NOT-ON C B), 5>: 0
-<(NOT-ON C B), 6>: oo
-<(ON C A), 0>: oo
-<(ON C A), 1>: oo
-<(ON C A), 2>: oo
-<(ON C A), 3>: oo
-<(ON C A), 4>: oo
-<(ON C A), 5>: oo
-<(ON C A), 6>: oo
-<(NOT-ON C A), 0>: 0
-<(NOT-ON C A), 1>: 0
-<(NOT-ON C A), 2>: 0
-<(NOT-ON C A), 3>: 0
-<(NOT-ON C A), 4>: 0
-<(NOT-ON C A), 5>: 0
-<(NOT-ON C A), 6>: oo
-<(ON B C), 0>: oo
-<(ON B C), 1>: oo
-<(ON B C), 2>: oo
-<(ON B C), 3>: oo
-<(ON B C), 4>: oo
-<(ON B C), 5>: oo
-<(ON B C), 6>: oo
-<(NOT-ON B C), 0>: 0
-<(NOT-ON B C), 1>: 0
-<(NOT-ON B C), 2>: 0
-<(NOT-ON B C), 3>: 0
-<(NOT-ON B C), 4>: 0
-<(NOT-ON B C), 5>: 0
-<(NOT-ON B C), 6>: oo
-<(ON B A), 0>: 0
-<(ON B A), 1>: 0
-<(ON B A), 2>: 0
-<(ON B A), 3>: 0
-<(ON B A), 4>: 0
-<(ON B A), 5>: 0
-<(ON B A), 6>: oo
-<(NOT-ON B A), 0>: oo
-<(NOT-ON B A), 1>: oo
-<(NOT-ON B A), 2>: oo
-<(NOT-ON B A), 3>: oo
-<(NOT-ON B A), 4>: oo
-<(NOT-ON B A), 5>: oo
-<(NOT-ON B A), 6>: oo
-<(ON A C), 0>: oo
-<(ON A C), 1>: oo
-<(ON A C), 2>: oo
-<(ON A C), 3>: oo
-<(ON A C), 4>: oo
-<(ON A C), 5>: oo
-<(ON A C), 6>: oo
-<(NOT-ON A C), 0>: 0
-<(NOT-ON A C), 1>: 0
-<(NOT-ON A C), 2>: 0
-<(NOT-ON A C), 3>: 0
-<(NOT-ON A C), 4>: 0
-<(NOT-ON A C), 5>: 0
-<(NOT-ON A C), 6>: oo
-<(ON A B), 0>: oo
-<(ON A B), 1>: oo
-<(ON A B), 2>: oo
-<(ON A B), 3>: oo
-<(ON A B), 4>: oo
-<(ON A B), 5>: oo
-<(ON A B), 6>: oo
-<(NOT-ON A B), 0>: 0
-<(NOT-ON A B), 1>: 0
-<(NOT-ON A B), 2>: 0
-<(NOT-ON A B), 3>: 0
-<(NOT-ON A B), 4>: 0
-<(NOT-ON A B), 5>: 0
-<(NOT-ON A B), 6>: oo
-<(ON A A), 0>: oo
-<(ON A A), 1>: oo
-<(ON A A), 2>: oo
-<(ON A A), 3>: oo
-<(ON A A), 4>: oo
-<(ON A A), 5>: oo
-<(ON A A), 6>: oo
-<(NOT-ON A A), 0>: 0
-<(NOT-ON A A), 1>: 0
-<(NOT-ON A A), 2>: 0
-<(NOT-ON A A), 3>: 0
-<(NOT-ON A A), 4>: 0
-<(NOT-ON A A), 5>: 0
-<(NOT-ON A A), 6>: 0
-<(ON B B), 0>: oo
-<(ON B B), 1>: oo
-<(ON B B), 2>: oo
-<(ON B B), 3>: oo
-<(ON B B), 4>: oo
-<(ON B B), 5>: oo
-<(ON B B), 6>: oo
-<(NOT-ON B B), 0>: 0
-<(NOT-ON B B), 1>: 0
-<(NOT-ON B B), 2>: 0
-<(NOT-ON B B), 3>: 0
-<(NOT-ON B B), 4>: 0
-<(NOT-ON B B), 5>: 0
-<(NOT-ON B B), 6>: 0
-<(ON C C), 0>: oo
-<(ON C C), 1>: oo
-<(ON C C), 2>: oo
-<(ON C C), 3>: oo
-<(ON C C), 4>: oo
-<(ON C C), 5>: oo
-<(ON C C), 6>: oo
-<(NOT-ON C C), 0>: 0
-<(NOT-ON C C), 1>: 0
-<(NOT-ON C C), 2>: 0
-<(NOT-ON C C), 3>: 0
-<(NOT-ON C C), 4>: 0
-<(NOT-ON C C), 5>: 0
-<(NOT-ON C C), 6>: 0
+<(Z P3), 0>: oo
+<(Z P3), 1>: 0
+<(Z P3), 2>: oo
+<(Z P3), 3>: oo
+<(Z P3), 4>: oo
+<(NOT-Z P3), 0>: 0
+<(NOT-Z P3), 1>: oo
+<(NOT-Z P3), 2>: 0
+<(NOT-Z P3), 3>: 0
+<(NOT-Z P3), 4>: oo
+<(Z P2), 0>: 0
+<(Z P2), 1>: oo
+<(Z P2), 2>: oo
+<(Z P2), 3>: oo
+<(Z P2), 4>: oo
+<(NOT-Z P2), 0>: oo
+<(NOT-Z P2), 1>: 0
+<(NOT-Z P2), 2>: 0
+<(NOT-Z P2), 3>: 0
+<(NOT-Z P2), 4>: oo
+<(Z P1), 0>: oo
+<(Z P1), 1>: oo
+<(Z P1), 2>: 0
+<(Z P1), 3>: 0
+<(Z P1), 4>: oo
+<(NOT-Z P1), 0>: 0
+<(NOT-Z P1), 1>: 0
+<(NOT-Z P1), 2>: oo
+<(NOT-Z P1), 3>: oo
+<(NOT-Z P1), 4>: oo
+<(Y P3), 0>: 0
+<(Y P3), 1>: 0
+<(Y P3), 2>: oo
+<(Y P3), 3>: oo
+<(Y P3), 4>: oo
+<(NOT-Y P3), 0>: oo
+<(NOT-Y P3), 1>: oo
+<(NOT-Y P3), 2>: 0
+<(NOT-Y P3), 3>: 0
+<(NOT-Y P3), 4>: oo
+<(Y P2), 0>: oo
+<(Y P2), 1>: oo
+<(Y P2), 2>: 0
+<(Y P2), 3>: 0
+<(Y P2), 4>: oo
+<(NOT-Y P2), 0>: 0
+<(NOT-Y P2), 1>: 0
+<(NOT-Y P2), 2>: oo
+<(NOT-Y P2), 3>: oo
+<(NOT-Y P2), 4>: oo
+<(Y P1), 0>: oo
+<(Y P1), 1>: oo
+<(Y P1), 2>: oo
+<(Y P1), 3>: oo
+<(Y P1), 4>: oo
+<(NOT-Y P1), 0>: 0
+<(NOT-Y P1), 1>: 0
+<(NOT-Y P1), 2>: 0
+<(NOT-Y P1), 3>: 0
+<(NOT-Y P1), 4>: 0
+<(X P3), 0>: 0
+<(X P3), 1>: oo
+<(X P3), 2>: oo
+<(X P3), 3>: oo
+<(X P3), 4>: oo
+<(NOT-X P3), 0>: oo
+<(NOT-X P3), 1>: 0
+<(NOT-X P3), 2>: 0
+<(NOT-X P3), 3>: 0
+<(NOT-X P3), 4>: oo
+<(X P2), 0>: oo
+<(X P2), 1>: 0
+<(X P2), 2>: oo
+<(X P2), 3>: oo
+<(X P2), 4>: oo
+<(NOT-X P2), 0>: 0
+<(NOT-X P2), 1>: oo
+<(NOT-X P2), 2>: 0
+<(NOT-X P2), 3>: 0
+<(NOT-X P2), 4>: oo
+<(X P1), 0>: oo
+<(X P1), 1>: oo
+<(X P1), 2>: 0
+<(X P1), 3>: oo
+<(X P1), 4>: oo
+<(NOT-X P1), 0>: 0
+<(NOT-X P1), 1>: 0
+<(NOT-X P1), 2>: oo
+<(NOT-X P1), 3>: 0
+<(NOT-X P1), 4>: oo
 <GOAL, 0>: oo
 <GOAL, 1>: oo
 <GOAL, 2>: oo
 <GOAL, 3>: oo
 <GOAL, 4>: oo
-<GOAL, 5>: oo
-<GOAL, 6>: oo
